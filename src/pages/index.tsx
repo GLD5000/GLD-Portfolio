@@ -17,8 +17,8 @@ export default function Home() {
         <meta name="keywords" content="web, coding, developer, HTML, CSS, JavaScript"/>
          <meta name="author" content="GLD"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-        <link rel="icon" href="%PUBLIC_URL%/gldcondensed.ico" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/gldcondensed.ico" />
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
