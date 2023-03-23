@@ -3,6 +3,9 @@ module.exports = {
   darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    fontFamily: {
+      title: ["Alkatra", "cursive"],
+    },
     extend: {
       gridTemplateColumns: {
         frAutoFr: "1fr auto 1fr",
@@ -23,6 +26,8 @@ module.exports = {
         "body-sm": "calc(100vw - 2rem)",
       },
       colors: {
+        brand: "#2e69ff",
+
         "bg-var-dk": "#000000",
         "bg-dk": "#1f1f1f",
         "deco-dk": "#3d3d3d",
