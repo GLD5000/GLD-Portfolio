@@ -4,7 +4,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      title: ["Alkatra", "cursive"],
+      title: ["Squada One", "cursive"],
+      devTips: ["Delicious Handrawn", "cursive"],
+      contrastTool: ["Poppins", "sans-serif"],
+      colourmatic: ["Press Start 2P", "cursive"],
     },
     extend: {
       gridTemplateColumns: {
@@ -26,7 +29,8 @@ module.exports = {
         "body-sm": "calc(100vw - 2rem)",
       },
       colors: {
-        brand: "#2e69ff",
+        brand: "#404040",
+        "brand-dk": "#e0e0e0",
 
         "bg-var-dk": "#000000",
         "bg-dk": "#1f1f1f",

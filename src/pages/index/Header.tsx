@@ -22,17 +22,18 @@ export default function Header({
   return (
     <header className="sticky top-0 left-0 right-0 z-[999] grid h-fit w-screen flex-shrink-0 flex-grow-0 grid-cols-frAutoFr content-center border-b bg-bg dark:bg-bg-dk">
       <nav className=" col-start-2 flex w-body min-w-body max-w-body flex-wrap items-center justify-between  ">
-        <div className="flex h-16 flex-wrap items-center gap-2 p-2">
+        <div className="flex h-20 flex-wrap items-center gap-2">
           <a
             href="https://gld-portfolio.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
-            {" "}
-            <GldSvg wrapperClasses="h-12 w-12 fill-brand" />
+            <GldSvg wrapperClasses="h-16 square fill-brand dark:fill-brand-dk" />
           </a>
 
-          <h2 className=" font-title text-4xl text-brand">Portfolio</h2>
+          <h2 className=" p-2 pb-4 font-title text-5xl text-brand underline decoration-current decoration-double underline-offset-2 dark:text-brand-dk">
+            Portfolio
+          </h2>
         </div>
         <div className="relative flex h-16 flex-wrap items-center justify-center gap-8 py-2">
           <a
