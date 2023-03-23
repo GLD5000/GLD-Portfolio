@@ -6,7 +6,7 @@
   "description": "View my portfolio projects, see my source code and get in touch with me.",
   "icons": [
     {
-      "src": "GLD144.png", 
+      "src": "GLD144.png",
       "sizes": "144x144",
       "purpose": "any"
     }
