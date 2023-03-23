@@ -9,7 +9,7 @@ export default function ContrastToolCard() {
           TOOL
         </h1>
       </div>
-      <b className="mx-auto mt-2 mb-20 text-center text-xl">
+      <b className="mx-auto mt-2 mb-20 text-center text-lg sm:text-xl">
         Create Accessible Colour Combinations
       </b>
     </div>

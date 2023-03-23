@@ -22,16 +22,16 @@ export default function Header({
   return (
     <header className="sticky top-0 left-0 right-0 z-[999] grid h-fit w-screen flex-shrink-0 flex-grow-0 grid-cols-frAutoFr content-center border-b bg-bg dark:bg-bg-dk">
       <nav className=" col-start-2 flex w-body min-w-body max-w-body flex-wrap items-center justify-between  ">
-        <div className="flex h-20 flex-wrap items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <a
             href="https://gld-portfolio.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
-            <GldSvg wrapperClasses="h-16 square fill-brand dark:fill-brand-dk" />
+            <GldSvg wrapperClasses="h-12  square fill-brand dark:fill-brand-dk" />
           </a>
 
-          <h2 className=" p-2 pb-4 font-title text-5xl text-brand underline decoration-current decoration-double underline-offset-2 dark:text-brand-dk">
+          <h2 className=" rounded-lg bg-brand  px-1 font-title text-3xl tracking-wider text-white text-shadow-title dark:bg-brand-dk dark:text-black">
             Portfolio
           </h2>
         </div>
@@ -43,7 +43,7 @@ export default function Header({
             rel="noreferrer"
           >
             <LinkedInSvg />
-            LinkedIn
+            <p className="m-0 hidden md:inline">LinkedIn</p>
           </a>
           <a
             className=" hidden  flex-row gap-2 text-txt-mid hover:text-txt-main hover:underline hover:decoration-current hover:underline-offset-2 hover:transition focus:text-txt-main focus:underline focus:decoration-current  focus:underline-offset-2 focus:transition dark:text-txt-mid-dk dark:hover:text-txt-main-dk dark:focus:text-txt-main-dk sm:flex"
@@ -52,7 +52,7 @@ export default function Header({
             rel="noreferrer"
           >
             <GitHubSvg />
-            GitHub
+            <p className="m-0 hidden md:inline">GitHub</p>
           </a>
           <SvgButton
             svgWrapperClasses="pointer-events-none h-6 w-6"

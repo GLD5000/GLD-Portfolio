@@ -1,15 +1,22 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      title: ["Squada One", "cursive"],
-      devTips: ["Delicious Handrawn", "cursive"],
+      title: ["'Roboto Mono'", "cursive"],
+      devTips: ["'Delicious Handrawn'", "cursive"],
       contrastTool: ["Poppins", "sans-serif"],
-      colourmatic: ["Press Start 2P", "cursive"],
+      colourmatic: ["'Press Start 2P'", "cursive"],
     },
     extend: {
+      textShadow: {
+        colourmatic: "4px 0px #757575",
+        title: "1px 1px 2px #000000",
+      },
       gridTemplateColumns: {
         frAutoFr: "1fr auto 1fr",
         autoAuto: "auto auto",
@@ -53,5 +60,16 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "text-shadow": (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme("textShadow") }
+      );
+    }),
+  ],
 };
