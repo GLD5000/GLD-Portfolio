@@ -23,7 +23,7 @@ export default function Header({
   colourTheme: boolean;
 }) {
   return (
-    <header className="sticky top-0 left-0 right-0 z-[999] grid h-fit w-screen flex-shrink-0 flex-grow-0 grid-cols-frAutoFr content-center border-b bg-brand">
+    <header className="sticky top-0 left-0 right-0 z-[999] grid h-fit w-screen flex-shrink-0 flex-grow-0 grid-cols-frAutoFr content-center  bg-brand">
       <nav className=" col-start-2 flex w-body min-w-body max-w-body flex-wrap items-center justify-between  ">
         <div>
           <a
@@ -34,9 +34,9 @@ export default function Header({
           >
             <GldSvg
               wrapperClasses="h-12  square fill-white"
-              svgClasses=" drop-shadow-logo stroke-black stroke-[0.1px]"
+              svgClasses=" drop-shadow-logo"
             />
-            <h2 className="    px-1 font-title text-3.5xl tracking-wider text-white text-shadow-title">
+            <h2 className="    px-1 font-title text-3.5xl tracking-widest text-white text-shadow-title">
               Portfolio
             </h2>
           </a>

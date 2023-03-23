@@ -21,7 +21,7 @@ module.exports = {
         title: "1px 1px 4px #000000",
       },
       dropShadow: {
-        logo: "1px 1px 2px rgba(0, 0, 0, 1)",
+        logo: "1px 2px 3px rgba(0, 0, 0, 1)",
       },
       gridTemplateColumns: {
         frAutoFr: "1fr auto 1fr",
@@ -43,8 +43,9 @@ module.exports = {
       },
       colors: {
         // brand: "#006aff",
-        brand: "#417b9b",
-
+        // brand: "#417b9b",
+        brand: "#419b7d",
+        //#419b7d
         "brand-dk": "#e0e0e0",
 
         "bg-var-dk": "#000000",
