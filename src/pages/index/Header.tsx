@@ -5,6 +5,9 @@ import SunSvg from "@/icons/SunSvg";
 import SvgButton from "src/elements/SvgButton";
 import GldSvg from "src/icons/GldSvg";
 
+const className =
+  "hidden   flex-row gap-2 text-txt-main-dk hover:text-txt-main hover:underline hover:decoration-current hover:underline-offset-2 hover:transition focus:text-txt-main focus:underline focus:decoration-current  focus:underline-offset-2 focus:transition dark:text-txt-main dark:hover:text-txt-main-dk dark:focus:text-txt-main-dk sm:flex";
+
 function getDarkToggleIcon(isDark: boolean) {
   const wrapper = (
     <div className=" h-6 w-6">{isDark ? <SunSvg /> : <MoonSvg />} </div>
@@ -20,24 +23,27 @@ export default function Header({
   colourTheme: boolean;
 }) {
   return (
-    <header className="sticky top-0 left-0 right-0 z-[999] grid h-fit w-screen flex-shrink-0 flex-grow-0 grid-cols-frAutoFr content-center border-b bg-bg dark:bg-bg-dk">
+    <header className="sticky top-0 left-0 right-0 z-[999] grid h-fit w-screen flex-shrink-0 flex-grow-0 grid-cols-frAutoFr content-center border-b bg-brand">
       <nav className=" col-start-2 flex w-body min-w-body max-w-body flex-wrap items-center justify-between  ">
-        <div className="flex flex-wrap items-center gap-2">
+        <div>
           <a
             href="https://gld-portfolio.vercel.app/"
             target="_blank"
             rel="noreferrer"
+            className="flex flex-wrap items-center gap-2"
           >
-            <GldSvg wrapperClasses="h-12  square fill-brand dark:fill-brand-dk" />
+            <GldSvg
+              wrapperClasses="h-12  square fill-white"
+              svgClasses=" drop-shadow-logo stroke-black stroke-[0.1px]"
+            />
+            <h2 className="    px-1 font-title text-3.5xl tracking-wider text-white text-shadow-title">
+              Portfolio
+            </h2>
           </a>
-
-          <h2 className=" rounded-lg bg-brand  px-1 font-title text-3xl tracking-wider text-white text-shadow-title dark:bg-brand-dk dark:text-black">
-            Portfolio
-          </h2>
         </div>
         <div className="relative flex h-16 flex-wrap items-center justify-center gap-8 py-2">
           <a
-            className=" hidden  flex-row gap-2 text-txt-mid hover:text-txt-main hover:underline hover:decoration-current hover:underline-offset-2 hover:transition focus:text-txt-main focus:underline focus:decoration-current  focus:underline-offset-2 focus:transition dark:text-txt-mid-dk dark:hover:text-txt-main-dk dark:focus:text-txt-main-dk sm:flex"
+            className={className}
             href="https://www.linkedin.com/in/garethlouisdevlin/"
             target="_blank"
             rel="noreferrer"
@@ -46,7 +52,7 @@ export default function Header({
             <p className="m-0 hidden md:inline">LinkedIn</p>
           </a>
           <a
-            className=" hidden  flex-row gap-2 text-txt-mid hover:text-txt-main hover:underline hover:decoration-current hover:underline-offset-2 hover:transition focus:text-txt-main focus:underline focus:decoration-current  focus:underline-offset-2 focus:transition dark:text-txt-mid-dk dark:hover:text-txt-main-dk dark:focus:text-txt-main-dk sm:flex"
+            className={className}
             href="https://github.com/GLD5000"
             target="_blank"
             rel="noreferrer"

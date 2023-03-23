@@ -1,5 +1,6 @@
 export default function GldSvg({
   wrapperClasses = " pointer-events-none h-12 w-12 fill-current",
+  svgClasses = "",
 }) {
   return (
     <div className={wrapperClasses}>
@@ -10,6 +11,7 @@ export default function GldSvg({
         height="100%"
         width="100%"
         viewBox="0 0 16 16"
+        className={svgClasses}
       >
         <g>
           <path
