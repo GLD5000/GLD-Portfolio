@@ -42,10 +42,9 @@ module.exports = {
         "body-sm": "calc(100vw - 2rem)",
       },
       colors: {
-        // brand: "#006aff",
-        // brand: "#417b9b",
-        brand: "#419b7d",
-        //#419b7d
+        // brand: "#417b9b", // mild blue
+        // brand: "#53655f", // murky green
+        brand: "#419b7d", // mint green
         "brand-dk": "#e0e0e0",
 
         "bg-var-dk": "#000000",
