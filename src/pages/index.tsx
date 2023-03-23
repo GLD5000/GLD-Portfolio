@@ -14,8 +14,11 @@ export default function Home() {
           name="description"
           content="View my portfolio projects, see my source code and get in touch with me."
         />
-        <meta name="keywords" content="web, coding, developer, HTML, CSS, JavaScript"/>
-         <meta name="author" content="GLD"/>
+        <meta
+          name="keywords"
+          content="web, coding, developer, HTML, CSS, JavaScript"
+        />
+        <meta name="author" content="GLD" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/gldcondensed.ico" />
@@ -96,14 +99,14 @@ export default function Home() {
 
           <a
             href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
+            className=" p-36 text-xs"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <h2 className="text-xs">
               Templates <span>-&gt;</span>
             </h2>
-            <p className={inter.className}>
+            <p >
               Discover and deploy boilerplate example Next.js&nbsp;projects.
             </p>
           </a>
