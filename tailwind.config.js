@@ -14,7 +14,7 @@ module.exports = {
     },
     extend: {
       fontSize: {
-        "3.5xl": "2rem",
+        "3.5xl": "2.2rem",
       },
       textShadow: {
         colourmatic: "4px 0px #757575",
