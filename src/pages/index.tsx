@@ -1,12 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
-import Hero from "./index/Hero";
 import Body from "./index/Body";
 import Header from "./index/Header";
 import Footer from "./index/Footer";
 import { useState } from "react";
+import MainContentLink from "./index/header/MainContentLink";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -50,6 +48,7 @@ export default function Home() {
           className={colourTheme ? "dark" : undefined}
         >
           <section className="flex h-screen flex-col overflow-x-hidden overflow-y-scroll border-border bg-bg text-txt-main dark:border-border-dk dark:bg-bg-dk dark:text-txt-main-dk ">
+            <MainContentLink />
             <Header
               toggleColourTheme={toggleColourTheme}
               colourTheme={colourTheme}
