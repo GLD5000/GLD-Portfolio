@@ -13,6 +13,10 @@ module.exports = {
       colourmatic: ["'Press Start 2P'", "cursive"],
     },
     extend: {
+      screens: {
+        xs: "420px",
+      },
+
       fontSize: {
         "3.5xl": "2.2rem",
       },

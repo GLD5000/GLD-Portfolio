@@ -12,7 +12,7 @@ export default function Body() {
         id="main-content"
         className="flex h-full w-body min-w-body max-w-body flex-col "
       >
-        <div className=" w-body-sm min-w-body max-w-body grow sm:w-body">
+        <div className=" mt-20 w-body-sm min-w-body max-w-body grow sm:w-body">
           <ContrastToolCard />
           <DevTipsCard />
           <ColourmaticCard />
