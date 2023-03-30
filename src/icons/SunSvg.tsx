@@ -9,6 +9,7 @@ export default function SunSvg({
       height="100%"
       width="100%"
       viewBox="0 0 32 32"
+      transform="rotate (40)"
     >
       <circle
         cx="16"
