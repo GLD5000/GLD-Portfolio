@@ -1,7 +1,7 @@
 {
   "manifest_version": "3",
   "version": "0.1",
-  "short_name": "GLD",
+  "short_name": "GLD Portfolio",
   "name": "GLD Portfolio",
   "description": "View my portfolio projects, see my source code and get in touch with me.",
   "icons": [
