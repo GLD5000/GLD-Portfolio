@@ -3,7 +3,7 @@ export default function ColourmaticCard() {
     <div className="mx-auto grid w-screen max-w-body items-center self-center px-4 py-10 sm:w-full sm:px-8">
       <a
         className=" mx-auto mt-10"
-        href="https://gld5000.github.io/ColourTheory/"
+        href="https://colour-theory.netlify.app/"
         target="_blank"
         rel="noreferrer"
       >
