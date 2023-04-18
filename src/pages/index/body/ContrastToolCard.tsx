@@ -12,7 +12,7 @@ export default function ContrastToolCard() {
             CONTRAST
           </h1>
           <h1 className="  rounded-none bg-black p-3 font-black leading-6 text-white sm:p-[0.95rem] sm:text-6xl">
-            TOOL
+            LAB
           </h1>
         </div>
       </a>
