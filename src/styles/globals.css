@@ -116,12 +116,12 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .zoom-in {
-  animation: zoomInAnimation ease-in 5000ms;
+  animation: zoomInAnimation ease-in 2000ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 .zoom-in-slow {
-  animation: zoomInAnimationSlow ease-in 6000ms;
+  animation: zoomInAnimationSlow ease-in 3300ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -130,7 +130,7 @@ input[type="range"]::-moz-range-thumb {
 @keyframes zoomInAnimation {
   0% {
     scale: 0;
-    translate:-100%;
+    translate:-45%;
     rotate:270deg;
   }
   100% {
@@ -142,12 +142,12 @@ input[type="range"]::-moz-range-thumb {
 @keyframes zoomInAnimationSlow {
   0% {
     scale: 0;
-    translate:-100%;
+    translate:-45%;
     rotate:270deg;
   }
   90% {
     scale: 0;
-    translate:-100%;
+    translate:-45%;
     rotate:270deg;
   }
   100% {
