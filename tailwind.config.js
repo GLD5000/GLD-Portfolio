@@ -13,6 +13,9 @@ module.exports = {
       colourmatic: ["'Press Start 2P'", "cursive"],
     },
     extend: {
+      gradientColorStopPositions: {
+        late: "5%",
+      },
       screens: {
         xs: "420px",
       },

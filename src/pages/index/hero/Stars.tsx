@@ -8,7 +8,7 @@ function getStars() {
     starArray.push(
       <div
         style={{ top: top, left: left }}
-        className="black absolute h-[2px] w-[2px] bg-black drop-shadow-star dark:bg-white dark:drop-shadow-star-dk"
+        className="black absolute h-[2px] w-[2px] bg-white drop-shadow-star-dk"
       ></div>
     );
     const leftb = `${Math.random() * 100}%`;
@@ -16,7 +16,7 @@ function getStars() {
     starArray.push(
       <div
         style={{ top: topb, left: leftb }}
-        className="black absolute h-[1px] w-[1px] bg-black drop-shadow-star dark:bg-white dark:drop-shadow-star-dk"
+        className="black absolute h-[1px] w-[1px] bg-white drop-shadow-star-dk"
       ></div>
     );
   }
