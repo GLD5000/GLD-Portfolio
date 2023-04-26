@@ -1,10 +1,10 @@
 import GldSvgHero from "@/icons/GldSvgHero";
-// import Stars from "./Stars";
+import Stars from "./Stars";
 
 export default function Hero() {
   return (
     <div className=" absolute top-0  z-[997] grid min-h-screen w-screen  bg-gradient-to-b from-bg-dk via-[98.5%]  to-transparent ">
-      {/* <Stars /> */}
+      <Stars />
       <div className=" h-full w-full bg-transparent">
         <div className="zoom-in mx-auto grid h-fit w-fit gap-12 [transition-duration:1500ms] [transition-delay:100ms]">
           <div className="  mx-auto h-auto w-[98vmin]  drop-shadow-hero dark:drop-shadow-hero-dk sm:w-[80vmin]">

@@ -1,24 +1,118 @@
 import { ReactElement } from "react";
 
 function getStars() {
+  const numberArray = [
+    ["41.68%", "25.38%"],
+    ["5.1%", "28.89%"],
+    ["94.24%", "90.75%"],
+    ["54.59%", "17.8%"],
+    ["20.46%", "89.33%"],
+    ["1.1%", "35.97%"],
+    ["56.12%", "97.11%"],
+    ["16.24%", "21.61%"],
+    ["10.06%", "10.75%"],
+    ["50.67%", "74.61%"],
+    ["58.2%", "62.02%"],
+    ["14.89%", "19.15%"],
+    ["17.89%", "12.91%"],
+    ["34.37%", "47.14%"],
+    ["60.77%", "28.11%"],
+    ["57.71%", "24.27%"],
+    ["40.88%", "33.98%"],
+    ["74.69%", "78.81%"],
+    ["8.48%", "4.88%"],
+    ["93.91%", "7.49%"],
+    ["17.89%", "46.88%"],
+    ["1.43%", "70.18%"],
+    ["58.93%", "63.52%"],
+    ["45.8%", "40.32%"],
+    ["76.34%", "7.36%"],
+    ["5.3%", "34.9%"],
+    ["14.92%", "57.81%"],
+    ["62.6%", "98.85%"],
+    ["55.77%", "41.88%"],
+    ["36.86%", "68.92%"],
+    ["72.94%", "61.15%"],
+    ["21.05%", "45.52%"],
+    ["56.12%", "3.67%"],
+    ["99.6%", "28.84%"],
+    ["62.93%", "20.7%"],
+    ["85.77%", "0.64%"],
+    ["16.23%", "84.17%"],
+    ["14.86%", "63.83%"],
+    ["50.48%", "14.24%"],
+    ["69.47%", "10.47%"],
+    ["3.63%", "41.83%"],
+    ["85.32%", "87.29%"],
+    ["73.2%", "9.99%"],
+    ["63.92%", "92.9%"],
+    ["16.57%", "39.48%"],
+    ["41.15%", "7.2%"],
+    ["33.32%", "96.32%"],
+    ["54.4%", "7.95%"],
+    ["61.4%", "45.2%"],
+    ["62.76%", "10.74%"],
+    ["20.8%", "79.41%"],
+    ["99.25%", "90.28%"],
+    ["27.26%", "98.57%"],
+    ["50.43%", "57.95%"],
+    ["93.63%", "72.92%"],
+    ["65.28%", "46.47%"],
+    ["59.94%", "82.96%"],
+    ["13.9%", "38%"],
+    ["52.36%", "80.81%"],
+    ["12.66%", "18.27%"],
+    ["45.08%", "3.76%"],
+    ["48.3%", "3.98%"],
+    ["51.64%", "81.65%"],
+    ["25.81%", "71.57%"],
+    ["89.84%", "18.91%"],
+    ["35.91%", "69.23%"],
+    ["27.72%", "7.37%"],
+    ["43.95%", "82.2%"],
+    ["66.73%", "71.16%"],
+    ["61.51%", "49.29%"],
+  ];
+
+  let key = 0;
+
+  // const logArray = [];
+  //   for (let i = 0; i < 35; i++) {
+  //     const left = `${Math.round(Math.random() * 10000)/100}%`;
+  //     const top = `${Math.round(Math.random() * 10000)/100}%`;
+  //     const leftb = `${Math.round(Math.random() * 10000)/100}%`;
+  //     const topb = `${Math.round(Math.random() * 10000)/100}%`;
+  //     logArray.push([left,top]);
+  //     logArray.push([leftb,topb]);
+
+  //   }
+
+  // console.log('logArray:', logArray);
+  console.log("numberArray.length:", numberArray.length);
   const starArray: ReactElement[] = [];
   for (let i = 0; i < 35; i++) {
-    const left = `${Math.random() * 100}%`;
-    const top = `${Math.random() * 100}%`;
+    console.log("key:", key);
+    console.log("numberArray[key][0]:", numberArray[key][0]);
     starArray.push(
-      <div
-        style={{ top: top, left: left }}
-        className="black absolute h-[2px] w-[2px] bg-white drop-shadow-star-dk"
-      ></div>
+      <>
+        <circle
+          key={key}
+          cx={numberArray[key][0]}
+          cy={numberArray[key][1]}
+          r="1"
+          fill="white"
+        ></circle>
+
+        <circle
+          key={key + 1}
+          cx={numberArray[key + 1][0]}
+          cy={numberArray[key + 1][1]}
+          r="0.5"
+          fill="white"
+        ></circle>
+      </>
     );
-    const leftb = `${Math.random() * 100}%`;
-    const topb = `${Math.random() * 100}%`;
-    starArray.push(
-      <div
-        style={{ top: topb, left: leftb }}
-        className="black absolute h-[1px] w-[1px] bg-white drop-shadow-star-dk"
-      ></div>
-    );
+    key += 2;
   }
   return starArray;
 }
@@ -26,8 +120,11 @@ function getStars() {
 export default function Stars() {
   const starArray = getStars();
   return (
-    <div className="-z-index-1 absolute top-0 left-0 h-screen w-screen">
+    <svg
+      className="-z-index-1 absolute top-0 left-0 h-screen w-screen"
+      viewBox="0 0 100% 100%"
+    >
       {starArray}
-    </div>
+    </svg>
   );
 }
