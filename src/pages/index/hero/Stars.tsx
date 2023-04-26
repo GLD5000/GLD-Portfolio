@@ -88,11 +88,8 @@ function getStars() {
   //   }
 
   // console.log('logArray:', logArray);
-  console.log("numberArray.length:", numberArray.length);
   const starArray: ReactElement[] = [];
   for (let i = 0; i < 35; i++) {
-    console.log("key:", key);
-    console.log("numberArray[key][0]:", numberArray[key][0]);
     starArray.push(
       <>
         <circle
