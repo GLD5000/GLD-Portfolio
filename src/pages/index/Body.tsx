@@ -1,7 +1,7 @@
 import ColourmaticCard from "./body/ColourmaticCard";
 import ContrastToolCard from "./body/ContrastToolCard";
 import DevTipsCard from "./body/DevTipsCard";
-import Hero from "./Hero";
+import Hero from "./hero/Hero";
 
 export default function Body() {
   return (
@@ -12,7 +12,7 @@ export default function Body() {
       <Hero />
       <section
         id="main-content"
-        className="flex h-full w-body min-w-body max-w-body flex-col "
+        className="flex h-full w-body min-w-body max-w-body flex-col bg-transparent "
       >
         <div className=" mt-20 w-body-sm min-w-body max-w-body grow sm:w-body">
           <ContrastToolCard />

@@ -28,6 +28,8 @@ module.exports = {
         logo: "1px 2px 3px rgba(0, 0, 0, 1)",
         hero: "-1vw 1vw 2vw rgba(0, 0, 0, 0.75)",
         "hero-dk": "-1vw 1vw 2vw #999",
+        star: "-1px 1px 7px rgba(0, 0, 0, 1)",
+        "star-dk": "-1px 1px 200px white",
       },
       gridTemplateColumns: {
         frAutoFr: "1fr auto 1fr",

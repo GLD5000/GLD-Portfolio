@@ -114,3 +114,30 @@ input[type="range"]::-moz-range-thumb {
   cursor: inherit;
   border-radius: 100%;
 }
+
+.zoom-in {
+  animation: zoomInAnimation ease-out 5000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes zoomInAnimation {
+  0% {
+    scale: 0;
+    translate:-100%;
+    rotate:270deg;
+  }
+  50% {
+    scale: 0.15;
+    translate:-50%;
+    rotate:90deg;
+
+  }
+  100% {
+    scale: 1;
+    translate:0%;
+    rotate:0;
+
+  }
+}
