@@ -116,7 +116,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .zoom-in {
-  animation: zoomInAnimation ease-out 5000ms;
+  animation: zoomInAnimation linear 5000ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -127,17 +127,27 @@ input[type="range"]::-moz-range-thumb {
     scale: 0;
     translate:-100%;
     rotate:270deg;
+    opacity:30%;
   }
+  10% {
+    scale: 0.05;
+    translate:-90%;
+    rotate:180deg;
+    opacity:100%;
+
+  }
+
   50% {
     scale: 0.15;
     translate:-50%;
     rotate:90deg;
+    opacity:100%;
 
   }
   100% {
     scale: 1;
     translate:0%;
     rotate:0;
-
+    opacity:100%;
   }
 }

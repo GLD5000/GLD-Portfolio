@@ -10,7 +10,7 @@ export default function GldSvgHero({
         aria-label="GLD"
         height="100%"
         width="100%"
-        viewBox="0 0 16 16"
+        viewBox="0 1 16 12"
         className={svgClasses}
       >
         <g>

@@ -7,9 +7,10 @@ export default function Body() {
   return (
     <main
       id="body-container"
-      className=" grid w-screen  flex-grow pt-2  sm:justify-items-center  "
+      className="relative grid w-screen  flex-grow pt-2  sm:justify-items-center  "
     >
-      <Hero />
+      <div className="mb-20 h-screen w-screen" />
+
       <section
         id="main-content"
         className="flex h-full w-body min-w-body max-w-body flex-col bg-transparent "

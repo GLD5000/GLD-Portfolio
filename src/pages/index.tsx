@@ -5,6 +5,7 @@ import Header from "./index/Header";
 import Footer from "./index/Footer";
 import { useState } from "react";
 import MainContentLink from "./index/header/MainContentLink";
+import Hero from "./index/hero/Hero";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -47,8 +48,9 @@ export default function Home() {
           id="theme-wrapper"
           className={colourTheme ? "dark" : undefined}
         >
-          <section className="flex h-screen flex-col overflow-x-hidden overflow-y-scroll border-border bg-bg text-txt-main dark:border-border-dk dark:bg-bg-dk dark:text-txt-main-dk ">
+          <section className="relative flex h-screen snap-y snap-proximity snap-normal flex-col overflow-x-hidden overflow-y-scroll scroll-smooth border-border bg-bg text-txt-main dark:border-border-dk dark:bg-bg-dk dark:text-txt-main-dk ">
             <MainContentLink />
+            <Hero />
             <Header
               toggleColourTheme={toggleColourTheme}
               colourTheme={colourTheme}
