@@ -1,4 +1,4 @@
-import ColourmaticCard from "./body/ColourmaticCard";
+import ColourmaticCard from "./body/ColourTheoryCard";
 import ContrastToolCard from "./body/ContrastToolCard";
 import DevTipsCard from "./body/DevTipsCard";
 import Hero from "./hero/Hero";

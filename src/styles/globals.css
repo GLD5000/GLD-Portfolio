@@ -116,12 +116,12 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .zoom-in {
-  animation: zoomInAnimation ease-in 2000ms;
+  animation: zoomInAnimation ease-in 1500ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 .zoom-in-slow {
-  animation: zoomInAnimationSlow ease-in 3300ms;
+  animation: zoomInAnimationSlow ease-in 2300ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -143,16 +143,16 @@ input[type="range"]::-moz-range-thumb {
   0% {
     scale: 0;
     translate:-45%;
-    rotate:270deg;
+    /* rotate:270deg; */
   }
   90% {
     scale: 0;
     translate:-45%;
-    rotate:270deg;
+    /* rotate:270deg; */
   }
   100% {
     scale: 1;
     translate:0%;
-    rotate:0;
+    /* rotate:0; */
   }
 }
