@@ -1,3 +1,10 @@
+import Image from "next/image";
+import ComboCropped from "src/assets/colourtheory/ComboCropped.jpg";
+import CopyCropped from "src/assets/colourtheory/CopyCropped.jpg";
+import PickerCropped from "src/assets/colourtheory/PickerBCropped.jpg";
+import SaveCropped from "src/assets/colourtheory/SaveCropped.jpg";
+import SmallPickerCropped from "src/assets/colourtheory/SmallPickerBCropped.jpg";
+
 export default function ColourTheoryCard() {
   return (
     <div className="mx-auto grid  w-screen max-w-body items-center self-center px-4 py-10 sm:w-full sm:px-8">
@@ -18,30 +25,30 @@ export default function ColourTheoryCard() {
           Custom CSS Colour Scheme Generator
         </b>
       </div>
-      <div className="relative mx-auto flex aspect-[1/1] w-[90%] max-w-[50rem]">
-        <img
-          className="absolute bottom-0 left-[50%] h-[30%] w-auto shadow-lg shadow-black"
-          src="/screenshots/colourtheory/SmallPickerBCropped.jpg"
+      <div className="relative mx-auto flex aspect-[1/1] w-[90%] max-w-[45rem]">
+        <Image
+          className="absolute bottom-0 right-0 h-[30%] w-auto shadow-xl shadow-black"
+          src={SmallPickerCropped}
           alt="Colour Picker"
         />
-        <img
-          className="absolute bottom-[50%] left-0 h-[45%] w-auto shadow-lg shadow-black"
-          src="/screenshots/colourtheory/SaveCropped.jpg"
+        <Image
+          className="absolute bottom-[50%] left-0 h-[45%] w-auto shadow-xl shadow-black"
+          src={SaveCropped}
           alt="Colour Picker"
         />
-        <img
-          className="absolute top-0 right-0 h-[35%] w-auto shadow-lg shadow-black"
-          src="/screenshots/colourtheory/CopyCropped.jpg"
+        <Image
+          className="absolute top-0 right-0 h-[35%] w-auto shadow-xl shadow-black"
+          src={CopyCropped}
           alt="Colour Picker"
         />
-        <img
-          className="absolute bottom-[25%] left-[30%] h-[45%] w-auto shadow-lg shadow-black"
-          src="/screenshots/colourtheory/PickerBCropped.jpg"
+        <Image
+          className="absolute bottom-0 left-0 h-[45%] w-auto shadow-xl shadow-black"
+          src={ComboCropped}
           alt="Colour Picker"
         />
-        <img
-          className="absolute bottom-0 left-0 h-[45%] w-auto shadow-lg shadow-black"
-          src="/screenshots/colourtheory/ComboCropped.jpg"
+        <Image
+          className="absolute bottom-[25%] left-[30%] h-[45%] w-auto shadow-xl shadow-black"
+          src={PickerCropped}
           alt="Colour Picker"
         />
       </div>
