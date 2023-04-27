@@ -7,7 +7,7 @@ import SmallPickerCropped from "src/assets/colourtheory/SmallPickerBCropped.jpg"
 
 export default function ColourTheoryCard() {
   return (
-    <div className="mx-auto grid  w-screen max-w-body items-center self-center px-4 py-10 sm:w-full sm:px-8">
+    <div className="mx-auto grid w-screen  max-w-body items-center self-center px-4 py-10 sm:w-full sm:px-8 lg:grid-cols-2">
       <div className="grid">
         <a
           className=" mx-auto mt-10"
@@ -16,7 +16,7 @@ export default function ColourTheoryCard() {
           rel="noreferrer"
         >
           <div className=" flex flex-row overflow-clip rounded-lg border-2 border-current font-colourmatic ">
-            <h1 className=" text rounded-none bg-white p-3 font-colourmatic text-2xl tracking-tight text-black text-shadow-colourmatic sm:p-[0.95rem] sm:text-4xl">
+            <h1 className=" text rounded-none bg-white p-3 font-colourmatic text-lg tracking-tight text-black text-shadow-colourmatic xs:text-2xl sm:p-[0.95rem] sm:text-3xl xl:text-4xl">
               &lt;ColourTheory&gt;
             </h1>
           </div>
@@ -25,7 +25,7 @@ export default function ColourTheoryCard() {
           Custom CSS Colour Scheme Generator
         </b>
       </div>
-      <div className="relative mx-auto flex aspect-[1/1] w-[90%] max-w-[45rem]">
+      <div className="relative mx-auto flex aspect-[1/1] w-[80%] max-w-[35rem]">
         <Image
           className="absolute bottom-0 right-0 h-[30%] w-auto shadow-xl shadow-black"
           src={SmallPickerCropped}
