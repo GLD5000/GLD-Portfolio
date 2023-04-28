@@ -1,7 +1,7 @@
 import ColourmaticCard from "./body/ColourTheoryCard";
 import ContrastToolCard from "./body/ContrastLabCard";
 import DevTipsCard from "./body/DevTipsCard";
-import Hero from "./hero/Hero";
+import Hero from "../hero/Hero";
 
 export default function Body() {
   return (
@@ -9,8 +9,6 @@ export default function Body() {
       id="body-container"
       className="relative grid w-screen  flex-grow pt-2  sm:justify-items-center  "
     >
-      <div className="mb-20 h-screen w-screen" />
-
       <section
         id="main-content"
         className="flex h-full w-body min-w-body max-w-body flex-col bg-transparent "

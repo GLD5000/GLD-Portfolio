@@ -39,7 +39,7 @@ export default function DevTipsCard() {
             alt="Colour Picker"
           /> */}
         <Image
-          className="absolute top-0 right-[10%] h-[37%] w-auto rounded-md shadow-xl shadow-black"
+          className="absolute top-0 right-[10%] h-[47%] w-auto rounded-md shadow-xl shadow-black"
           src={tagsCropped}
           alt="Colour Picker"
         />
@@ -49,7 +49,7 @@ export default function DevTipsCard() {
           alt="Colour Picker"
         />
         <Image
-          className="absolute top-[38%] right-0 h-[37%] w-auto rounded-md shadow-xl shadow-black"
+          className="absolute top-[38%] right-0 h-[46%] w-auto rounded-md shadow-xl shadow-black"
           src={TipBCropped}
           alt="Colour Picker"
         />

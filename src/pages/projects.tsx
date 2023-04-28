@@ -33,7 +33,20 @@ export default function Home() {
         <link rel="icon" href="/gldcondensed.ico" />
       </Head>
       <main>
-        <Hero />
+        <section
+          id="theme-wrapper"
+          className={colourTheme ? "dark" : undefined}
+        >
+          <section className="relative flex h-screen snap-y snap-proximity snap-normal flex-col overflow-x-hidden overflow-y-scroll scroll-smooth border-border bg-bg text-txt-main dark:border-border-dk dark:bg-bg-dk dark:text-txt-main-dk ">
+            <MainContentLink />
+            <Header
+              toggleColourTheme={toggleColourTheme}
+              colourTheme={colourTheme}
+            />
+            <Body />
+            <Footer />
+          </section>
+        </section>
       </main>
     </>
   );

@@ -121,22 +121,40 @@ input[type="range"]::-moz-range-thumb {
   animation-fill-mode: forwards;
 }
 .zoom-in-slow {
-  animation: zoomInAnimationSlow ease-in 1300ms;
+  animation: zoomInAnimationSlow ease-in 2300ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.zoom-in-g {
+  animation: zoomInAnimation ease-out 500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.zoom-in-l {
+  animation: zoomInAnimation ease-out 1000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.zoom-in-d {
+  animation: zoomInAnimation ease-out 1500ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 
+
 @keyframes zoomInAnimation {
   0% {
     scale: 0;
-    translate:-45%;
-    rotate:270deg;
   }
+  80%{
+  scale:0;
+  }
+
+
   100% {
     scale: 1;
-    translate:0%;
-    rotate:0;
   }
 }
 @keyframes zoomInAnimationSlow {
@@ -145,7 +163,7 @@ input[type="range"]::-moz-range-thumb {
     translate:-45%;
     /* rotate:270deg; */
   }
-  90% {
+  80% {
     scale: 0;
     translate:-45%;
     /* rotate:270deg; */
