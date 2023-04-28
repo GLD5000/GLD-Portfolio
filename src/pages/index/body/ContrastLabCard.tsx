@@ -6,7 +6,7 @@ import MatrixBCropped from "src/assets/contrasttool/MatrixBCropped.jpg";
 import PickerCropped from "src/assets/contrasttool/PickerSoloCropped.jpg";
 import InputCropped from "src/assets/contrasttool/InputCropped.jpg";
 
-export default function ColourTheoryCard() {
+export default function ContrastLabCard() {
   return (
     <div className="mx-auto grid w-screen  max-w-body items-center self-center px-4 py-10 sm:w-full sm:px-8 lg:grid-cols-2">
       <div className="grid">
@@ -42,7 +42,7 @@ export default function ColourTheoryCard() {
           alt="Colour Picker"
         />
         <Image
-          className="absolute top-[36%] left-0 h-[38%] w-auto rounded-md shadow-xl shadow-black"
+          className="absolute top-[36%] left-[5%] h-[38%] w-auto rounded-md shadow-xl shadow-black"
           src={InfoTableCropped}
           alt="Colour Picker"
         />
@@ -57,7 +57,7 @@ export default function ColourTheoryCard() {
           alt="Colour Picker"
         />
         <Image
-          className="absolute top-[7%] right-0 h-[53%] w-auto rounded-3xl shadow-xl shadow-black"
+          className="absolute top-[7%] right-[12%] h-[53%] w-auto rounded-3xl shadow-xl shadow-black"
           src={ComboCropped}
           alt="Colour Picker"
         />

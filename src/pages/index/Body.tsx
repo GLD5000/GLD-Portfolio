@@ -1,5 +1,5 @@
 import ColourmaticCard from "./body/ColourTheoryCard";
-import ContrastToolCard from "./body/ContrastToolCard";
+import ContrastToolCard from "./body/ContrastLabCard";
 import DevTipsCard from "./body/DevTipsCard";
 import Hero from "./hero/Hero";
 
