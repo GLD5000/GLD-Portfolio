@@ -9,21 +9,10 @@ import Hero from "./index/hero/Hero";
 
 const inter = Inter({ subsets: ["latin"] });
 
-function setThemeToLocalStorage(themeBoolean: boolean) {
-  if (typeof window !== "undefined") {
-    localStorage.setItem("theme", themeBoolean.toString());
-  }
-}
-
 export default function Home() {
-  const [colourTheme, setColourTheme] = useState(
-    typeof window !== "undefined"
-      ? localStorage.getItem("theme") !== "false"
-      : true
-  );
+  const [colourTheme, setColourTheme] = useState(true);
   function toggleColourTheme() {
     setColourTheme((currentTheme: boolean) => !currentTheme);
-    setThemeToLocalStorage(!colourTheme);
   }
 
   return (

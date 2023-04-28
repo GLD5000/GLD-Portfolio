@@ -27,27 +27,27 @@ export default function ColourTheoryCard() {
       </div>
       <div className="relative mx-auto flex aspect-[1/1] w-[80%] max-w-[35rem]">
         <Image
-          className="absolute bottom-0 right-0 h-[30%] w-auto shadow-xl shadow-black"
+          className="absolute bottom-0 right-0 h-[30%] w-auto rounded shadow-xl shadow-black"
           src={SmallPickerCropped}
           alt="Colour Picker"
         />
         <Image
-          className="absolute bottom-[50%] left-0 h-[45%] w-auto shadow-xl shadow-black"
+          className="absolute bottom-[50%] left-0 h-[45%] w-auto rounded shadow-xl shadow-black"
           src={SaveCropped}
           alt="Colour Picker"
         />
         <Image
-          className="absolute top-0 right-0 h-[35%] w-auto shadow-xl shadow-black"
+          className="absolute top-0 right-0 h-[35%] w-auto rounded shadow-xl shadow-black"
           src={CopyCropped}
           alt="Colour Picker"
         />
         <Image
-          className="absolute bottom-0 left-0 h-[45%] w-auto shadow-xl shadow-black"
+          className="absolute bottom-0 left-0 h-[45%] w-auto rounded shadow-xl shadow-black"
           src={ComboCropped}
           alt="Colour Picker"
         />
         <Image
-          className="absolute bottom-[25%] left-[30%] h-[45%] w-auto shadow-xl shadow-black"
+          className="absolute bottom-[25%] left-[30%] h-[45%] w-auto rounded shadow-xl shadow-black"
           src={PickerCropped}
           alt="Colour Picker"
         />

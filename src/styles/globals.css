@@ -121,7 +121,7 @@ input[type="range"]::-moz-range-thumb {
   animation-fill-mode: forwards;
 }
 .zoom-in-slow {
-  animation: zoomInAnimationSlow ease-in 2300ms;
+  animation: zoomInAnimationSlow ease-in 1300ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
