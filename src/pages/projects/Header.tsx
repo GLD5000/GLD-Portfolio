@@ -5,7 +5,7 @@ import NavBar from "./header/NavBar";
 import Link from "next/link";
 
 const className =
-  "hidden   flex-row gap-2 text-txt-main-dk hover:text-txt-main hover:underline hover:decoration-current hover:underline-offset-2 hover:transition focus:text-txt-main focus:underline focus:decoration-current  focus:underline-offset-2 focus:transition dark:text-txt-main dark:hover:text-txt-main-dk dark:focus:text-txt-main-dk sm:flex";
+  "hidden flex-row gap-2 text-txt-main-dk hover:text-txt-main hover:underline hover:decoration-current hover:underline-offset-2 hover:transition focus:text-txt-main focus:underline focus:decoration-current focus:underline-offset-2 focus:transition dark:text-txt-main dark:hover:text-txt-main-dk dark:focus:text-txt-main-dk sm:flex";
 
 export default function Header({
   toggleColourTheme,
@@ -20,8 +20,8 @@ export default function Header({
   }
 
   return (
-    <header className="sticky top-0 left-0 right-0 z-[996] grid h-fit w-screen flex-shrink-0 flex-grow-0 grid-cols-frAutoFr content-center  bg-brand">
-      <div className=" col-start-2 flex w-body-sm min-w-body max-w-body flex-wrap items-center justify-between sm:w-body  ">
+    <header className="sticky top-0 left-0 right-0 z-[996] grid h-fit w-screen flex-shrink-0 flex-grow-0 grid-cols-frAutoFr content-center bg-brand">
+      <div className=" col-start-2 flex w-body-sm min-w-body max-w-body flex-wrap items-center justify-between sm:w-body ">
         <div>
           <Link
             href="/"
@@ -29,10 +29,10 @@ export default function Header({
             className="flex flex-wrap items-center gap-2"
           >
             <GldSvg
-              wrapperClasses="h-12  square fill-white"
+              wrapperClasses="h-12 square fill-white"
               svgClasses=" drop-shadow-logo"
             />
-            <h2 className="    px-1 font-title text-3.5xl tracking-widest text-white text-shadow-title">
+            <h2 className=" px-1 font-title text-3.5xl tracking-widest text-white text-shadow-title">
               Portfolio
             </h2>
           </Link>
