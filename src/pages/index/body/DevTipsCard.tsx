@@ -39,7 +39,7 @@ export default function ColourTheoryCard() {
           alt="Colour Picker"
         />
         <Image
-          className="absolute top-[31%] right-0 h-[39%] w-auto rounded-md shadow-xl shadow-black"
+          className="absolute top-[31%] left-0 h-[45%] w-auto rounded-md shadow-xl shadow-black"
           src={tagsCropped}
           alt="Colour Picker"
         />
@@ -59,7 +59,7 @@ export default function ColourTheoryCard() {
           alt="Colour Picker"
         />
         <Image
-          className="absolute bottom-[80%] right-0 h-[15%] w-auto rounded-md shadow-xl shadow-black"
+          className="absolute top-[14%] right-0 h-[18%] w-auto rounded-md shadow-xl shadow-black"
           src={CreateCropped}
           alt="Colour Picker"
         />
