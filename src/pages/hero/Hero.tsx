@@ -33,12 +33,14 @@ export default function Hero() {
             <div className="mx-4 grid w-fit grid-cols-2 gap-2 overflow-clip rounded-b-3xl bg-white px-2 pb-2 text-lg font-bold">
               <Link
                 href="/projects"
+                target="_self"
                 className="h-fit w-full rounded-r rounded-br-md rounded-bl-3xl  bg-pink-400 p-4 text-black"
               >
                 About
               </Link>
               <Link
                 href="/projects"
+                target="_self"
                 className="h-fit w-full rounded-l rounded-bl-md rounded-br-3xl bg-pink-400 p-4 text-black"
               >
                 Projects

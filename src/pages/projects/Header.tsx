@@ -25,8 +25,7 @@ export default function Header({
         <div>
           <Link
             href="/"
-            target="_blank"
-            rel="noreferrer"
+            target="_self"
             className="flex flex-wrap items-center gap-2"
           >
             <GldSvg
