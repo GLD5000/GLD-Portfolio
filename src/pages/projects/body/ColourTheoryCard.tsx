@@ -27,6 +27,7 @@ export default function ColourTheoryCard() {
       </div>
       <div className="relative mx-auto flex aspect-[1/1] w-[80%] max-w-[35rem]">
         <Image
+          placeholder="blur"
           className="absolute bottom-0 right-0 h-[30%] w-auto rounded shadow-xl shadow-black"
           src={SmallPickerCropped}
           alt="Colour Picker"

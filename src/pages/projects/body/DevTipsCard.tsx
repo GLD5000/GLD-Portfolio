@@ -28,37 +28,42 @@ export default function DevTipsCard() {
         </b>{" "}
       </div>
       <div className="relative mx-auto flex aspect-[1/1] w-[80%] max-w-[35rem] ">
-        {/* <Image
+        {/* <Image placeholder="blur"
           className="absolute rounded-md bottom-[45%] right-0 h-[45%] w-auto shadow-xl shadow-black"
           src={BlankSectionCropped}
           alt="Colour Picker"
         /> */}
-        {/* <Image
+        {/* <Image placeholder="blur"
             className="absolute bottom-[33%] right-0 h-[50%] w-auto rounded-md object-contain shadow-xl shadow-black"
             src={TipCropped}
             alt="Colour Picker"
           /> */}
         <Image
+          placeholder="blur"
           className="absolute top-0 right-[10%] h-[47%] w-auto rounded-md shadow-xl shadow-black"
           src={tagsCropped}
           alt="Colour Picker"
         />
         <Image
+          placeholder="blur"
           className="absolute top-[10%] left-0 h-[42%] w-auto rounded-md shadow-xl shadow-black"
           src={TipsCropped}
           alt="Colour Picker"
         />
         <Image
+          placeholder="blur"
           className="absolute top-[38%] right-0 h-[46%] w-auto rounded-md shadow-xl shadow-black"
           src={TipBCropped}
           alt="Colour Picker"
         />
         <Image
+          placeholder="blur"
           className="absolute bottom-0 left-0 h-[43%] w-auto rounded-md shadow-xl shadow-black"
           src={SectionCropped}
           alt="Colour Picker"
         />
         <Image
+          placeholder="blur"
           className="absolute bottom-[9%] left-[45%] h-[15%] w-auto rounded-md shadow-xl shadow-black"
           src={CreateCropped}
           alt="Colour Picker"

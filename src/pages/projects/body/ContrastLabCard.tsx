@@ -32,31 +32,36 @@ export default function ContrastLabCard() {
       </div>
       <div className="relative mx-auto flex aspect-[1/1] w-[80%] max-w-[35rem]">
         <Image
+          placeholder="blur"
           className="absolute bottom-0 left-0 h-[25%] w-auto rounded-md shadow-xl shadow-black"
           src={PickerCropped}
           alt="Colour Picker"
         />
         <Image
+          placeholder="blur"
           className="absolute top-0 left-0 h-[37%] w-auto rounded-md shadow-xl shadow-black"
           src={InputCropped}
           alt="Colour Picker"
         />
         <Image
+          placeholder="blur"
           className="absolute top-[36%] left-[5%] h-[38%] w-auto rounded-md shadow-xl shadow-black"
           src={InfoTableCropped}
           alt="Colour Picker"
         />
-        {/* <Image
+        {/* <Image placeholder="blur"
           className="absolute rounded-md bottom-0 left-0 h-[45%] w-auto shadow-xl shadow-black"
           src={MatrixBCropped}
           alt="Colour Picker"
         /> */}
         <Image
+          placeholder="blur"
           className="absolute bottom-0 right-0 h-[45%] w-auto rounded-3xl shadow-xl shadow-black"
           src={MatrixACropped}
           alt="Colour Picker"
         />
         <Image
+          placeholder="blur"
           className="absolute top-[7%] right-[12%] h-[53%] w-auto rounded-3xl shadow-xl shadow-black"
           src={ComboCropped}
           alt="Colour Picker"
