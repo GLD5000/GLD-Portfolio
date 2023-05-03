@@ -34,14 +34,14 @@ export default function Hero() {
               <Link
                 href="/projects"
                 target="_self"
-                className="h-fit w-full rounded-r rounded-br-md rounded-bl-3xl  bg-pink-400 p-4 text-black"
+                className="h-fit w-full rounded-r rounded-br-md rounded-bl-3xl bg-pink-400  p-4 text-center text-black"
               >
                 About
               </Link>
               <Link
                 href="/projects"
                 target="_self"
-                className="h-fit w-full rounded-l rounded-bl-md rounded-br-3xl bg-pink-400 p-4 text-black"
+                className="h-fit w-full rounded-l rounded-bl-md rounded-br-3xl bg-pink-400 p-4 text-center text-black"
               >
                 Projects
               </Link>
