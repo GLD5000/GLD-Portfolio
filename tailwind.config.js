@@ -13,6 +13,9 @@ module.exports = {
       colourmatic: ["'Press Start 2P'", "cursive"],
     },
     extend: {
+      backgroundImage: {
+        "mesh-gradient": "url('/background/MeshGradA.svg')",
+      },
       gradientColorStopPositions: {
         late: "5%",
       },
