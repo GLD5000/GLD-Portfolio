@@ -7,7 +7,7 @@ export default function Body() {
   return (
     <main
       id="body-container"
-      className="relative grid w-screen  flex-grow pt-2  sm:justify-items-center  "
+      className="relative grid w-screen flex-grow pt-2  sm:justify-items-center  "
     >
       <section
         id="main-content"

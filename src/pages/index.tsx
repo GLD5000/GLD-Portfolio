@@ -6,6 +6,7 @@ import Footer from "./projects/Footer";
 import { useState } from "react";
 import MainContentLink from "./projects/header/MainContentLink";
 import Hero from "./hero/Hero";
+import About from "./hero/About";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,8 +33,10 @@ export default function Home() {
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/gldcondensed.ico" />
       </Head>
-      <main>
+      <main className="relative h-screen w-screen overflow-auto scroll-smooth">
         <Hero />
+        <div className="h-screen"></div>
+        <About />
       </main>
     </>
   );
