@@ -3,26 +3,27 @@ import Link from "next/link";
 
 export default function About() {
   const stackModal = useRef<HTMLDialogElement>(null);
+  const accessModal = useRef<HTMLDialogElement>(null);
   return (
     <section
       id="about"
-      className="h-screen w-full bg-bg-var-dk text-txt-main-dk"
+      className="min-h-screen w-full bg-bg-var-dk text-txt-main-dk"
     >
-      <div className="mx-auto flex  h-full  w-body min-w-body max-w-body flex-col bg-transparent ">
+      <div className="mx-auto flex  h-full w-body-sm min-w-body max-w-body flex-col bg-transparent sm:w-body ">
         <div className="mt-20 grid w-body-sm min-w-body max-w-body grow gap-10 bg-mesh-gradient bg-right bg-no-repeat sm:w-body">
-          <h1 className="mx-auto text-8xl">{`Hello, I'm Gareth`}</h1>
+          <h1 className="mx-auto text-4xl lg:text-8xl">{`Hello, I'm Gareth`}</h1>
           <p className=" mx-auto w-fit text-xl">
             I am a web developer based near London, UK.
           </p>
 
           <div className="grid gap-10 md:grid-cols-2">
-            <div>
+            <div className="grid gap-4">
               <h2>Creative</h2>
               <p className=" max-w-[40rem]">
                 From software, to music, sound and graphics: I love to create
                 and believe in the power of innovation. I enjoy finding new ways
                 to tackle challenges within a project and create value for
-                users. Click to see the tools I use to make it happen.
+                users.
               </p>
             </div>
             <button
@@ -72,7 +73,7 @@ export default function About() {
                   <li>JavaScript</li>
                   <li>Tailwind CSS</li>
                   <li>SCSS</li>
-                  <li>HTML 5</li>
+                  <li>HTML5</li>
                 </ul>
               </figure>
 
@@ -103,7 +104,7 @@ export default function About() {
             </dialog>
           </div>
           <div className="grid gap-10 md:grid-cols-2">
-            <div>
+            <div className="grid gap-4">
               <h2>Accessible</h2>
               <p>
                 The web is even better when it is available to everyone. I am
@@ -112,17 +113,76 @@ export default function About() {
                 make websites more accessible.
               </p>
             </div>
-            <ul className=" list-disc ">
-              <li>Links that skip to main content for keyboard navigation</li>
-              <li>
-                Light and Dark modes for different abilities and preferences
-              </li>
-              <li>Perfect colour contrast for easy reading and navigating</li>
-            </ul>
+            <button
+              type="button"
+              className="m-auto h-fit w-full rounded bg-brand p-4 text-xl"
+              onClick={() => {
+                accessModal.current?.showModal();
+              }}
+            >
+              Find Out More
+            </button>
+            <dialog
+              className="m-auto max-w-[95vw] gap-6 rounded p-10 text-black lg:grid-cols-3"
+              ref={accessModal}
+            >
+              <button
+                className="absolute right-0 top-0 m-1 p-1 text-xs text-txt-mid"
+                type="button"
+                onClick={() => {
+                  accessModal.current?.close();
+                }}
+              >
+                Close
+              </button>
+
+              <figure>
+                <figcaption className="text-bold mb-4 text-center text-xl">
+                  GLD Designs Include:
+                </figcaption>
+                <ul className=" list-disc pl-6 ">
+                  <li>
+                    Links that skip to main content for keyboard navigation
+                  </li>
+                  <li>
+                    Light and Dark modes for different abilities and preferences
+                  </li>
+                  <li>
+                    Perfect colour contrast for easy reading and navigating
+                  </li>
+                  <li>
+                    Responsive layouts for any screen size or magnification
+                  </li>
+                </ul>
+              </figure>
+
+              <figure>
+                <figcaption className="text-bold mb-4 text-center text-xl">
+                  My Tools for Developers:
+                </figcaption>
+                <ul className=" list-disc pl-6 ">
+                  <li>
+                    Colour Scheme generator with automatic text colours & tonal
+                    gradients
+                  </li>
+                  <li>Contrast Ratio checker and creator for colour schemes</li>
+                  <li>
+                    Developer tips and tricks to help new / junior developers
+                  </li>
+                </ul>
+              </figure>
+
+              <Link
+                className="m-auto h-fit w-full rounded bg-brand p-4 text-center text-xl"
+                href="/projects"
+              >
+                See My Projects
+              </Link>
+            </dialog>
           </div>
 
           <div className="grid gap-10 md:grid-cols-2">
-            <div>
+            <div className="grid gap-4">
               <h2>Open-Source</h2>
               <p>
                 No developer is an island and Open-Source software is what
@@ -131,6 +191,14 @@ export default function About() {
                 can find the source code for all my projects on GitHub.
               </p>
             </div>
+            <Link
+              className="m-auto h-fit w-full rounded bg-brand p-4 text-center text-xl"
+              target="_blank"
+              referrerPolicy="no-referrer"
+              href="https://github.com/GLD5000"
+            >
+              Connect On GitHub
+            </Link>
           </div>
         </div>
       </div>

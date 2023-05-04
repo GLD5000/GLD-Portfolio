@@ -46,7 +46,7 @@ module.exports = {
         autoFr: "auto 1fr",
       },
       minWidth: {
-        body: "340px",
+        body: "280px",
       },
       maxWidth: {
         body: "1250px",
