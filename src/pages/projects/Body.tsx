@@ -2,6 +2,7 @@ import ColourmaticCard from "./body/ColourTheoryCard";
 import ContrastToolCard from "./body/ContrastLabCard";
 import DevTipsCard from "./body/DevTipsCard";
 import Hero from "../hero/Hero";
+import LondonDataWeekCard from "./body/LondonDataWeekCard";
 
 export default function Body() {
   return (
@@ -14,6 +15,7 @@ export default function Body() {
         className="flex h-full w-body min-w-body max-w-body flex-col bg-transparent "
       >
         <div className="mt-20 grid w-body-sm min-w-body max-w-body grow gap-10 sm:w-body">
+          <LondonDataWeekCard />
           <ContrastToolCard />
           <DevTipsCard />
           <ColourmaticCard />
