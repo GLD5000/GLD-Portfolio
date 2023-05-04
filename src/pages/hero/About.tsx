@@ -40,7 +40,7 @@ export default function About() {
             >
               <figure>
                 <figcaption className="text-bold mb-4 text-center text-xl">
-                  My Stack
+                  See My Stack
                 </figcaption>
                 <ul className="list-disc">
                   <li>React</li>
@@ -83,9 +83,9 @@ export default function About() {
                   <li>Lua Scripting</li>
                   <li>Visual Basic for Application (VBA)</li>
                   <li>Google Apps Script (GAS)</li>
-                  <li>Vector-Based Graphic Design - InkScape</li>
-                  <li>Sound Design</li>
+                  <li>Graphic Design - InkScape</li>
                   <li>Music Production - Reaper / Cubase</li>
+                  <li>Sound Design</li>
                 </ul>
               </figure>
             </dialog>
