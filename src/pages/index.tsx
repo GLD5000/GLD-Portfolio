@@ -33,15 +33,25 @@ export default function Home() {
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/gldcondensed.ico" />
       </Head>
-      <main className="relative h-screen w-screen overflow-y-auto overflow-x-hidden scroll-smooth">
-        <Hero />
-        <Header
-          toggleColourTheme={toggleColourTheme}
-          colourTheme={colourTheme}
-        />
-        <div className="h-screen bg-black"></div>
-        <About />
-      </main>
+      <section id="theme-wrapper" className={colourTheme ? "dark" : undefined}>
+        <main
+          className={`relative h-screen w-screen snap-y snap-proximity snap-normal flex-col overflow-y-auto overflow-x-hidden scroll-smooth   border-border bg-bg text-txt-main dark:border-border-dk dark:bg-bg-dk dark:text-txt-main-dk  ${
+            colourTheme ? "dark" : ""
+          }`}
+        >
+          <Hero />
+          <MainContentLink />
+          <Header
+            toggleColourTheme={toggleColourTheme}
+            colourTheme={colourTheme}
+          />
+          <div className="h-screen bg-black"></div>
+
+          <About />
+          <Body />
+          <Footer />
+        </main>
+      </section>
     </>
   );
 }

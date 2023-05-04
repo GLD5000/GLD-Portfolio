@@ -7,11 +7,11 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen w-full bg-bg-var-dk text-txt-main-dk"
+      className="min-h-screen w-full bg-bg-var bg-mesh-gradient bg-right bg-no-repeat text-txt-main dark:bg-bg-var-dk dark:text-txt-main-dk"
     >
       <div className="mx-auto flex  h-full w-body-sm min-w-body max-w-body flex-col bg-transparent sm:w-body ">
-        <div className="mt-20 grid w-body-sm min-w-body max-w-body grow gap-10 bg-mesh-gradient bg-right bg-no-repeat sm:w-body">
-          <h1 className="mx-auto text-4xl lg:text-8xl">{`Hello, I'm Gareth`}</h1>
+        <div className="mt-20 grid w-body-sm min-w-body max-w-body grow gap-10  sm:w-body">
+          <h1 className="mx-auto mt-20 text-4xl lg:text-8xl">{`Hello, I'm Gareth`}</h1>
           <p className=" mx-auto w-fit text-xl">
             I am a web developer based near London, UK.
           </p>
@@ -200,7 +200,7 @@ export default function About() {
               referrerPolicy="no-referrer"
               href="https://github.com/GLD5000"
             >
-              Connect On GitHub
+              Go To GitHub
             </Link>
           </div>
         </div>
