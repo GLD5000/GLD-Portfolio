@@ -174,3 +174,14 @@ input[type="range"]::-moz-range-thumb {
     /* rotate:0; */
   }
 }
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+}
+dialog:not([open]){
+  display:none;
+}
+
+
+dialog{
+  display:grid;
+}
