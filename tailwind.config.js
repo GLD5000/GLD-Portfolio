@@ -58,8 +58,9 @@ module.exports = {
       colors: {
         // brand: "#417b9b", // mild blue
         // brand: "#53655f", // murky green
-        brand: "#419b7d", // mint green
+        // brand: "#419b7d", // mint green
         "brand-dk": "#e0e0e0",
+        brand: "#37836a",
 
         "bg-var-dk": "#000000",
         "bg-dk": "#1f1f1f",
