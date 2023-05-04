@@ -28,7 +28,7 @@ export default function About() {
             </div>
             <button
               type="button"
-              className="m-auto h-fit w-full rounded bg-brand p-4 text-xl"
+              className="m-auto h-fit w-full rounded-full bg-brand p-4 text-xl"
               onClick={() => {
                 stackModal.current?.showModal();
               }}
@@ -60,6 +60,9 @@ export default function About() {
                   <li>Vite</li>
                   <li>Vitest</li>
                   <li>Husky</li>
+                  <li>Lint-Staged</li>
+                  <li>VSCode</li>
+                  <li>GitHub</li>
                 </ul>
               </figure>
 
@@ -115,7 +118,7 @@ export default function About() {
             </div>
             <button
               type="button"
-              className="m-auto h-fit w-full rounded bg-brand p-4 text-xl"
+              className="m-auto h-fit w-full rounded-full bg-brand p-4 text-xl"
               onClick={() => {
                 accessModal.current?.showModal();
               }}
@@ -173,7 +176,7 @@ export default function About() {
               </figure>
 
               <Link
-                className="m-auto h-fit w-full rounded bg-brand p-4 text-center text-xl"
+                className="m-auto h-fit w-full rounded-full bg-brand p-4 text-center text-xl"
                 href="/projects"
               >
                 See My Projects
@@ -192,7 +195,7 @@ export default function About() {
               </p>
             </div>
             <Link
-              className="m-auto h-fit w-full rounded bg-brand p-4 text-center text-xl"
+              className="m-auto h-fit w-full rounded-full bg-brand p-4 text-center text-xl"
               target="_blank"
               referrerPolicy="no-referrer"
               href="https://github.com/GLD5000"
