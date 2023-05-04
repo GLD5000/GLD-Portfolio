@@ -8,7 +8,7 @@ export default function About() {
         <div className="mt-20 grid w-body-sm min-w-body max-w-body grow gap-10 bg-mesh-gradient bg-right bg-no-repeat sm:w-body">
           <h1 className="mx-auto text-8xl">{`Hello, I'm Gareth`}</h1>
           <p className=" mx-auto w-fit text-xl">
-            I am a web developer based near London in the UK.
+            I am a web developer based near London, UK.
           </p>
 
           <div className="grid gap-10 md:grid-cols-2">
@@ -18,7 +18,7 @@ export default function About() {
                 From software, to music, sound and graphics: I love to create
                 and believe in the power of innovation. I enjoy finding new ways
                 to tackle challenges within a project and create value for
-                users. These are the tools I like using to make it happen.
+                users. These are the tools I use to make it happen.
               </p>
             </div>
             <ul className="list-disc">
