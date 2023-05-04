@@ -27,20 +27,30 @@ export default function About() {
             </div>
             <button
               type="button"
-              className="m-auto h-fit w-full bg-brand p-4 text-xl"
+              className="m-auto h-fit w-full rounded bg-brand p-4 text-xl"
               onClick={() => {
                 stackModal.current?.showModal();
               }}
             >
-              My Stack
+              See My Stack
             </button>
             <dialog
               className="m-auto gap-6 rounded p-10 text-black lg:grid-cols-3"
               ref={stackModal}
             >
+              <button
+                className="absolute right-0 top-0 m-1 p-1 text-xs text-txt-mid"
+                type="button"
+                onClick={() => {
+                  stackModal.current?.close();
+                }}
+              >
+                Close
+              </button>
+
               <figure>
                 <figcaption className="text-bold mb-4 text-center text-xl">
-                  See My Stack
+                  My Stack
                 </figcaption>
                 <ul className="list-disc">
                   <li>React</li>
@@ -57,10 +67,11 @@ export default function About() {
                   Web Skills
                 </figcaption>
                 <ul className="list-disc">
+                  <li>React</li>
                   <li>TypeScript</li>
                   <li>JavaScript</li>
                   <li>Tailwind CSS</li>
-                  <li>Sassy CSS</li>
+                  <li>SCSS</li>
                   <li>HTML 5</li>
                 </ul>
               </figure>
@@ -75,6 +86,7 @@ export default function About() {
                       href="https://www.cockos.com/EEL2/"
                       target="_blank"
                       referrerPolicy="no-referrer"
+                      className="underline"
                     >
                       EEL2
                     </Link>{" "}
