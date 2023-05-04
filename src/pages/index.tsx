@@ -33,7 +33,7 @@ export default function Home() {
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/gldcondensed.ico" />
       </Head>
-      <main className="relative h-screen w-screen overflow-auto scroll-smooth">
+      <main className="relative h-screen w-screen overflow-y-auto overflow-x-hidden scroll-smooth">
         <Hero />
         <Header
           toggleColourTheme={toggleColourTheme}

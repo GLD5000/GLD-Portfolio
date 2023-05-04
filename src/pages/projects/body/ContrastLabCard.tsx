@@ -2,13 +2,12 @@ import Image from "next/image";
 import ComboCropped from "src/assets/contrasttool/ComboCropped.jpg";
 import InfoTableCropped from "src/assets/contrasttool/InfoTableCropped.jpg";
 import MatrixACropped from "src/assets/contrasttool/MatrixACropped.jpg";
-import MatrixBCropped from "src/assets/contrasttool/MatrixBCropped.jpg";
 import PickerCropped from "src/assets/contrasttool/PickerSoloCropped.jpg";
 import InputCropped from "src/assets/contrasttool/InputCropped.jpg";
 
 export default function ContrastLabCard() {
   return (
-    <div className="mx-auto grid w-screen  max-w-body items-center self-center px-4 py-10 sm:w-full sm:px-8 lg:grid-cols-2">
+    <div className="mx-auto grid w-full  max-w-body items-center self-center px-4 py-10 sm:w-full sm:px-8 lg:grid-cols-2">
       <div className="grid">
         <a
           className=" mx-auto mt-10"
@@ -49,11 +48,6 @@ export default function ContrastLabCard() {
           src={InfoTableCropped}
           alt="Colour Picker"
         />
-        {/* <Image placeholder="blur"
-          className="absolute rounded-md bottom-0 left-0 h-[45%] w-auto shadow-xl shadow-black"
-          src={MatrixBCropped}
-          alt="Colour Picker"
-        /> */}
         <Image
           placeholder="blur"
           className="absolute bottom-0 right-0 h-[45%] w-auto rounded-3xl shadow-xl shadow-black"

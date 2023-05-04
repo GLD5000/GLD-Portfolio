@@ -9,7 +9,7 @@ const righteous = Righteous({ subsets: ["latin"], weight: "400" });
 
 export default function LondonDataWeekCard() {
   return (
-    <div className="mx-auto grid w-screen  max-w-body items-center self-center px-4 py-10 sm:w-full sm:px-8 lg:grid-cols-2">
+    <div className="mx-auto grid w-full  max-w-body items-center self-center px-4 py-10 sm:w-full sm:px-8 lg:grid-cols-2">
       <div className="grid">
         <a
           className={`${righteous.className} mx-auto mt-10 text-center`}
