@@ -21,14 +21,14 @@ export default function Hero() {
   }, [originURL, hrefProjects]);
 
   return (
-    <div className=" absolute top-0  z-[997] grid h-screen w-full  bg-bg-dk ">
+    <div className=" absolute top-0  z-[997] grid h-screen w-full  bg-black">
       <Stars />
       <div className=" h-full w-full ">
         <div className="mx-auto grid h-fit w-fit skew-x-2 gap-12 ">
           <div className="mx-auto h-auto w-[98vmin]  drop-shadow-hero-dk sm:w-[80vmin]">
             <GldSvgHero />
           </div>
-          <div className="zoom-in-slow mx-auto grid h-fit  w-fit  drop-shadow-hero-dk">
+          <div className=" mx-auto grid h-fit  w-fit  drop-shadow-hero-dk">
             <div className="h-4 w-full rounded-b-full border-8 border-transparent border-x-white border-b-white "></div>
             <div className="mx-4 grid h-fit w-64 grid-cols-2 gap-2 overflow-clip rounded-b-full bg-white px-2 pb-2 text-lg font-bold">
               <Link

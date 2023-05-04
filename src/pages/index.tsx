@@ -35,7 +35,11 @@ export default function Home() {
       </Head>
       <main className="relative h-screen w-screen overflow-auto scroll-smooth">
         <Hero />
-        <div className="h-screen"></div>
+        <Header
+          toggleColourTheme={toggleColourTheme}
+          colourTheme={colourTheme}
+        />
+        <div className="h-screen bg-black"></div>
         <About />
       </main>
     </>

@@ -28,7 +28,7 @@ export default function About() {
             </div>
             <button
               type="button"
-              className="m-auto h-fit w-full rounded-full bg-brand p-4 text-xl"
+              className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-xl text-white hover:bg-white hover:text-black hover:transition  focus:bg-white focus:text-black focus:transition"
               onClick={() => {
                 stackModal.current?.showModal();
               }}
@@ -40,7 +40,7 @@ export default function About() {
               ref={stackModal}
             >
               <button
-                className="absolute right-0 top-0 m-1 p-1 text-xs text-txt-mid"
+                className="absolute right-0 top-0 m-1 p-1 text-xs text-txt-mid hover:bg-black hover:text-white hover:transition focus:bg-black focus:text-white focus:transition"
                 type="button"
                 onClick={() => {
                   stackModal.current?.close();
@@ -118,7 +118,7 @@ export default function About() {
             </div>
             <button
               type="button"
-              className="m-auto h-fit w-full rounded-full bg-brand p-4 text-xl"
+              className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
               onClick={() => {
                 accessModal.current?.showModal();
               }}
@@ -130,7 +130,7 @@ export default function About() {
               ref={accessModal}
             >
               <button
-                className="absolute right-0 top-0 m-1 p-1 text-xs text-txt-mid"
+                className="absolute right-0 top-0 m-1 p-1 text-xs text-txt-mid hover:bg-black hover:text-white hover:transition focus:bg-black focus:text-white focus:transition"
                 type="button"
                 onClick={() => {
                   accessModal.current?.close();
@@ -176,7 +176,7 @@ export default function About() {
               </figure>
 
               <Link
-                className="m-auto h-fit w-full rounded-full bg-brand p-4 text-center text-xl"
+                className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
                 href="/projects"
               >
                 See My Projects
@@ -195,7 +195,7 @@ export default function About() {
               </p>
             </div>
             <Link
-              className="m-auto h-fit w-full rounded-full bg-brand p-4 text-center text-xl"
+              className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
               target="_blank"
               referrerPolicy="no-referrer"
               href="https://github.com/GLD5000"
