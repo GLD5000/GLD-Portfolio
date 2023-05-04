@@ -5,7 +5,11 @@ import HeroLandscape from "src/assets/LDW/HeroLandscape.jpg";
 import SchedulePortrait from "src/assets/LDW/SchedulePortrait.jpg";
 import { Righteous } from "@next/font/google";
 
-const righteous = Righteous({ subsets: ["latin"], weight: "400" });
+const righteous = Righteous({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
 
 export default function LondonDataWeekCard() {
   return (
