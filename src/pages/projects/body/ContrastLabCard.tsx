@@ -1,9 +1,9 @@
 import Image from "next/image";
-import ComboCropped from "src/assets/contrasttool/ComboCropped.jpg";
-import InfoTableCropped from "src/assets/contrasttool/InfoTableCropped.jpg";
-import MatrixACropped from "src/assets/contrasttool/MatrixACropped.jpg";
-import PickerCropped from "src/assets/contrasttool/PickerSoloCropped.jpg";
-import InputCropped from "src/assets/contrasttool/InputCropped.jpg";
+import ComboCropped from "src/assets/contrastlab/ComboCropped.jpg";
+import InfoTableCropped from "src/assets/contrastlab/InfoTableCropped.jpg";
+import MatrixACropped from "src/assets/contrastlab/MatrixACropped.jpg";
+import PickerCropped from "src/assets/contrastlab/PickerSoloCropped.jpg";
+import InputCropped from "src/assets/contrastlab/InputCropped.jpg";
 
 export default function ContrastLabCard() {
   return (

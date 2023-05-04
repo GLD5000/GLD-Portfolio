@@ -1,10 +1,8 @@
 import Image from "next/image";
-// import BlankSectionCropped from "src/assets/devtips/BlankSectionCropped.jpg";
 import CreateCropped from "src/assets/devtips/CreateCropped.jpg";
 import SectionCropped from "src/assets/devtips/SectionCropped.jpg";
 import tagsCropped from "src/assets/devtips/tagsCropped.jpg";
 import TipBCropped from "src/assets/devtips/TipBCropped.jpg";
-// import TipCropped from "src/assets/devtips/TipCropped.jpg";
 import TipsCropped from "src/assets/devtips/TipsDCropped.jpg";
 
 export default function DevTipsCard() {
