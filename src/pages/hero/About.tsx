@@ -1,12 +1,34 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
+import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
+import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
 
 export default function About() {
   const stackModal = useRef<HTMLDialogElement>(null);
   const accessModal = useRef<HTMLDialogElement>(null);
+
+  const { elementRef, onScreen } = useIntersectionObserver();
+  const { setcurrentSection, hasScrolled, setHasScrolled } =
+    useIntersectionProviderContext();
+
+  useEffect(() => {
+    let run = true;
+    const refElement = elementRef.current;
+    if (run && onScreen && refElement != null) {
+      setcurrentSection(refElement.id);
+
+      if (!hasScrolled) setHasScrolled(true);
+    }
+
+    return () => {
+      run = false;
+    };
+  }, [onScreen, elementRef, setcurrentSection, hasScrolled, setHasScrolled]);
+
   return (
     <section
       id="about"
+      ref={elementRef}
       className="min-h-screen w-full bg-bg-var bg-mesh-gradient bg-right bg-no-repeat text-txt-main dark:bg-bg-var-dk dark:text-txt-main-dk"
     >
       <div className="mx-auto flex  h-full w-body-sm min-w-body max-w-body flex-col bg-transparent sm:w-body ">

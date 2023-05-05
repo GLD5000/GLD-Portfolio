@@ -3,6 +3,7 @@ import GldSvg from "src/icons/GldSvg";
 import HamburgerMenu from "./header/HamburgerMenu";
 import NavBar from "./header/NavBar";
 import Link from "next/link";
+import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
 
 const className =
   "hidden flex-row gap-2 text-txt-main-dk hover:text-txt-main hover:underline hover:decoration-current hover:underline-offset-2 hover:transition focus:text-txt-main focus:underline focus:decoration-current focus:underline-offset-2 focus:transition dark:text-txt-main dark:hover:text-txt-main-dk dark:focus:text-txt-main-dk sm:flex";
@@ -15,6 +16,14 @@ export default function Header({
   colourTheme: boolean;
 }) {
   const [showMenu, setShowMenu] = useState(false);
+  const { hasScrolled } = useIntersectionProviderContext();
+  if (!hasScrolled)
+    return (
+      <div className="sticky top-0 left-0 right-0 z-[996] grid min-h-[88px] w-screen">
+        {" "}
+      </div>
+    );
+
   function toggleShowMenu() {
     setShowMenu((state) => !state);
   }

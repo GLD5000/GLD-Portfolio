@@ -1,3 +1,4 @@
+import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
 import SvgButtonNew from "../../../elements/SvgButtonNew";
 import GitHubSvg from "../../../icons/GitHubSvg";
 import GLDNegSvg from "../../../icons/GLDNegSvg";
@@ -6,6 +7,7 @@ import LinkedInSvg from "../../../icons/LinkedInSvg";
 import MoonSvg from "../../../icons/MoonSvg";
 import SunSvg from "../../../icons/SunSvg";
 import ExternalLink from "./ExternalLink";
+import Link from "next/link";
 
 const linkColours =
   "text-black hover:text-white hover:underline hover:decoration-current hover:underline-offset-2 hover:transition focus:text-white focus:underline focus:decoration-current  focus:underline-offset-2 focus:transition ";
@@ -28,9 +30,11 @@ export default function NavBar({
   toggleMenu: () => void;
   colourTheme: boolean;
 }) {
+  const { currentSection } = useIntersectionProviderContext();
+
   return (
     <nav className="relative flex h-16 flex-wrap items-center justify-center gap-8 ">
-      <ExternalLink
+      {/* <ExternalLink
         colourClasses={linkColours}
         mediaVisibility="hidden sm:flex"
         link="https://www.linkedin.com/in/garethlouisdevlin/"
@@ -51,7 +55,23 @@ export default function NavBar({
             GitHub
           </p>,
         ]}
-      />
+      /> */}
+      <Link
+        href={"#about"}
+        className={`m-0 hidden font-bold text-black sm:inline ${
+          currentSection === "about" ? "text-white" : ""
+        }`}
+      >
+        About
+      </Link>
+      <Link
+        href={"#projects"}
+        className={`m-0 hidden font-bold text-black sm:inline ${
+          currentSection === "projects" ? "text-white" : ""
+        }`}
+      >
+        Projects
+      </Link>
 
       <div className="flex flex-wrap gap-1">
         <SvgButtonNew

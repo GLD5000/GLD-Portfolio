@@ -1,11 +1,11 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
-import Body from "./projects/Body";
 import Header from "./projects/Header";
 import Footer from "./projects/Footer";
 import { useState } from "react";
 import MainContentLink from "./projects/header/MainContentLink";
 import Hero from "./hero/Hero";
+import Projects from "./projects/Projects";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,7 +43,7 @@ export default function Home() {
               toggleColourTheme={toggleColourTheme}
               colourTheme={colourTheme}
             />
-            <Body />
+            <Projects />
             <Footer />
           </section>
         </section>

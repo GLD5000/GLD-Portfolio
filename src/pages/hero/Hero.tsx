@@ -2,26 +2,34 @@ import GldSvgHero from "@/icons/GldSvgHero";
 import Stars from "./Stars";
 import { useEffect } from "react";
 import Link from "next/link";
+import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
+import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
 
 export default function Hero() {
-  let originURL = "https://gld-portfolio.vercel.app/";
-  let hrefProjects = `${originURL}/projects`;
+  const { elementRef, onScreen } = useIntersectionObserver();
+  const { setcurrentSection, hasScrolled, setHasScrolled } =
+    useIntersectionProviderContext();
+
   useEffect(() => {
     let run = true;
-    if (run) {
-      originURL = document.location.origin;
-      hrefProjects = `${originURL}/projects`;
-      console.log("originURL:", originURL);
-      console.log("hrefProjects:", originURL);
+    const refElement = elementRef.current;
+    if (run && onScreen && refElement != null) {
+      setcurrentSection(refElement.id);
+
+      if (!hasScrolled) setHasScrolled(true);
     }
 
     return () => {
       run = false;
     };
-  }, [originURL, hrefProjects]);
+  }, [onScreen, elementRef, setcurrentSection, hasScrolled, setHasScrolled]);
 
   return (
-    <div className=" absolute top-0  z-[997] grid h-screen w-full  bg-black">
+    <div
+      id="hero"
+      ref={elementRef}
+      className=" absolute top-0  z-[997] grid h-screen w-full  bg-black"
+    >
       <Stars />
       <div className=" h-full w-full ">
         <div className="mx-auto grid h-fit w-fit skew-x-2 gap-12 ">
@@ -39,7 +47,7 @@ export default function Hero() {
                 About
               </Link>
               <Link
-                href="/projects"
+                href="#projects"
                 target="_self"
                 className="h-fit w-full rounded-l rounded-bl-md rounded-br-full bg-pink-400 p-4 text-center text-black"
               >
