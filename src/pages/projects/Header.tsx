@@ -33,7 +33,7 @@ export default function Header({
       <div className=" col-start-2 flex w-body-sm min-w-body max-w-body flex-wrap items-center justify-between sm:w-body ">
         <div>
           <Link
-            href="/"
+            href="/#hero"
             target="_self"
             className="flex flex-wrap items-center gap-2"
           >
