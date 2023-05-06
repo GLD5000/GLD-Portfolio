@@ -31,30 +31,27 @@ export default function Hero() {
       className=" absolute top-0  z-[997] grid h-screen w-full  bg-black"
     >
       <Stars />
-      <div className=" h-full w-full ">
-        <div className="mx-auto grid h-fit w-fit skew-x-2 gap-12 ">
-          <div className="mx-auto h-auto w-[98vmin]  drop-shadow-hero-dk sm:w-[80vmin]">
-            <GldSvgHero />
-          </div>
-          <div className=" mx-auto grid h-fit  w-fit  drop-shadow-hero-dk">
-            <div className="h-4 w-full rounded-b-full border-8 border-transparent border-x-white border-b-white "></div>
-            <div className="mx-4 grid h-fit w-64 grid-cols-2 gap-2 overflow-clip rounded-b-full bg-white px-2 pb-2 text-lg font-bold">
-              <Link
-                href="#about"
-                target="_self"
-                className="h-fit w-full rounded-r rounded-br-md rounded-bl-full bg-pink-400  p-4 text-center text-black"
-              >
-                About
-              </Link>
-              <Link
-                href="#projects"
-                target="_self"
-                className="h-fit w-full rounded-l rounded-bl-md rounded-br-full bg-pink-400 p-4 text-center text-black"
-              >
-                Projects
-              </Link>
-            </div>
-          </div>
+      <div className=" mx-auto grid h-full w-full items-center gap-8 lg:grid-cols-2 2xl:w-fit">
+        <div className="mx-auto h-full w-screen max-w-[60rem] drop-shadow-hero-dk  lg:w-full ">
+          <GldSvgHero />
+        </div>
+        <div className="grid h-fit gap-2">
+          <p className=" mx-auto mb-0 w-fit text-sm sm:text-base md:text-lg lg:text-xl">
+            Hi, I am
+          </p>
+
+          <h1 className="mx-auto text-4xl font-bold xs:text-5xl xl:text-7xl 2xl:text-8xl">
+            Gareth L Devlin
+          </h1>
+          <h2 className="mx-auto text-2xl font-bold xl:text-4xl">
+            Web Developer
+          </h2>
+          <p className="my-0 mx-auto w-fit text-sm sm:text-base md:text-lg lg:text-xl">
+            I am a React developer based near London, UK.
+          </p>
+          <p className="my-0 mx-auto w-fit text-sm sm:text-base md:text-lg lg:text-xl">
+            I build innovative and accessible websites and apps.
+          </p>
         </div>
       </div>
     </div>

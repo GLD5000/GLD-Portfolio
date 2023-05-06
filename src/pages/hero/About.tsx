@@ -33,10 +33,7 @@ export default function About() {
     >
       <div className="mx-auto flex  h-full w-body-sm min-w-body max-w-body flex-col bg-transparent sm:w-body ">
         <div className="mt-20 grid w-body-sm min-w-body max-w-body grow gap-10  sm:w-body">
-          <h1 className="mx-auto mt-20 text-4xl lg:text-8xl">{`Hello, I'm Gareth`}</h1>
-          <p className=" mx-auto w-fit text-xl">
-            I am a web developer based near London, UK.
-          </p>
+          <h1 className="mx-auto mt-20 text-4xl lg:text-8xl">About Me</h1>
 
           <div className="grid gap-10 md:grid-cols-2">
             <div className="grid gap-4">
