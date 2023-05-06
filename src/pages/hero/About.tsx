@@ -29,10 +29,10 @@ export default function About() {
     <section
       id="about"
       ref={elementRef}
-      className="min-h-screen w-full bg-bg-var bg-mesh-gradient bg-right bg-no-repeat text-txt-main dark:bg-bg-var-dk dark:text-txt-main-dk"
+      className="min-h-screen w-full bg-bg-var bg-mesh-gradient bg-right bg-no-repeat py-20 text-txt-main dark:bg-bg-var-dk dark:text-txt-main-dk"
     >
       <div className="mx-auto flex  h-full w-body-sm min-w-body max-w-body flex-col bg-transparent sm:w-body ">
-        <div className="mt-20 grid w-body-sm min-w-body max-w-body grow gap-10  sm:w-body">
+        <div className=" grid w-body-sm min-w-body max-w-body grow gap-10  sm:w-body">
           <h1 className="mx-auto mt-20 text-4xl lg:text-8xl">About Me</h1>
 
           <div className="grid gap-10 md:grid-cols-2">

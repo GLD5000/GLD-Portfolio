@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SvgButtonNew from "../../../elements/SvgButtonNew";
 import GitHubSvg from "../../../icons/GitHubSvg";
 import GLDNegSvg from "../../../icons/GLDNegSvg";
@@ -5,6 +6,7 @@ import LinkedInSvg from "../../../icons/LinkedInSvg";
 import MoonSvg from "../../../icons/MoonSvg";
 import SunSvg from "../../../icons/SunSvg";
 import ExternalLink from "./ExternalLink";
+import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
 
 const linkColours =
   "text-black hover:text-white hover:underline hover:decoration-current hover:underline-offset-2 hover:transition focus:text-white focus:underline focus:decoration-current  focus:underline-offset-2 focus:transition ";
@@ -27,13 +29,15 @@ export default function HamburgerMenu({
   colourTheme: boolean;
   show: boolean;
 }) {
+  const { currentSection } = useIntersectionProviderContext();
+
   return (
     <nav
       className={`relative ${!show && "hidden"} ${
         show && "flex sm:hidden"
-      } mx-auto h-16 w-full flex-wrap items-center justify-center gap-6 py-2`}
+      } h-8 w-screen min-w-[214px]   justify-center gap-2 border-y border-white p-1 text-sm`}
     >
-      <ExternalLink
+      {/* <ExternalLink
         colourClasses={linkColours}
         layoutClasses="text-center items-center flex flex-col w-16"
         link="https://www.linkedin.com/in/garethlouisdevlin/"
@@ -54,7 +58,23 @@ export default function HamburgerMenu({
             GitHub
           </p>,
         ]}
-      />
+      /> */}
+      <Link
+        href={"#about"}
+        className={`m-0 block h-fit w-20 p-0 text-center font-bold text-black  ${
+          currentSection === "about" ? "text-white" : ""
+        }`}
+      >
+        About
+      </Link>
+      <Link
+        href={"#projects"}
+        className={`m-0 block h-fit w-20 p-0 text-center font-bold text-black  ${
+          currentSection === "projects" ? "text-white" : ""
+        }`}
+      >
+        Projects
+      </Link>
 
       <SvgButtonNew
         showTextIn
@@ -63,10 +83,8 @@ export default function HamburgerMenu({
         id="colour-theme-button-secondary"
         name="Dark Mode Button"
         className="rounded text-xs"
-        buttonClasses={`flex flex-col w-12 h-12 text-base xs:hidden ${linkColours} self-start`}
-        textElement={
-          <div className="text-base">{colourTheme ? "Light" : "Dark"}</div>
-        }
+        buttonClasses={`flex flex-col w-7 h-7 text-base xs:hidden ${linkColours} self-start`}
+        textElement={null}
         svg={getDarkToggleIcon(colourTheme)}
       />
     </nav>

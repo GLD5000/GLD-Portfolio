@@ -15,7 +15,7 @@ export default function Header({
   toggleColourTheme: () => void;
   colourTheme: boolean;
 }) {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
   const { hasScrolled } = useIntersectionProviderContext();
   if (!hasScrolled)
     return (
@@ -29,8 +29,8 @@ export default function Header({
   }
 
   return (
-    <header className="sticky top-0 left-0 right-0 z-[996] grid h-fit w-full flex-shrink-0 flex-grow-0 grid-cols-frAutoFr content-center bg-brand">
-      <div className=" col-start-2 flex w-body-sm min-w-body max-w-body flex-wrap items-center justify-between sm:w-body ">
+    <header className="sticky top-0 left-0 right-0 z-[996] grid h-fit w-full flex-shrink-0 flex-grow-0  bg-brand">
+      <div className=" mx-auto flex w-body-sm min-w-body max-w-body flex-wrap items-center justify-between sm:w-body ">
         <div>
           <Link
             href="/#hero"
@@ -41,7 +41,7 @@ export default function Header({
               wrapperClasses="h-12 square fill-white"
               svgClasses=" drop-shadow-logo"
             />
-            <h2 className=" px-1 font-title text-3.5xl tracking-widest text-white text-shadow-title">
+            <h2 className=" px-1 font-title text-3.5xl text-white text-shadow-title">
               Portfolio
             </h2>
           </Link>
@@ -51,12 +51,12 @@ export default function Header({
           colourTheme={colourTheme}
           toggleMenu={toggleShowMenu}
         />
-        <HamburgerMenu
-          toggleColourTheme={toggleColourTheme}
-          colourTheme={colourTheme}
-          show={showMenu}
-        />
       </div>
+      <HamburgerMenu
+        toggleColourTheme={toggleColourTheme}
+        colourTheme={colourTheme}
+        show={showMenu}
+      />
     </header>
   );
 }
