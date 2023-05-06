@@ -39,7 +39,7 @@ export default function Projects() {
         <h1 className="mx-auto mt-10 w-fit text-4xl lg:text-8xl">
           My Projects
         </h1>
-        <div className="mt-10 grid w-full grow gap-10 ">
+        <div className="mt-10 grid w-full grow gap-10 lg:gap-32 ">
           <LondonDataWeekCard />
           <ContrastToolCard />
           <DevTipsCard />
