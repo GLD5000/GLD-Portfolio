@@ -30,13 +30,16 @@ export default function Projects() {
     <main
       id="projects"
       ref={elementRef}
-      className="relative grid w-screen flex-grow pt-2  sm:justify-items-center  "
+      className="relative grid w-screen flex-grow sm:justify-items-center  "
     >
       <section
         id="main-content"
-        className="flex h-full w-body min-w-body max-w-body flex-col bg-transparent "
+        className="mx-auto flex h-full w-body min-w-body max-w-body flex-col bg-transparent py-20 "
       >
-        <div className="mt-20 grid w-body-sm min-w-body max-w-body grow gap-10 sm:w-body">
+        <h1 className="mx-auto mt-10 w-fit text-4xl lg:text-8xl">
+          My Projects
+        </h1>
+        <div className="mt-10 grid w-full grow gap-10 ">
           <LondonDataWeekCard />
           <ContrastToolCard />
           <DevTipsCard />
