@@ -36,7 +36,7 @@ export default function Hero() {
           <GldSvgHero />
         </div>
         <div className="grid h-fit gap-2">
-          <p className=" mx-auto mb-0 w-fit text-sm sm:text-base md:text-lg lg:text-xl">
+          <p className=" mx-auto mb-0 w-fit text-xl lg:text-2xl xl:text-3xl">
             Hi, I am
           </p>
 
