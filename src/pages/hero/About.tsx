@@ -1,5 +1,9 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import githubHeatMap from "src/assets/aboutme/GitHubHeatMap.jpg";
+import inkscape from "src/assets/aboutme/inkscape.jpg";
+
 import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
 import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
 
@@ -196,7 +200,7 @@ export default function About() {
 
               <Link
                 className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
-                href="/projects"
+                href="#projects"
               >
                 See My Projects
               </Link>
@@ -205,22 +209,32 @@ export default function About() {
 
           <div className="grid gap-10 md:grid-cols-2">
             <div className="grid gap-4">
-              <h2>Open-Source</h2>
+              <h2 className="mx-auto text-center">Open-Source</h2>
+              <Image
+                placeholder="blur"
+                className=" mx-auto max-w-[200px] rounded-xl shadow-xl shadow-black"
+                src={githubHeatMap}
+                alt="Colour Picker"
+              />
+            </div>
+            <div className="grid gap-6">
               <p>
                 No developer is an island and Open-Source software is what
-                allows us to connect and share good ideas. My background as a
-                teacher showed me the value of sharing best practices and you
-                can find the source code for all my projects on GitHub.
+                allows us to connect and share good ideas. Every tool I make is
+                free and open source. All my source code is freely available on
+                GitHub on my profile where I have over 2,800 commits over the
+                past year.
               </p>
+
+              <Link
+                className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+                target="_blank"
+                referrerPolicy="no-referrer"
+                href="https://github.com/GLD5000"
+              >
+                Go To GitHub
+              </Link>
             </div>
-            <Link
-              className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
-              target="_blank"
-              referrerPolicy="no-referrer"
-              href="https://github.com/GLD5000"
-            >
-              Go To GitHub
-            </Link>
           </div>
         </div>
       </div>
