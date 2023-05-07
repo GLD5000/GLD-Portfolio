@@ -34,12 +34,12 @@ export default function Projects() {
     >
       <section
         id="main-content"
-        className="mx-auto flex h-full w-body min-w-body max-w-body snap-start flex-col bg-transparent py-20 "
+        className="mx-auto flex h-full w-body min-w-body max-w-body snap-start flex-col bg-transparent pt-20 pb-60 "
       >
         <h1 className="mx-auto mt-10 w-fit text-4xl lg:text-8xl">
           My Projects
         </h1>
-        <div className="mt-10 grid w-full grow gap-10 lg:gap-32 ">
+        <div className="mt-10 grid w-full grow gap-10 ">
           <LondonDataWeekCard />
           <ContrastToolCard />
           <DevTipsCard />
