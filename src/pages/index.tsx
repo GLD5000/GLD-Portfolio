@@ -1,12 +1,12 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
-import Header from "./projects/Header";
-import Footer from "./projects/Footer";
+import Header from "./index/header/Header";
+import Footer from "./index/footer/Footer";
 import { useState } from "react";
-import MainContentLink from "./projects/header/MainContentLink";
-import Hero from "./hero/Hero";
-import About from "./hero/About";
-import Projects from "./projects/Projects";
+import MainContentLink from "./index/header/MainContentLink";
+import Hero from "./index/hero/Hero";
+import About from "./index/about/About";
+import Projects from "./index/projects/Projects";
 import IntersectionProvider from "@/utilities/contexts/IntersectionProvider";
 
 const inter = Inter({ subsets: ["latin"] });

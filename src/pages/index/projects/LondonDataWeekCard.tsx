@@ -14,7 +14,7 @@ const righteous = Righteous({
 export default function LondonDataWeekCard() {
   return (
     <div className="mx-auto grid w-full  max-w-body items-center self-center sm:w-full sm:px-8 lg:grid-cols-2">
-      <div className="grid">
+      <div className="grid max-w-[95%]">
         <a
           className={`${righteous.className} mx-auto mt-10 text-center`}
           href="https://www.londondataweek.org/"

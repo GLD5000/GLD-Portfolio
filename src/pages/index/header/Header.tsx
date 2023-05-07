@@ -1,7 +1,7 @@
 import { useState } from "react";
 import GldSvg from "src/icons/GldSvg";
-import HamburgerMenu from "./header/HamburgerMenu";
-import NavBar from "./header/NavBar";
+import HamburgerMenu from "./HamburgerMenu";
+import NavBar from "./NavBar";
 import Link from "next/link";
 import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
 

@@ -32,7 +32,7 @@ export default function Hero() {
     >
       <Stars />
       <div className=" mx-auto grid h-full w-full items-center gap-8 lg:grid-cols-2 2xl:w-fit">
-        <div className="mx-auto h-full w-screen max-w-[60rem] drop-shadow-hero-dk  lg:w-full ">
+        <div className="mx-auto h-full w-screen max-w-[35rem] drop-shadow-hero-dk  lg:w-full lg:max-w-[50rem] ">
           <GldSvgHero />
         </div>
         <div className="grid h-fit gap-2">

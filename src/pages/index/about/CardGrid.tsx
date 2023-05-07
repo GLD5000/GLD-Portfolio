@@ -1,54 +1,25 @@
-import { useEffect, useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
+import { useRef } from "react";
 import githubHeatMap from "src/assets/aboutme/GitHubHeatMap.jpg";
 import inkscape from "src/assets/aboutme/inkscape.jpg";
+import accessible from "src/assets/aboutme/accessible.jpg";
+import Link from "next/link";
+import AboutCard from "./AboutCard";
 
-import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
-import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
-
-export default function About() {
+export default function CardGrid() {
   const stackModal = useRef<HTMLDialogElement>(null);
   const accessModal = useRef<HTMLDialogElement>(null);
 
-  const { elementRef, onScreen } = useIntersectionObserver();
-  const { setcurrentSection, hasScrolled, setHasScrolled } =
-    useIntersectionProviderContext();
-
-  useEffect(() => {
-    let run = true;
-    const refElement = elementRef.current;
-    if (run && onScreen && refElement != null) {
-      setcurrentSection(refElement.id);
-
-      if (!hasScrolled) setHasScrolled(true);
-    }
-
-    return () => {
-      run = false;
-    };
-  }, [onScreen, elementRef, setcurrentSection, hasScrolled, setHasScrolled]);
-
   return (
-    <section
-      id="about"
-      ref={elementRef}
-      className="min-h-screen w-full bg-bg-var bg-mesh-gradient bg-right bg-no-repeat py-20 text-txt-main dark:bg-bg-var-dk dark:text-txt-main-dk"
-    >
-      <div className="mx-auto flex  h-full w-body-sm min-w-body max-w-body flex-col bg-transparent sm:w-body ">
-        <div className=" grid w-body-sm min-w-body max-w-body grow gap-10  sm:w-body">
-          <h1 className="mx-auto mt-10 text-4xl lg:text-8xl">About Me</h1>
-
-          <div className="grid gap-10 md:grid-cols-2">
-            <div className="grid gap-4">
-              <h2>Creative</h2>
-              <p className=" max-w-[40rem]">
-                From software, to music, sound and graphics: I love to create
-                and believe in the power of innovation. I enjoy finding new ways
-                to tackle challenges within a project and create value for
-                users.
-              </p>
-            </div>
+    <div className="grid gap-10 lg:grid-cols-3">
+      <AboutCard
+        image={inkscape}
+        text={
+          "From software, to music, sound and graphics: I love to create and believe in the power of innovation. I enjoy finding new ways to tackle challenges within a project and create value for users."
+        }
+        title={"Creative"}
+        cta={
+          <>
+            {" "}
             <button
               type="button"
               className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-xl text-white hover:bg-white hover:text-black hover:transition  focus:bg-white focus:text-black focus:transition"
@@ -117,7 +88,7 @@ export default function About() {
                     >
                       EEL2
                     </Link>{" "}
-                    Software Plugin Development
+                    Music Plugin Development
                   </li>
                   <li>Lua Scripting</li>
                   <li>Visual Basic for Application (VBA)</li>
@@ -128,17 +99,17 @@ export default function About() {
                 </ul>
               </figure>
             </dialog>
-          </div>
-          <div className="grid gap-10 md:grid-cols-2">
-            <div className="grid gap-4">
-              <h2>Accessible</h2>
-              <p>
-                The web is even better when it is available to everyone. I am
-                passionate about ease-of-access and bake it in to my designs. I
-                seek out best practices and make tools for developers to help
-                make websites more accessible.
-              </p>
-            </div>
+          </>
+        }
+      />{" "}
+      <AboutCard
+        image={accessible}
+        text={
+          "The web is even better when it is available to everyone. I am passionate about ease-of-access and bake it in to my designs. I seek out best practices and make tools for developers to help make websites more accessible."
+        }
+        title={"Accessible"}
+        cta={
+          <>
             <button
               type="button"
               className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
@@ -205,39 +176,26 @@ export default function About() {
                 See My Projects
               </Link>
             </dialog>
-          </div>
-
-          <div className="grid gap-10 md:grid-cols-2">
-            <div className="grid gap-4">
-              <h2 className="mx-auto text-center">Open-Source</h2>
-              <Image
-                placeholder="blur"
-                className=" mx-auto max-w-[200px] rounded-xl shadow-xl shadow-black"
-                src={githubHeatMap}
-                alt="Colour Picker"
-              />
-            </div>
-            <div className="grid gap-6">
-              <p>
-                No developer is an island and Open-Source software is what
-                allows us to connect and share good ideas. Every tool I make is
-                free and open source. All my source code is freely available on
-                GitHub on my profile where I have over 2,800 commits over the
-                past year.
-              </p>
-
-              <Link
-                className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
-                target="_blank"
-                referrerPolicy="no-referrer"
-                href="https://github.com/GLD5000"
-              >
-                Go To GitHub
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </>
+        }
+      />{" "}
+      <AboutCard
+        image={githubHeatMap}
+        text={
+          "No developer is an island and Open-Source software is what allows us to connect and share good ideas. Every tool I make is free and open source. All my source code is freely available on GitHub on my profile where I have over 2,800 commits over the past year."
+        }
+        title={"Open-Source"}
+        cta={
+          <Link
+            className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+            target="_blank"
+            referrerPolicy="no-referrer"
+            href="https://github.com/GLD5000"
+          >
+            Go To GitHub
+          </Link>
+        }
+      />
+    </div>
   );
 }
