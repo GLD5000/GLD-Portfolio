@@ -142,19 +142,16 @@ input[type="range"]::-moz-range-thumb {
   animation-fill-mode: forwards;
 }
 
-
-
 @keyframes zoomInAnimation {
   0% {
     scale: 1;
   }
-  55%{
-  scale:1;
+  55% {
+    scale: 1;
   }
-  80%{
-  scale:0.8;
+  80% {
+    scale: 0.8;
   }
-
 
   100% {
     scale: 1;
@@ -168,28 +165,45 @@ input[type="range"]::-moz-range-thumb {
   }
   60% {
     scale: 1;
-    translate:0%;
+    translate: 0%;
     /* rotate:0; */
   }
   90% {
     scale: 0.9;
-    translate:0%;
+    translate: 0%;
     /* rotate:0; */
   }
   100% {
     scale: 1;
-    translate:0%;
+    translate: 0%;
     /* rotate:0; */
   }
 }
+
+@keyframes modalAnimation {
+  0% {
+    scale: 0.95;
+    opacity: 0;
+    /*translate:-45%;*/
+    /* rotate:270deg; */
+    100% {
+      scale: 1;
+      opacity: 1;
+    }
+  }
+}
+
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.75);
 }
-dialog:not([open]){
-  display:none;
+dialog:not([open]) {
+  display: none;
 }
 
-
-dialog{
-  display:grid;
+dialog {
+  opacity: 1;
+  display: grid;
+  animation: modalAnimation ease-out 300ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }

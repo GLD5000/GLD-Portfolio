@@ -1,19 +1,9 @@
 import { useEffect, useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import githubHeatMap from "src/assets/aboutme/GitHubHeatMap.jpg";
-import inkscape from "src/assets/aboutme/inkscape.jpg";
-import accessible from "src/assets/aboutme/accessible.jpg";
-
 import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
 import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
-import AboutCard from "./AboutCard";
 import CardGrid from "./CardGrid";
 
 export default function About() {
-  const stackModal = useRef<HTMLDialogElement>(null);
-  const accessModal = useRef<HTMLDialogElement>(null);
-
   const { elementRef, onScreen } = useIntersectionObserver();
   const { setcurrentSection, hasScrolled, setHasScrolled } =
     useIntersectionProviderContext();
