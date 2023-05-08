@@ -69,15 +69,15 @@ export default function Hero() {
                 <StarSvg />
               </div>
             </div>
-            <h2 className="mx-auto text-2xl font-bold xl:text-4xl">
+            <h2 className="mx-auto text-2xl font-bold sm:text-3xl xl:text-4xl">
               <SpanSplitter word={"Web Developer"} />
             </h2>
-            <p className="my-0 mx-auto w-fit text-sm sm:text-base lg:text-lg xl:text-xl">
+            <p className="my-0 mx-auto w-fit text-xs xs:text-sm sm:text-base lg:text-lg xl:text-xl">
               <SpanSplitter
                 word={"I am a React developer based near London, UK."}
               />
             </p>
-            <p className="my-0 mx-auto w-fit text-sm sm:text-base lg:text-lg xl:text-xl">
+            <p className="my-0 mx-auto w-fit text-xs xs:text-sm sm:text-base lg:text-lg xl:text-xl">
               <SpanSplitter
                 word={"I build innovative and accessible websites and apps."}
               />
