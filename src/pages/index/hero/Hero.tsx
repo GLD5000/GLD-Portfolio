@@ -27,6 +27,7 @@ export default function Hero() {
 
   return (
     <>
+      <div className=" absolute top-0  z-[997] grid h-screen w-full bg-black"></div>
       <Stars />
       <div
         id="hero"
