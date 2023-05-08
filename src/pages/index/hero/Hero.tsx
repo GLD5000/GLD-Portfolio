@@ -43,8 +43,25 @@ export default function Hero() {
               <SpanSplitter word={"Hi, I am"} />
             </p>
 
-            <h1 className="mx-auto text-4xl font-bold xs:text-5xl xl:text-7xl 2xl:text-8xl">
-              <SpanSplitter word={"Gareth L Devlin"} />
+            <h1 className="mx-auto flex flex-row text-4xl font-bold xs:text-5xl xl:text-7xl 2xl:text-8xl">
+              <span
+                key="g"
+                className="colour-in-g cursor-default [transition-duration:800ms] [transition-delay:100ms] hover:text-brand"
+              >
+                Gareth{" "}
+              </span>
+              <span
+                key="l"
+                className="colour-in-l cursor-default [transition-duration:800ms] [transition-delay:100ms] hover:text-brand"
+              >
+                L{" "}
+              </span>
+              <span
+                key="d"
+                className="colour-in-d cursor-default [transition-duration:800ms] [transition-delay:100ms] hover:text-brand"
+              >
+                Devlin
+              </span>
             </h1>
             <h2 className="mx-auto text-2xl font-bold xl:text-4xl">
               <SpanSplitter word={"Web Developer"} />
