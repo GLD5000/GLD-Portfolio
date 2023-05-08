@@ -127,20 +127,21 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .zoom-in-g {
-  animation: zoomInAnimation ease-in-out 1500ms;
-  animation-iteration-count: 1;
+  animation: zoomInAnimation ease-in-out 1500ms 1000ms;
+  animation-iteration-count: 3;
   animation-fill-mode: forwards;
 }
 .zoom-in-l {
-  animation: zoomInAnimation ease-in-out 2500ms;
-  animation-iteration-count: 1;
+  animation: zoomInAnimation ease-in-out 1500ms 1300ms;
+  animation-iteration-count: 3;
   animation-fill-mode: forwards;
 }
 .zoom-in-d {
-  animation: zoomInAnimation ease-in-out 3500ms;
-  animation-iteration-count: 1;
+  animation: zoomInAnimation ease-in-out 1500ms 1600ms;
+  animation-iteration-count: 3;
   animation-fill-mode: forwards;
 }
+
 
 @keyframes zoomInAnimation {
   0% {
@@ -150,7 +151,7 @@ input[type="range"]::-moz-range-thumb {
     scale: 1;
   }
   80% {
-    scale: 0.8;
+    scale: 0.97;
   }
 
   100% {
