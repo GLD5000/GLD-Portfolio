@@ -1,4 +1,6 @@
 function getSpanArray(stringIn: string) {
+  if (stringIn === undefined) return null;
+
   return stringIn
     .replaceAll(" ", " [space]")
     .split(" ")
