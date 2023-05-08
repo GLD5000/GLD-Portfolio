@@ -128,34 +128,90 @@ input[type="range"]::-moz-range-thumb {
 
 .zoom-in-g {
   animation: zoomInAnimation ease-in 3000ms 1000ms;
-  animation-iteration-count: 7;
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
 .zoom-in-l {
   animation: zoomInAnimation ease-in 3000ms 1280ms;
-  animation-iteration-count: 7;
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
 .zoom-in-d {
   animation: zoomInAnimation ease-in 3000ms 1560ms;
-  animation-iteration-count: 7;
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
 .colour-in-g {
   animation: colourInAnimation ease-in 3000ms 1000ms;
-  animation-iteration-count: 7;
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
 .colour-in-l {
   animation: colourInAnimation ease-in 3000ms 1280ms;
-  animation-iteration-count: 7;
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
 .colour-in-d {
   animation: colourInAnimation ease-in 3000ms 1560ms;
-  animation-iteration-count: 7;
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
+
+.shootingStar {
+  animation: shootingAnimation ease-in 3000ms 1560ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.wobblingStar {
+  animation: wobblingAnimation ease-in 3000ms 1560ms;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes wobblingAnimation {
+  0% {
+    rotate: 0deg;
+  }
+  55% {
+    rotate: -2deg;
+  }
+  65% {
+    rotate: 0deg;
+  }
+
+
+  80% {
+    rotate: 3deg;
+  }
+
+  100% {
+    rotate: 0deg;
+  }
+}
+
+
+@keyframes shootingAnimation {
+  0% {
+    opacity: 0;
+    scale:0.2;
+
+  }
+  55% {
+    opacity: 0.75;
+    transform: translateX(-70%); 
+    scale:0.2;
+     }
+  80% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 
 @keyframes colourInAnimation {
   0% {
