@@ -21,7 +21,7 @@ const imagesCollection = (
       alt="Colour Picker"
     />
     <Image
-      className="absolute top-0 right-0 h-[35%] w-auto rounded shadow-xl shadow-black"
+      className="absolute top-0 right-0 h-[45%] w-auto rounded shadow-xl shadow-black"
       src={CopyCropped}
       alt="Colour Picker"
     />
