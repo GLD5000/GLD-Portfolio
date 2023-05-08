@@ -31,6 +31,14 @@ export default function About() {
       <div className="mx-auto flex  h-full w-body-sm min-w-body max-w-body flex-col bg-transparent sm:w-body ">
         <div className=" grid w-body-sm min-w-body max-w-body grow gap-10  sm:w-body">
           <h1 className="mx-auto my-10 text-4xl lg:text-8xl">About Me</h1>
+          <p className="m-0 mx-auto max-w-[60rem] text-center xs:text-justify">
+            I am a self-taught software developer and former teacher. I
+            discovered my passion for coding after learning VBA and JavaScript
+            to build assessment data processors and dashboards for my work.
+            Since then, I have found lots of creative ways to apply my skills
+            and love building for the web. See below to see some of the
+            qualities I really value as a developer.
+          </p>
           <CardGrid />
         </div>
       </div>
