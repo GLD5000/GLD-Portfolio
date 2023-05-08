@@ -34,7 +34,7 @@ export default function ProjectCard({
           className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
           target="_blank"
           referrerPolicy="no-referrer"
-          href={url}
+          href={url ?? ""}
         >
           See It Live
         </Link>
