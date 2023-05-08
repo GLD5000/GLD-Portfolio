@@ -34,12 +34,21 @@ export default function Projects() {
     >
       <section
         id="main-content"
-        className="mx-auto flex h-full w-body min-w-body max-w-body snap-start flex-col bg-transparent pt-20 pb-60 "
+        className="mx-auto grid h-full w-body min-w-body max-w-body snap-start flex-col gap-10 bg-transparent pt-20 pb-60 "
       >
-        <h1 className="mx-auto mt-10 w-fit text-4xl lg:text-8xl">
-          My Projects
+        <h1 className="mx-auto my-10 w-fit text-4xl lg:text-8xl">
+          What Do I make?
         </h1>
-        <div className="mt-10 grid w-full grow gap-10 ">
+        <p className="m-0 mx-auto max-w-[60rem] text-center xs:text-justify">
+          Coding allows me to bring my imagination to life. It is also a way to
+          create enticing and interactive tools and products that others can
+          enjoy. I make websites with a focus on user experience and
+          accessibility. I also make tools for myself and other developers to
+          help push web development forwards. See below to find out more about
+          my projects, see them in action and view their source code on GitHub.
+        </p>
+
+        <div className="mt-10 grid w-full grow gap-10 lg:gap-24 ">
           <LondonDataWeekCard />
           <ContrastToolCard />
           <DevTipsCard />

@@ -30,7 +30,7 @@ export default function About() {
     >
       <div className="mx-auto flex  h-full w-body-sm min-w-body max-w-body flex-col bg-transparent sm:w-body ">
         <div className=" grid w-body-sm min-w-body max-w-body grow gap-10  sm:w-body">
-          <h1 className="mx-auto my-10 text-4xl lg:text-8xl">About Me</h1>
+          <h1 className="mx-auto my-10 text-4xl lg:text-8xl">Who Am I?</h1>
           <p className="m-0 mx-auto max-w-[60rem] text-center xs:text-justify">
             I am a self-taught software developer and former teacher. I
             discovered my passion for coding after learning VBA and JavaScript

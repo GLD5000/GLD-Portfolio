@@ -55,7 +55,7 @@ export default function DevTipsCard() {
     <ProjectCard
       images={imagesCollection}
       text={
-        "A keep / repository for tips and tricks for developers. Simply search by keyword or filter by tag to explore and learn. If you are feeling creative, you can even add your own tips too."
+        "A website full of tips and tricks for developers. Simply search by keyword or filter by tag to explore and learn. If you are feeling creative, you can even add your own tips too."
       }
       subtitle={"Tips and Tricks for Developers"}
       title={titleDiv}
