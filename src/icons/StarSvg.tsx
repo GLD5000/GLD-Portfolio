@@ -1,5 +1,5 @@
 export default function StarSvg({
-  classes = "stroke-current fill-current stroke-2 [transition-duration:800ms] [transition-delay:100ms] hover:fill-brand ",
+  classes = "stroke-current fill-brand stroke-2 [transition-duration:800ms] [transition-delay:100ms] hover:fill-white ",
 }) {
   return (
     <div className="h-full w-full">

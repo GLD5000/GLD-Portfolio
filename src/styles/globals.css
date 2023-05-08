@@ -173,12 +173,17 @@ input[type="range"]::-moz-range-thumb {
 @keyframes wobblingAnimation {
   0% {
     rotate: 0deg;
+    scale: 1;
+
   }
   55% {
     rotate: -2deg;
+    scale: 0.95;
   }
   65% {
     rotate: 0deg;
+    scale: 1;
+
   }
 
 
