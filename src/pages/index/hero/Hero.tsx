@@ -28,7 +28,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className=" absolute top-0  z-[997] grid h-screen w-full bg-black"></div>
+      <div className=" absolute top-0  z-[997] grid h-screen w-full bg-gradient-to-t from-black to-purple"></div>
       <Stars />
       <div
         id="hero"

@@ -61,6 +61,7 @@ module.exports = {
         // brand: "#419b7d", // mint green
         "brand-dk": "#e0e0e0",
         brand: "#37836a",
+        purple: "#050214",
 
         "bg-var-dk": "#000000",
         "bg-dk": "#1f1f1f",
