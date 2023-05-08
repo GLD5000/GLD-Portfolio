@@ -147,7 +147,7 @@ export default function Stars() {
   return (
     <svg
       key="starArray"
-      className="-z-index-1 zoom-in-slow absolute top-0 left-0 h-screen w-full rounded-3xl py-[5%]"
+      className="  zoom-in-slow absolute top-0 left-0 z-[997] h-screen w-full bg-black py-[5%]"
     >
       {starArray}
     </svg>

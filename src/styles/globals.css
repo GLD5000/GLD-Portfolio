@@ -127,19 +127,35 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .zoom-in-g {
-  animation: zoomInAnimation ease-in-out 1500ms 1000ms;
-  animation-iteration-count: 3;
+  animation: zoomInAnimation ease-in 3000ms 1000ms;
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
 .zoom-in-l {
-  animation: zoomInAnimation ease-in-out 1500ms 1300ms;
-  animation-iteration-count: 3;
+  animation: zoomInAnimation ease-in 3000ms 1280ms;
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
 .zoom-in-d {
-  animation: zoomInAnimation ease-in-out 1500ms 1600ms;
-  animation-iteration-count: 3;
+  animation: zoomInAnimation ease-in 3000ms 1560ms;
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;
+}
+
+@keyframes zoomInAnimation {
+  0% {
+    scale: 1;
+  }
+  55% {
+    scale: 1;
+  }
+  80% {
+    scale: 0.98;
+  }
+
+  100% {
+    scale: 1;
+  }
 }
 
 
@@ -151,7 +167,7 @@ input[type="range"]::-moz-range-thumb {
     scale: 1;
   }
   80% {
-    scale: 0.97;
+    scale: 0.98;
   }
 
   100% {
