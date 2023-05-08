@@ -233,22 +233,6 @@ input[type="range"]::-moz-range-thumb {
     opacity: 1;
   }
 }
-@keyframes zoomInAnimation {
-  0% {
-    scale: 1;
-  }
-  55% {
-    scale: 1;
-  }
-  80% {
-    scale: 0.98;
-  }
-
-  100% {
-    scale: 1;
-  }
-}
-
 
 @keyframes zoomInAnimation {
   0% {
@@ -258,7 +242,7 @@ input[type="range"]::-moz-range-thumb {
     scale: 1;
   }
   80% {
-    scale: 0.98;
+    scale: 0.995;
   }
 
   100% {
