@@ -16,21 +16,25 @@ const imagesCollection = (
       alt="Colour Picker"
     />
     <Image
+      placeholder="blur"
       className="absolute bottom-[50%] left-0 h-[45%] w-auto rounded shadow-xl shadow-black"
       src={SaveCropped}
       alt="Colour Picker"
     />
     <Image
+      placeholder="blur"
       className="absolute top-0 right-0 h-[45%] w-auto rounded shadow-xl shadow-black"
       src={CopyCropped}
       alt="Colour Picker"
     />
     <Image
+      placeholder="blur"
       className="absolute bottom-0 left-0 h-[45%] w-auto rounded shadow-xl shadow-black"
       src={ComboCropped}
       alt="Colour Picker"
     />
     <Image
+      placeholder="blur"
       className="absolute bottom-[25%] left-[30%] h-[45%] w-auto rounded shadow-xl shadow-black"
       src={PickerCropped}
       alt="Colour Picker"
