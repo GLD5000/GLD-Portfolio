@@ -62,19 +62,19 @@ export default function Hero({
               <SpanSplitter word={"Hi, I am"} />
             </p> */}
 
-            <div className="px:4 relative mx-auto w-fit max-w-[90%] pt-4 pb-4 md:px-16  md:pt-10">
-              <h1 className="mx-auto grid grid-cols-frAutoFr gap-2 text-3xl font-bold xs:text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl">
+            <div className="px:4 relative mx-auto w-full pt-4 pb-4  md:pt-10">
+              <h1 className="mx-auto grid w-fit grid-cols-frAutoFr gap-2 text-3xl font-bold xs:text-4xl sm:gap-4 sm:text-4xl md:text-5xl xl:text-6xl">
                 <span
                   key="g"
                   className="colour-in-g cursor-default hover:text-brand hover:[transition-duration:800ms] hover:[transition-delay:100ms]"
                 >
-                  Gareth{" "}
+                  Gareth
                 </span>
                 <span
                   key="l"
                   className="colour-in-l cursor-default hover:text-brand hover:[transition-duration:800ms] hover:[transition-delay:100ms]"
                 >
-                  L{" "}
+                  L
                 </span>
                 <span
                   key="d"
@@ -83,7 +83,7 @@ export default function Hero({
                   Devlin
                 </span>
               </h1>
-              <div className=" wobblingStar absolute right-0 top-0 aspect-square h-6  sm:h-8 md:h-10 lg:h-12 xl:h-14">
+              <div className=" wobblingStar absolute right-2 top-0 aspect-square h-6  sm:h-8 md:h-10 lg:h-12">
                 <StarSvg />
               </div>
             </div>
