@@ -91,14 +91,10 @@ export default function Hero({
               <SpanSplitter word={"Web Developer"} />
             </h2>
             <p className="my-0 mx-auto w-fit text-xs xs:text-sm sm:text-base lg:text-lg xl:text-xl">
-              <SpanSplitter
-                word={"I am a React developer based near London, UK."}
-              />
+              I am a React developer based near London, UK.
             </p>
             <p className="my-0 mx-auto w-fit text-xs xs:text-sm sm:text-base lg:text-lg xl:text-xl">
-              <SpanSplitter
-                word={"I build innovative and accessible websites and apps."}
-              />
+              I build innovative and accessible websites and apps.
             </p>
           </div>
         </div>
