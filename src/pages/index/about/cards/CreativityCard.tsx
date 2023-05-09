@@ -24,7 +24,7 @@ export default function CreativityCard() {
                 modalRef.current?.showModal();
               }}
             >
-              See My Stack
+              See My Skills
             </button>
           </>
         }
