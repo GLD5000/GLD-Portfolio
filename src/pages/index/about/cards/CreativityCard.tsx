@@ -1,9 +1,9 @@
-import AboutCard from "./AboutCard";
+import AboutCard from "../AboutCard";
 import { useRef } from "react";
 import inkscape from "src/assets/aboutme/inkscape.jpg";
-import CreativeModal from "./CreativeModal";
+import CreativityModal from "../modals/CreativityModal";
 
-export default function CreativeCard() {
+export default function CreativityCard() {
   const modalRef = useRef<HTMLDialogElement>(null);
 
   return (
@@ -13,7 +13,7 @@ export default function CreativeCard() {
         text={
           "From software, to music, sound and graphics: I love to create and believe in the power of innovation. I enjoy finding new ways to tackle challenges within a project and create value for users."
         }
-        title={"Creative"}
+        title={"Creativity"}
         cta={
           <>
             {" "}
@@ -29,7 +29,7 @@ export default function CreativeCard() {
           </>
         }
       />
-      <CreativeModal refPassed={modalRef} />
+      <CreativityModal refPassed={modalRef} />
     </>
   );
 }

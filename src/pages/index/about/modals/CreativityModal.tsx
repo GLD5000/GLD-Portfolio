@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Modal from "../components/Modal";
+import Modal from "../../components/Modal";
 import { RefObject } from "react";
 
-export default function CreativeModal({
+export default function CreativityModal({
   refPassed,
 }: {
   refPassed: RefObject<HTMLDialogElement>;
