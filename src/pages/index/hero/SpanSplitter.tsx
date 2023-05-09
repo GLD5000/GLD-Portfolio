@@ -9,7 +9,7 @@ function getSpanArray(stringIn: string) {
       return (
         <span
           key={key}
-          className=" cursor-default [transition-duration:800ms] [transition-delay:100ms] hover:text-brand"
+          className=" cursor-default hover:text-brand hover:[transition-duration:800ms] hover:[transition-delay:100ms]"
         >
           {letter.replaceAll("[space]", " ")}
         </span>

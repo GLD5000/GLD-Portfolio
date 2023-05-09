@@ -15,17 +15,17 @@ export default function GldSvgHero({
       >
         <g>
           <path
-            className="zoom-in-g [transition-duration:800ms] [transition-delay:100ms] hover:fill-brand"
+            className="zoom-in-g hover:fill-brand hover:[transition-duration:800ms] hover:[transition-delay:100ms]"
             d="M 6,2 H 2 V 3 H 1 V 10 H 2 V 11 H 6 V 6 H 4 v 2 h 1 v 1 H 3 V 4 H 4 v 1 h 2 z"
             id="path510"
           />
           <path
-            className="zoom-in-l [transition-duration:800ms] [transition-delay:100ms] hover:fill-brand"
+            className="zoom-in-l hover:fill-brand hover:[transition-duration:800ms] hover:[transition-delay:100ms]"
             d="M 10,14 H 7 l -1e-7,-10 H 9 l 10e-8,8 H 10 Z"
             id="path512"
           />
           <path
-            className="zoom-in-d [transition-duration:800ms] [transition-delay:100ms] hover:fill-brand"
+            className="zoom-in-d hover:fill-brand hover:[transition-duration:800ms] hover:[transition-delay:100ms]"
             id="path514"
             d="m 10,2 v 9 h 4 v -1 h 1 V 3 H 14 V 2 Z m 2,2 h 1 v 5 h -1 z"
           />

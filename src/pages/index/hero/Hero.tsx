@@ -6,8 +6,26 @@ import { useIntersectionProviderContext } from "@/utilities/contexts/Intersectio
 import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
 import SpanSplitter from "./SpanSplitter";
 import StarSvg from "@/icons/StarSvg";
+import MoonSvg from "@/icons/MoonSvg";
+import SunSvg from "@/icons/SunSvg";
+import SvgButtonNew from "@/elements/SvgButtonNew";
 
-export default function Hero() {
+function getDarkToggleIcon(isDark: boolean) {
+  const wrapper = (
+    <div className=" text:inherit my-auto aspect-square h-6">
+      {isDark ? <SunSvg /> : <MoonSvg />}{" "}
+    </div>
+  );
+  return wrapper;
+}
+
+export default function Hero({
+  toggleColourTheme,
+  colourTheme,
+}: {
+  toggleColourTheme: () => void;
+  colourTheme: boolean;
+}) {
   const { elementRef, onScreen } = useIntersectionObserver();
   const { setcurrentSection, hasScrolled, setHasScrolled } =
     useIntersectionProviderContext();
@@ -48,19 +66,19 @@ export default function Hero() {
               <h1 className="mx-auto grid grid-cols-frAutoFr gap-2 text-3xl font-bold xs:text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl">
                 <span
                   key="g"
-                  className="colour-in-g cursor-default [transition-duration:800ms] [transition-delay:100ms] hover:text-brand"
+                  className="colour-in-g cursor-default hover:text-brand hover:[transition-duration:800ms] hover:[transition-delay:100ms]"
                 >
                   Gareth{" "}
                 </span>
                 <span
                   key="l"
-                  className="colour-in-l cursor-default [transition-duration:800ms] [transition-delay:100ms] hover:text-brand"
+                  className="colour-in-l cursor-default hover:text-brand hover:[transition-duration:800ms] hover:[transition-delay:100ms]"
                 >
                   L{" "}
                 </span>
                 <span
                   key="d"
-                  className="colour-in-d cursor-default [transition-duration:800ms] [transition-delay:100ms] hover:text-brand"
+                  className="colour-in-d cursor-default hover:text-brand hover:[transition-duration:800ms] hover:[transition-delay:100ms]"
                 >
                   Devlin
                 </span>
@@ -82,6 +100,25 @@ export default function Hero() {
                 word={"I build innovative and accessible websites and apps."}
               />
             </p>
+          </div>
+        </div>
+        <div className="absolute top-0 left-0 w-full">
+          <div className="mx-auto w-body-sm min-w-body max-w-body flex-col bg-transparent sm:w-body">
+            <SvgButtonNew
+              showTextIn={undefined}
+              clickFunction={toggleColourTheme}
+              reverse={false}
+              id="colour-theme-button"
+              name="Dark Mode Button"
+              className="relative rounded text-xs"
+              buttonClasses={`w-fit h-fit overflow-visible flex-col flex text-current pb-4 pt-1 ml-auto mt-3 px-2`}
+              textElement={
+                <span className="absolute bottom-0 w-fit rounded-t-none bg-transparent text-current ">
+                  {colourTheme ? "Light" : "Dark"}
+                </span>
+              }
+              svg={getDarkToggleIcon(colourTheme)}
+            />
           </div>
         </div>
       </div>

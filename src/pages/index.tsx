@@ -42,7 +42,10 @@ export default function Home() {
         >
           <IntersectionProvider>
             <MainContentLink />
-            <Hero />
+            <Hero
+              toggleColourTheme={toggleColourTheme}
+              colourTheme={colourTheme}
+            />
             <Header
               toggleColourTheme={toggleColourTheme}
               colourTheme={colourTheme}
