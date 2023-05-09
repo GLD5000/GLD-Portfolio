@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Modal from "../../../../elements/Modal";
 import { RefObject } from "react";
+import Image from "next/image";
+import portrait from "src/assets/aboutme/bwportrait.jpg";
 
 export default function OpenSourceModal({
   refPassed,
@@ -12,6 +14,15 @@ export default function OpenSourceModal({
       refIn={refPassed}
       content={
         <div className="grid gap-8 lg:grid-cols-2">
+          <Image
+            src={portrait}
+            className="m-auto h-40 w-40 rounded-full"
+            alt={"Gareth Photo"}
+          ></Image>
+          <div className="m-auto w-fit">
+            <p className="m-0 mx-auto text-center text-4xl">Hi There!</p>
+            <p className="m-0 mx-auto text-center text-xl">{`Let's chat!`}</p>
+          </div>
           <Link
             className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
             target="_blank"
