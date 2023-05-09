@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Modal from "../../components/Modal";
+import Modal from "../../../../elements/Modal";
 import { RefObject } from "react";
 
 export default function OpenSourceModal({
