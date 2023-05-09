@@ -18,17 +18,17 @@ export default function CreativityModal({
     <Modal
       refIn={refPassed}
       content={
-        <div className="grid gap-10 p-4 ">
+        <div className="grid ">
           <div className="grid max-w-[30rem] px-8">
-            <h2 className="mx-auto mb-4 w-fit text-center text-2xl font-bold">
+            <h2 className="mx-auto mb-4 w-fit text-center text-3xl font-bold">
               Web Skills / My Stack
             </h2>
-            <div className="flex flex-wrap gap-6">
+            <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="https://react.dev/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-brand p-1 text-white"
               >
                 {" "}
                 React
@@ -37,7 +37,7 @@ export default function CreativityModal({
                 href="https://www.typescriptlang.org/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-brand p-1 text-white"
               >
                 {" "}
                 TypeScript
@@ -46,7 +46,7 @@ export default function CreativityModal({
                 href="https://nextjs.org"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-brand p-1 text-white"
               >
                 {" "}
                 Next.js
@@ -55,7 +55,7 @@ export default function CreativityModal({
                 href="https://tailwindcss.com/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-brand p-1 text-white"
               >
                 {" "}
                 Tailwind CSS
@@ -64,7 +64,7 @@ export default function CreativityModal({
                 href="https://vitejs.dev/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-brand p-1 text-white"
               >
                 {" "}
                 Vite
@@ -73,7 +73,7 @@ export default function CreativityModal({
                 href="https://vitest.dev/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-brand p-1 text-white"
               >
                 {" "}
                 Vitest
@@ -82,7 +82,7 @@ export default function CreativityModal({
                 href="https://www.npmjs.com/package/husky"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-brand p-1 text-white"
               >
                 {" "}
                 Husky
@@ -91,7 +91,7 @@ export default function CreativityModal({
                 href="https://www.npmjs.com/package/lint-staged"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-brand p-1 text-white"
               >
                 {" "}
                 Lint-Staged
@@ -100,7 +100,7 @@ export default function CreativityModal({
                 href="https://code.visualstudio.com/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-brand p-1 text-white"
               >
                 {" "}
                 VSCode
@@ -109,7 +109,7 @@ export default function CreativityModal({
                 href="https://github.com/GLD5000"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-brand p-1 text-white"
               >
                 {" "}
                 GitHub
@@ -118,7 +118,7 @@ export default function CreativityModal({
                 href="https://git-scm.com/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-brand p-1 text-white"
               >
                 {" "}
                 Git
@@ -127,7 +127,7 @@ export default function CreativityModal({
                 href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-brand p-1 text-white"
               >
                 {" "}
                 JavaScript
@@ -136,7 +136,7 @@ export default function CreativityModal({
                 href="https://sass-lang.com/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-brand p-1 text-white"
               >
                 {" "}
                 SCSS
@@ -145,7 +145,7 @@ export default function CreativityModal({
                 href="https://html.spec.whatwg.org/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-brand p-1 text-white"
               >
                 {" "}
                 HTML5+
@@ -168,12 +168,12 @@ export default function CreativityModal({
             </div>
           </div>
 
-          <div className="mx-auto grid max-w-[30rem] items-center gap-6 px-8">
-            <h2 className="mx-auto mb-4 w-fit text-center text-2xl font-bold">
-              Other Skills
-            </h2>
+          <h2 className="mx-auto mt-8 mb-4 w-fit text-center text-3xl font-bold">
+            Other Skills
+          </h2>
+          <div className="mx-auto grid max-w-[30rem] items-center gap-8 px-8">
             <div className="grid items-center gap-2">
-              <h3 className="mx-auto flex h-fit w-fit gap-6 text-center">
+              <h3 className="mx-auto flex h-fit w-fit gap-6 text-center font-bold">
                 Music Plugin Development
               </h3>
               <Link
@@ -194,7 +194,7 @@ export default function CreativityModal({
             </div>
 
             <div className="grid gap-2">
-              <h3 className="mx-auto h-fit w-fit text-center">
+              <h3 className="mx-auto h-fit w-fit text-center font-bold">
                 Google Apps Script
               </h3>
               <Link
@@ -214,7 +214,7 @@ export default function CreativityModal({
             </div>
 
             <div className="grid gap-2">
-              <h3 className="mx-auto h-fit w-fit text-center">
+              <h3 className="mx-auto h-fit w-fit text-center font-bold">
                 Graphic Design
               </h3>
               <Link
@@ -242,7 +242,7 @@ export default function CreativityModal({
               </div>
             </div>
             <div className="grid gap-2">
-              <h3 className="mx-auto h-fit w-fit text-center">
+              <h3 className="mx-auto h-fit w-fit text-center font-bold">
                 Music Production
               </h3>
               <p className="mx-auto mb-0 w-fit text-sm">
@@ -272,11 +272,11 @@ export default function CreativityModal({
               </div>
             </div>
             <div className="grid gap-2">
-              {/* <h3 className="mx-auto h-fit w-fit text-center">Sound Design</h3> */}
+              {/* <h3 className="font-bold mx-auto h-fit w-fit text-center">Sound Design</h3> */}
               {/* add image */}
             </div>
-            {/* <h3 className="mx-auto h-fit w-fit text-center">Lua Scripting</h3> */}
-            {/* <h3 className="mx-auto h-fit w-fit text-center">
+            {/* <h3 className="font-bold mx-auto h-fit w-fit text-center">Lua Scripting</h3> */}
+            {/* <h3 className="font-bold mx-auto h-fit w-fit text-center">
               Visual Basic for Application (VBA)
             </h3> */}
           </div>

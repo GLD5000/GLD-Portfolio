@@ -14,7 +14,7 @@ export default function Modal({
   return (
     <dialog
       ref={refIn}
-      className="m-auto max-w-[95vw] gap-6 rounded-3xl border-2 bg-purple-light p-2 text-black dark:bg-purple dark:text-white"
+      className="m-auto max-w-[95vw] rounded-3xl border-2 bg-purple-light p-2 text-black dark:bg-purple dark:text-white"
     >
       <button
         id="close-btn"
