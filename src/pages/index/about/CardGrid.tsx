@@ -4,6 +4,7 @@ import inkscape from "src/assets/aboutme/inkscape.jpg";
 import accessible from "src/assets/aboutme/accessible.jpg";
 import Link from "next/link";
 import AboutCard from "./AboutCard";
+import CreativeCard from "./CreativeCard";
 
 export default function CardGrid() {
   const stackModal = useRef<HTMLDialogElement>(null);
@@ -12,97 +13,7 @@ export default function CardGrid() {
 
   return (
     <div className="grid gap-10 lg:grid-cols-3">
-      <AboutCard
-        image={inkscape}
-        text={
-          "From software, to music, sound and graphics: I love to create and believe in the power of innovation. I enjoy finding new ways to tackle challenges within a project and create value for users."
-        }
-        title={"Creative"}
-        cta={
-          <>
-            {" "}
-            <button
-              type="button"
-              className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-xl text-white hover:bg-white hover:text-black hover:transition  focus:bg-white focus:text-black focus:transition"
-              onClick={() => {
-                stackModal.current?.showModal();
-              }}
-            >
-              See My Stack
-            </button>
-            <dialog
-              className="m-auto gap-6 rounded p-10 text-black lg:grid-cols-3"
-              ref={stackModal}
-            >
-              <button
-                className="absolute right-0 top-0 m-1 p-1 text-xs text-txt-mid hover:bg-black hover:text-white hover:transition focus:bg-black focus:text-white focus:transition"
-                type="button"
-                onClick={() => {
-                  stackModal.current?.close();
-                }}
-              >
-                Close
-              </button>
-
-              <figure>
-                <figcaption className="text-bold mb-4 text-center text-xl">
-                  My Stack
-                </figcaption>
-                <ul className="list-disc">
-                  <li>React</li>
-                  <li>Next.js</li>
-                  <li>Tailwind</li>
-                  <li>Vite</li>
-                  <li>Vitest</li>
-                  <li>Husky</li>
-                  <li>Lint-Staged</li>
-                  <li>VSCode</li>
-                  <li>GitHub</li>
-                </ul>
-              </figure>
-
-              <figure>
-                <figcaption className="text-bold mb-4 text-center text-xl">
-                  Web Skills
-                </figcaption>
-                <ul className="list-disc">
-                  <li>React</li>
-                  <li>TypeScript</li>
-                  <li>JavaScript</li>
-                  <li>Tailwind CSS</li>
-                  <li>SCSS</li>
-                  <li>HTML5</li>
-                </ul>
-              </figure>
-
-              <figure>
-                <figcaption className="text-bold mb-4 text-center text-xl">
-                  Other Skills
-                </figcaption>
-                <ul className="list-disc">
-                  <li>
-                    <Link
-                      href="https://www.cockos.com/EEL2/"
-                      target="_blank"
-                      referrerPolicy="no-referrer"
-                      className="underline"
-                    >
-                      EEL2
-                    </Link>{" "}
-                    Music Plugin Development
-                  </li>
-                  <li>Lua Scripting</li>
-                  <li>Visual Basic for Application (VBA)</li>
-                  <li>Google Apps Script (GAS)</li>
-                  <li>Graphic Design - InkScape</li>
-                  <li>Music Production - Reaper / Cubase</li>
-                  <li>Sound Design</li>
-                </ul>
-              </figure>
-            </dialog>
-          </>
-        }
-      />{" "}
+      <CreativeCard />
       <AboutCard
         image={accessible}
         text={
