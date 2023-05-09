@@ -272,13 +272,13 @@ export default function CreativityModal({
               </div>
             </div>
             <div className="grid gap-2">
-              <h3 className="mx-auto h-fit w-fit text-center">Sound Design</h3>
+              {/* <h3 className="mx-auto h-fit w-fit text-center">Sound Design</h3> */}
               {/* add image */}
             </div>
-            <h3 className="mx-auto h-fit w-fit text-center">Lua Scripting</h3>
-            <h3 className="mx-auto h-fit w-fit text-center">
+            {/* <h3 className="mx-auto h-fit w-fit text-center">Lua Scripting</h3> */}
+            {/* <h3 className="mx-auto h-fit w-fit text-center">
               Visual Basic for Application (VBA)
-            </h3>
+            </h3> */}
           </div>
         </div>
       }
