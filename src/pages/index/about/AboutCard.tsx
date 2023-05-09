@@ -13,7 +13,7 @@ export default function AboutCard({
   cta: ReactNode;
 }) {
   return (
-    <div className="mx-auto grid w-full max-w-[500px] snap-start scroll-my-24 gap-10">
+    <div className="mx-auto grid w-full max-w-[500px] snap-start scroll-my-24 gap-10 lg:snap-none">
       <div className="grid gap-4">
         <h2 className="mx-auto text-center font-bold">{title}</h2>
         <Image

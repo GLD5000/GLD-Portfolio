@@ -30,12 +30,9 @@ export default function Projects() {
     <main
       id="projects"
       ref={elementRef}
-      className="relative grid w-screen  flex-grow sm:justify-items-center  "
+      className="relative grid w-screen  flex-grow bg-gradient-to-t  from-bg to-bg-var dark:bg-gradient-to-t dark:from-bg-dk dark:to-bg-var-dk sm:justify-items-center  "
     >
-      <section
-        id="main-content"
-        className="mx-auto grid h-full w-body min-w-body max-w-body snap-start flex-col gap-10 bg-transparent pt-20 pb-60 "
-      >
+      <section className="mx-auto grid h-full w-body min-w-body max-w-body flex-col gap-10 bg-transparent pt-20 pb-60 lg:snap-start ">
         <h1 className="mx-auto my-10 w-fit text-4xl lg:text-8xl">
           What Do I make?
         </h1>

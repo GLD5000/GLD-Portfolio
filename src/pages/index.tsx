@@ -47,7 +47,7 @@ export default function Home() {
               toggleColourTheme={toggleColourTheme}
               colourTheme={colourTheme}
             />
-            <div className="h-screen bg-black"></div>
+            <div className="h-screen bg-purple-light dark:bg-purple"></div>
 
             <About />
             <Projects />

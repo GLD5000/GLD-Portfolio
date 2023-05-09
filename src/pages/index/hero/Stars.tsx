@@ -125,7 +125,7 @@ function getStars() {
         cx={NUMBER_ARRAY[count][0]}
         cy={NUMBER_ARRAY[count][1]}
         r="1.25"
-        fill="white"
+        className="fill-current"
       ></circle>
     );
     starArray.push(
@@ -134,7 +134,7 @@ function getStars() {
         cx={NUMBER_ARRAY[count + 1][0]}
         cy={NUMBER_ARRAY[count + 1][1]}
         r="0.5"
-        fill="white"
+        className="fill-current"
       ></circle>
     );
     count += 2;

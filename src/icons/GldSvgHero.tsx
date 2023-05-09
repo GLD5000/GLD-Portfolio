@@ -1,5 +1,5 @@
 export default function GldSvgHero({
-  wrapperClasses = "  h-full w-full fill-white ",
+  wrapperClasses = "  h-full w-full fill-current ",
   svgClasses = "",
 }) {
   return (

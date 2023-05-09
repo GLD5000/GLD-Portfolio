@@ -32,7 +32,7 @@ module.exports = {
       },
       dropShadow: {
         logo: "1px 2px 3px rgba(0, 0, 0, 1)",
-        hero: "-1vw 1vw 2vw rgba(0, 0, 0, 0.75)",
+        hero: "-0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.75)",
         "hero-dk": "-1vw 1vw 2vw #999",
         star: "-1px 1px 7px rgba(0, 0, 0, 1)",
         "star-dk": "-1px 1px 200px white",
@@ -62,6 +62,7 @@ module.exports = {
         "brand-dk": "#e0e0e0",
         brand: "#37836a",
         purple: "#050214",
+        "purple-light": "#d4cdfa",
 
         "bg-var-dk": "#000000",
         "bg-dk": "#1f1f1f",

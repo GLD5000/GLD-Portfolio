@@ -28,7 +28,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className=" absolute top-0  z-[997] grid h-screen w-full bg-gradient-to-t from-black to-purple"></div>
+      <div className=" absolute top-0  z-[997] grid h-screen w-full bg-purple-light dark:bg-purple"></div>
       <Stars />
       <div
         id="hero"
@@ -36,7 +36,7 @@ export default function Hero() {
         className=" absolute top-0  z-[997] grid h-screen w-full "
       >
         <div className=" mx-auto grid h-full w-min items-center gap-8 lg:w-fit lg:grid-cols-2">
-          <div className="mx-auto h-full w-screen max-w-[35rem] drop-shadow-hero-dk lg:h-auto lg:w-full lg:max-w-[50rem] ">
+          <div className="mx-auto h-full w-screen max-w-[35rem] drop-shadow-hero dark:drop-shadow-hero-dk lg:h-auto lg:w-full lg:max-w-[50rem] ">
             <GldSvgHero />
           </div>
           <div className="mx-auto grid h-fit w-max gap-2">
