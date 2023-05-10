@@ -209,7 +209,7 @@ export default function CreativityModal({
                 placeholder="blur"
                 src={assessment}
                 className="m-auto h-auto w-full rounded-3xl shadow-xl shadow-black"
-                alt={"GLD Scope Oscilloscope"}
+                alt={"Assessments Portal"}
               />
             </div>
 
@@ -231,13 +231,13 @@ export default function CreativityModal({
                   placeholder="blur"
                   src={scales}
                   className="absolute right-0 bottom-0 m-auto h-[60%] w-auto rounded-3xl shadow-xl shadow-black"
-                  alt={"GLD Scope Oscilloscope"}
+                  alt={"Inkscape graphic poster"}
                 />
                 <Image
                   placeholder="blur"
                   src={logo}
                   className="absolute left-0 top-0 m-auto h-auto w-[45%] rounded-3xl shadow-xl shadow-black"
-                  alt={"GLD Scope Oscilloscope"}
+                  alt={"Inkscape logo work"}
                 />
               </div>
             </div>
@@ -261,13 +261,13 @@ export default function CreativityModal({
                   placeholder="blur"
                   src={morethan}
                   className="absolute left-0 top-0 m-auto h-auto w-[55%] rounded-3xl shadow-xl shadow-black"
-                  alt={"GLD Scope Oscilloscope"}
+                  alt={"More Than Meets the Eye Podcast"}
                 />
                 <Image
                   placeholder="blur"
                   src={pool}
                   className="absolute right-0 bottom-0 m-auto h-auto w-[55%] rounded-3xl shadow-xl shadow-black"
-                  alt={"GLD Scope Oscilloscope"}
+                  alt={"Prime of Our Lives Podcast"}
                 />
               </div>
             </div>
