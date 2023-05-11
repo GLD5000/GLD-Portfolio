@@ -18,8 +18,8 @@ export default function CreativityModal({
     <Modal
       refIn={refPassed}
       content={
-        <div className="grid ">
-          <div className="grid max-w-[30rem] px-8">
+        <div className="grid gap-4 lg:grid-cols-3">
+          <div className="grid h-fit max-w-[20rem] px-8">
             <h2 className="mx-auto mb-4 w-fit text-center text-3xl font-bold">
               Web Skills / My Stack
             </h2>
@@ -114,7 +114,7 @@ export default function CreativityModal({
                 {" "}
                 GitHub
               </Link>
-              <Link
+              {/* <Link
                 href="https://git-scm.com/"
                 target="_blank"
                 referrerPolicy="no-referrer"
@@ -122,8 +122,8 @@ export default function CreativityModal({
               >
                 {" "}
                 Git
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 target="_blank"
                 referrerPolicy="no-referrer"
@@ -131,7 +131,7 @@ export default function CreativityModal({
               >
                 {" "}
                 JavaScript
-              </Link>
+              </Link> */}
               <Link
                 href="https://sass-lang.com/"
                 target="_blank"
@@ -141,7 +141,7 @@ export default function CreativityModal({
                 {" "}
                 SCSS
               </Link>
-              <Link
+              {/* <Link
                 href="https://html.spec.whatwg.org/"
                 target="_blank"
                 referrerPolicy="no-referrer"
@@ -149,7 +149,7 @@ export default function CreativityModal({
               >
                 {" "}
                 HTML5+
-              </Link>
+              </Link> */}
               <Link
                 href={
                   "https://freecodecamp.org/certification/GLD5000/javascript-algorithms-and-data-structures"
@@ -158,75 +158,75 @@ export default function CreativityModal({
                 referrerPolicy="no-referrer"
                 aria-label="Go to my Free code camp certificate"
               >
-                <Image
+                {/* <Image
                   placeholder="blur"
                   src={cert}
-                  className="m-auto h-auto w-full rounded shadow-xl shadow-black"
+                  className="m-auto h-auto w-full max-h-[248px] rounded shadow-xl shadow-black"
                   alt={"Freecode camp certificate"}
-                />
+                /> */}
               </Link>
             </div>
           </div>
 
-          <h2 className="mx-auto mt-8 mb-4 w-fit text-center text-3xl font-bold">
+          {/* <h2 className="mx-auto mt-8 mb-4 w-fit text-center text-3xl font-bold">
             Other Skills
-          </h2>
-          <div className="mx-auto grid max-w-[30rem] items-center gap-8 px-8">
-            <div className="grid items-center gap-2">
-              <h3 className="mx-auto flex h-fit w-fit gap-6 text-center font-bold">
-                Music Plugin Development
-              </h3>
-              <Link
-                href="https://www.cockos.com/EEL2/"
-                target="_blank"
-                referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
-              >
-                EEL2
-              </Link>
+          </h2> */}
+          {/* <div className="mx-auto grid max-w-[20rem] items-center gap-8 px-8"> */}
+          <div className="grid h-fit w-full min-w-[18rem] max-w-[20rem] items-center gap-2">
+            <h3 className="mx-auto flex h-fit w-fit gap-6 text-center font-bold">
+              Music Plugin Development
+            </h3>
+            <Link
+              href="https://www.cockos.com/EEL2/"
+              target="_blank"
+              referrerPolicy="no-referrer"
+              className="mx-auto w-fit rounded bg-brand p-1 text-white"
+            >
+              EEL2
+            </Link>
 
-              <Image
-                placeholder="blur"
-                src={scope}
-                className="m-auto h-auto w-full rounded shadow-xl shadow-black"
-                alt={"GLD Scope Oscilloscope"}
-              />
-            </div>
+            <Image
+              placeholder="blur"
+              src={scope}
+              className="m-auto h-full max-h-[248px] w-auto rounded shadow-xl shadow-black"
+              alt={"GLD Scope Oscilloscope"}
+            />
+          </div>
 
-            <div className="grid gap-2">
-              <h3 className="mx-auto h-fit w-fit text-center font-bold">
-                Google Apps Script
-              </h3>
-              <Link
-                href="https://www.google.com/script/start/"
-                target="_blank"
-                referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
-              >
-                GAS
-              </Link>
-              <Image
-                placeholder="blur"
-                src={assessment}
-                className="m-auto h-auto w-full rounded-3xl shadow-xl shadow-black"
-                alt={"Assessments Portal"}
-              />
-            </div>
+          <div className="grid h-fit w-full min-w-[18rem] max-w-[20rem] items-center gap-2">
+            <h3 className="mx-auto h-fit w-fit text-center font-bold">
+              Google Apps Script
+            </h3>
+            <Link
+              href="https://www.google.com/script/start/"
+              target="_blank"
+              referrerPolicy="no-referrer"
+              className="mx-auto w-fit rounded bg-brand p-1 text-white"
+            >
+              GAS
+            </Link>
+            <Image
+              placeholder="blur"
+              src={assessment}
+              className="m-auto h-auto max-h-[248px] w-auto rounded-3xl shadow-xl shadow-black"
+              alt={"Assessments Portal"}
+            />
+          </div>
 
-            <div className="grid gap-2">
-              <h3 className="mx-auto h-fit w-fit text-center font-bold">
-                Graphic Design
-              </h3>
-              <Link
-                href="https://inkscape.org/"
-                target="_blank"
-                referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
-              >
-                Inkscape
-              </Link>
-
-              <div className="relative aspect-[2/1.2] w-full">
+          <div className="grid h-fit w-full min-w-[18rem] max-w-[20rem] items-center gap-2">
+            <h3 className="mx-auto h-fit w-fit text-center font-bold">
+              Graphic Design
+            </h3>
+            <Link
+              href="https://inkscape.org/"
+              target="_blank"
+              referrerPolicy="no-referrer"
+              className="mx-auto w-fit rounded bg-brand p-1 text-white"
+            >
+              Inkscape
+            </Link>
+            <div>
+              <div className="relative mx-auto aspect-[2/1.2] h-full max-h-[248px] w-auto">
                 <Image
                   placeholder="blur"
                   src={scales}
@@ -241,22 +241,24 @@ export default function CreativityModal({
                 />
               </div>
             </div>
-            <div className="grid gap-2">
-              <h3 className="mx-auto h-fit w-fit text-center font-bold">
-                Music Production
-              </h3>
-              <p className="mx-auto mb-0 w-fit text-sm">
-                Including some theme music for podcasts
-              </p>
-              <Link
-                href="https://inkscape.org/"
-                target="_blank"
-                referrerPolicy="no-referrer"
-                className="mx-auto w-fit rounded bg-brand p-1 text-white"
-              >
-                Reaper
-              </Link>
-              <div className="relative aspect-[2/1.2] w-full">
+          </div>
+          <div className="grid h-fit w-full min-w-[18rem] max-w-[20rem] items-center gap-2">
+            <h3 className="mx-auto h-fit w-fit text-center font-bold">
+              Music Production
+            </h3>
+            <p className="mx-auto mb-0 w-fit text-sm">
+              Including some theme music for podcasts
+            </p>
+            <Link
+              href="https://inkscape.org/"
+              target="_blank"
+              referrerPolicy="no-referrer"
+              className="mx-auto w-fit rounded bg-brand p-1 text-white"
+            >
+              Reaper
+            </Link>
+            <div>
+              <div className="relative mx-auto aspect-[2/1.2] h-full max-h-[248px] w-auto">
                 <Image
                   placeholder="blur"
                   src={morethan}
@@ -271,16 +273,17 @@ export default function CreativityModal({
                 />
               </div>
             </div>
-            <div className="grid gap-2">
-              {/* <h3 className="font-bold mx-auto h-fit w-fit text-center">Sound Design</h3> */}
-              {/* add image */}
-            </div>
-            {/* <h3 className="font-bold mx-auto h-fit w-fit text-center">Lua Scripting</h3> */}
-            {/* <h3 className="font-bold mx-auto h-fit w-fit text-center">
+          </div>
+          <div className="grid h-fit w-full min-w-[18rem] max-w-[20rem] items-center gap-2">
+            {/* <h3 className="font-bold mx-auto h-fit w-fit text-center">Sound Design</h3> */}
+            {/* add image */}
+          </div>
+          {/* <h3 className="font-bold mx-auto h-fit w-fit text-center">Lua Scripting</h3> */}
+          {/* <h3 className="font-bold mx-auto h-fit w-fit text-center">
               Visual Basic for Application (VBA)
             </h3> */}
-          </div>
         </div>
+        // </div>
       }
     />
   );

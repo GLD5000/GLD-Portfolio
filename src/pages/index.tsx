@@ -36,7 +36,7 @@ export default function Home() {
       </Head>
       <section id="theme-wrapper" className={colourTheme ? "dark" : undefined}>
         <main
-          className={`relative h-screen w-screen snap-y snap-proximity snap-normal flex-col overflow-y-auto overflow-x-hidden scroll-smooth   border-border bg-bg text-txt-main dark:border-border-dk dark:bg-bg-dk dark:text-txt-main-dk  ${
+          className={`relative h-screen w-screen snap-y snap-proximity snap-normal flex-col overflow-y-auto overflow-x-hidden border-border   bg-bg text-txt-main motion-safe:scroll-smooth dark:border-border-dk dark:bg-bg-dk dark:text-txt-main-dk  ${
             colourTheme ? "dark" : ""
           }`}
         >

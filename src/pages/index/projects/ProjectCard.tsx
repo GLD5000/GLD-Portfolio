@@ -17,7 +17,7 @@ export default function ProjectCard({
   url: string;
 }) {
   return (
-    <div className="mx-auto grid w-full max-w-body snap-start scroll-my-[7rem] items-center gap-8 self-center sm:w-full sm:gap-10 sm:px-8 lg:grid-cols-2">
+    <div className="mx-auto grid w-full max-w-body items-center gap-8 self-center sm:w-full sm:gap-10 sm:px-8 lg:grid-cols-2">
       <div className="relative mx-auto flex aspect-[1/1] w-full max-w-[25rem] sm:w-[80%]">
         {images}
       </div>
