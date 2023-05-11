@@ -60,6 +60,7 @@ export default function Hero({
             {/* <GldSvgHero /> */}
             <div className="h-full w-full px-8">
               <Image
+                loading="eager"
                 placeholder="blur"
                 src={gldLogo}
                 className="m-auto h-auto w-full"
