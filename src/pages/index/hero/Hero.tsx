@@ -115,7 +115,7 @@ export default function Hero({
               showTextIn={undefined}
               clickFunction={toggleColourTheme}
               reverse={false}
-              id="colour-theme-button"
+              id="colour-theme-button-hero"
               name="Dark Mode Button"
               className="relative rounded text-xs"
               buttonClasses={`w-fit h-fit overflow-visible flex-col flex text-current pb-4 pt-1 ml-auto mt-3 px-2`}
