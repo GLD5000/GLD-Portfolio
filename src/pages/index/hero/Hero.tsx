@@ -9,6 +9,8 @@ import StarSvg from "@/icons/StarSvg";
 import MoonSvg from "@/icons/MoonSvg";
 import SunSvg from "@/icons/SunSvg";
 import SvgButtonNew from "@/elements/SvgButtonNew";
+import Image from "next/image";
+import gldLogo from "src/assets/hero/g22813.png";
 
 function getDarkToggleIcon(isDark: boolean) {
   const wrapper = (
@@ -54,8 +56,16 @@ export default function Hero({
         className=" absolute top-0  z-[997] grid h-screen w-full "
       >
         <div className=" mx-auto grid h-full w-min items-center gap-8 lg:w-fit lg:grid-cols-2">
-          <div className="mx-auto h-full w-screen max-w-[35rem] drop-shadow-hero dark:drop-shadow-hero-dk lg:h-auto lg:w-full lg:max-w-[50rem] ">
-            <GldSvgHero />
+          <div className="m-auto h-fit w-screen max-w-[35rem] drop-shadow-hero dark:drop-shadow-hero-dk lg:h-auto lg:w-full lg:max-w-[50rem] ">
+            {/* <GldSvgHero /> */}
+            <div className="h-full w-full px-8">
+              <Image
+                placeholder="blur"
+                src={gldLogo}
+                className="m-auto h-auto w-full"
+                alt={"GLD Logo"}
+              />
+            </div>
           </div>
           <div className="mx-auto grid h-fit w-max gap-2">
             {/* <p className=" ml:4 mr-auto mb-0 w-fit text-xl md:ml-16 lg:text-2xl  xl:text-3xl">
