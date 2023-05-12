@@ -56,12 +56,12 @@ export default function Hero({
         className=" absolute top-0  z-[997] grid h-screen w-full "
       >
         <div className=" mx-auto grid h-full w-min items-center gap-8 lg:w-fit lg:grid-cols-2">
-          <div className="m-auto h-fit w-screen max-w-[35rem] drop-shadow-hero dark:drop-shadow-hero-dk lg:h-auto lg:w-full lg:max-w-[50rem] ">
+          <div className="m-auto h-fit w-screen max-w-[35rem] lg:h-auto lg:w-full lg:max-w-[50rem] ">
             {/* <GldSvgHero /> */}
             <div className="h-full w-full px-8">
               <Image
                 loading="eager"
-                placeholder="blur"
+                placeholder="empty"
                 src={gldLogo}
                 className="m-auto h-auto w-full"
                 alt={"GLD Logo"}
