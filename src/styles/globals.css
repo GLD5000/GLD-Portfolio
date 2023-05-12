@@ -167,14 +167,12 @@ input[type="range"]::-moz-range-thumb {
   animation: wobblingAnimation ease-in 3000ms 1560ms;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
-
 }
 
 @keyframes wobblingAnimation {
   0% {
     rotate: 0deg;
     scale: 1;
-
   }
   55% {
     rotate: -2deg;
@@ -183,9 +181,7 @@ input[type="range"]::-moz-range-thumb {
   65% {
     rotate: 0deg;
     scale: 1;
-
   }
-
 
   80% {
     rotate: 3deg;
@@ -196,18 +192,16 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-
 @keyframes shootingAnimation {
   0% {
     opacity: 0;
-    scale:0.2;
-
+    scale: 0.2;
   }
   55% {
     opacity: 0.75;
-    transform: translateX(-70%); 
-    scale:0.2;
-     }
+    transform: translateX(-70%);
+    scale: 0.2;
+  }
   80% {
     opacity: 0.9;
   }
@@ -216,7 +210,6 @@ input[type="range"]::-moz-range-thumb {
     opacity: 1;
   }
 }
-
 
 @keyframes colourInAnimation {
   0% {

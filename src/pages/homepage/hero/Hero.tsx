@@ -60,6 +60,7 @@ export default function Hero({
             {/* <GldSvgHero /> */}
             <div className="h-full w-full px-8">
               <Image
+                priority
                 loading="eager"
                 placeholder="empty"
                 src={gldLogo}
