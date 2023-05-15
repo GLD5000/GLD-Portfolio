@@ -1,12 +1,8 @@
 import Link from "next/link";
+import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
 import SvgButtonNew from "../../../elements/SvgButtonNew";
-import GitHubSvg from "../../../icons/GitHubSvg";
-import GLDNegSvg from "../../../icons/GLDNegSvg";
-import LinkedInSvg from "../../../icons/LinkedInSvg";
 import MoonSvg from "../../../icons/MoonSvg";
 import SunSvg from "../../../icons/SunSvg";
-import ExternalLink from "./ExternalLink";
-import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
 
 const linkColours =
   "text-black hover:text-white hover:underline hover:decoration-current hover:underline-offset-2 hover:transition focus:text-white focus:underline focus:decoration-current  focus:underline-offset-2 focus:transition ";
@@ -60,7 +56,7 @@ export default function HamburgerMenu({
         ]}
       /> */}
       <Link
-        href={"#about"}
+        href="#about"
         className={`m-0 block h-fit w-20 p-0 text-center font-bold text-black  ${
           currentSection === "about" ? "text-white" : ""
         }`}
@@ -68,7 +64,7 @@ export default function HamburgerMenu({
         About
       </Link>
       <Link
-        href={"#projects"}
+        href="#projects"
         className={`m-0 block h-fit w-20 p-0 text-center font-bold text-black  ${
           currentSection === "projects" ? "text-white" : ""
         }`}

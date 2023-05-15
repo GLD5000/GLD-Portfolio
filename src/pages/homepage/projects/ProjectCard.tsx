@@ -6,14 +6,12 @@ export default function ProjectCard({
   text,
   subtitle,
   title,
-  cta,
   url,
 }: {
   images: ReactNode;
   text: string;
   subtitle: string;
   title: ReactNode;
-  cta: ReactNode;
   url: string;
 }) {
   return (

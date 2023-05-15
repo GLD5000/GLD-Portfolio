@@ -1,13 +1,12 @@
 import GldSvg from "@/icons/GldSvg";
-import Modal from "../../../../elements/Modal";
 import Image from "next/image";
 import { RefObject } from "react";
 import scores from "src/assets/aboutme/Performance.jpg";
-import hiddenlink from "src/assets/aboutme/hiddenlinkC.jpg";
 import MoonSvg from "@/icons/MoonSvg";
 import ArrowSvg from "@/icons/ArrowSvg";
 import ArrowReversedSvg from "@/icons/ArrowReversedSvg";
 import TickSvg from "@/icons/TickSvg";
+import Modal from "../../../../elements/Modal";
 
 export default function AccessibilityModal({
   refPassed,
@@ -118,7 +117,7 @@ export default function AccessibilityModal({
             placeholder="blur"
             src={scores}
             className="m-auto h-auto w-full rounded-xl shadow-xl shadow-black"
-            alt={"100 percent Lighthouse Scores"}
+            alt="100 percent Lighthouse Scores"
           />
         </>
 

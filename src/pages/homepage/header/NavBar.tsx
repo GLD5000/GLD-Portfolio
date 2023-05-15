@@ -1,13 +1,9 @@
 import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
+import Link from "next/link";
 import SvgButtonNew from "../../../elements/SvgButtonNew";
-import GitHubSvg from "../../../icons/GitHubSvg";
-import GLDNegSvg from "../../../icons/GLDNegSvg";
 import HamburgerSvg from "../../../icons/HamburgerSvg";
-import LinkedInSvg from "../../../icons/LinkedInSvg";
 import MoonSvg from "../../../icons/MoonSvg";
 import SunSvg from "../../../icons/SunSvg";
-import ExternalLink from "./ExternalLink";
-import Link from "next/link";
 
 const linkColours =
   "text-black hover:text-white hover:underline hover:decoration-current hover:underline-offset-2 hover:transition focus:text-white focus:underline focus:decoration-current  focus:underline-offset-2 focus:transition ";
@@ -57,7 +53,7 @@ export default function NavBar({
         ]}
       /> */}
       <Link
-        href={"#about"}
+        href="#about"
         className={`m-0 hidden font-bold text-black sm:inline ${
           currentSection === "about" ? "text-white" : ""
         }`}
@@ -65,7 +61,7 @@ export default function NavBar({
         About
       </Link>
       <Link
-        href={"#projects"}
+        href="#projects"
         className={`m-0 hidden font-bold text-black sm:inline ${
           currentSection === "projects" ? "text-white" : ""
         }`}

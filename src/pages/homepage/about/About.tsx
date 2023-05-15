@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
 import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
 import CardGrid from "./CardGrid";

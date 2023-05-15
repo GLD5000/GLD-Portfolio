@@ -47,7 +47,7 @@ export default function HomePage() {
             toggleColourTheme={toggleColourTheme}
             colourTheme={colourTheme}
           />
-          <div className="h-screen bg-secondary-light dark:bg-secondary"></div>
+          <div className="h-screen bg-secondary-light dark:bg-secondary" />
 
           <About />
           <Projects />

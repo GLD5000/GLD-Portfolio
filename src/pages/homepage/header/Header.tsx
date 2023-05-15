@@ -1,12 +1,9 @@
 import { useState } from "react";
 import GldSvg from "src/icons/GldSvg";
-import HamburgerMenu from "./HamburgerMenu";
-import NavBar from "./NavBar";
 import Link from "next/link";
 import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
-
-const className =
-  "hidden flex-row gap-2 text-txt-main-dk hover:text-txt-main hover:underline hover:decoration-current hover:underline-offset-2 hover:transition focus:text-txt-main focus:underline focus:decoration-current focus:underline-offset-2 focus:transition dark:text-txt-main dark:hover:text-txt-main-dk dark:focus:text-txt-main-dk sm:flex";
+import HamburgerMenu from "./HamburgerMenu";
+import NavBar from "./NavBar";
 
 export default function Header({
   toggleColourTheme,

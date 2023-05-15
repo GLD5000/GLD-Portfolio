@@ -1,11 +1,10 @@
-import ColourmaticCard from "./ColourTheoryCard";
-import ContrastToolCard from "./ContrastLabCard";
-import DevTipsCard from "./DevTipsCard";
-import Hero from "../hero/Hero";
-import LondonDataWeekCard from "./LondonDataWeekCard";
 import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
 import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
 import { useEffect } from "react";
+import ColourmaticCard from "./ColourTheoryCard";
+import ContrastToolCard from "./ContrastLabCard";
+import DevTipsCard from "./DevTipsCard";
+import LondonDataWeekCard from "./LondonDataWeekCard";
 
 export default function Projects() {
   const { elementRef, onScreen } = useIntersectionObserver();

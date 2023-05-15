@@ -1,16 +1,14 @@
-import GldSvgHero from "@/icons/GldSvgHero";
-import Stars from "./Stars";
 import { useEffect } from "react";
-import Link from "next/link";
 import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
 import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
-import SpanSplitter from "./SpanSplitter";
 import StarSvg from "@/icons/StarSvg";
 import MoonSvg from "@/icons/MoonSvg";
 import SunSvg from "@/icons/SunSvg";
 import SvgButtonNew from "@/elements/SvgButtonNew";
 import Image from "next/image";
 import gldLogo from "src/assets/hero/g22813.png";
+import SpanSplitter from "./SpanSplitter";
+import Stars from "./Stars";
 
 function getDarkToggleIcon(isDark: boolean) {
   const wrapper = (
@@ -48,7 +46,7 @@ export default function Hero({
 
   return (
     <>
-      <div className=" absolute top-0  z-[997] grid h-screen w-full bg-secondary-light dark:bg-secondary"></div>
+      <div className=" absolute top-0  z-[997] grid h-screen w-full bg-secondary-light dark:bg-secondary" />
       <Stars />
       <div
         id="hero"
@@ -65,7 +63,7 @@ export default function Hero({
                 placeholder="empty"
                 src={gldLogo}
                 className="m-auto h-auto w-full"
-                alt={"GLD Logo"}
+                alt="GLD Logo"
               />
             </div>
           </div>
@@ -100,7 +98,7 @@ export default function Hero({
               </div>
             </div>
             <h2 className="mx-auto text-2xl font-bold sm:text-3xl xl:text-4xl">
-              <SpanSplitter word={"Web Developer"} />
+              <SpanSplitter word="Web Developer" />
             </h2>
             <p className="my-0 mx-auto w-fit text-xs xs:text-sm sm:text-base lg:text-lg xl:text-xl">
               I am a React developer based near London, UK.
@@ -119,7 +117,7 @@ export default function Hero({
               id="colour-theme-button-hero"
               name="Dark Mode Button"
               className="relative rounded text-xs"
-              buttonClasses={`w-fit h-fit overflow-visible flex-col flex text-current pb-4 pt-1 ml-auto mt-3 px-2`}
+              buttonClasses="w-fit h-fit overflow-visible flex-col flex text-current pb-4 pt-1 ml-auto mt-3 px-2"
               textElement={
                 <span className="absolute bottom-0 w-fit rounded-t-none bg-transparent text-current ">
                   {colourTheme ? "Light" : "Dark"}

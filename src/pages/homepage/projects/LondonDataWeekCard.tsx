@@ -54,12 +54,9 @@ export default function LondonDataWeekCard() {
   return (
     <ProjectCard
       images={imageCollection}
-      text={
-        "The offical website of London Data Week 2023 - a citywide festival about data where you can learn, create, discuss, and explore how to use data to shape our city for the better."
-      }
-      subtitle={"Data in the public, for the public"}
+      text="The offical website of London Data Week 2023 - a citywide festival about data where you can learn, create, discuss, and explore how to use data to shape our city for the better."
+      subtitle="Data in the public, for the public"
       title={titleDiv}
-      cta={undefined}
       url="https://www.londondataweek.org/"
     />
   );

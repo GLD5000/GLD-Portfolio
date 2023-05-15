@@ -55,13 +55,10 @@ export default function ColourTheoryCard() {
   return (
     <ProjectCard
       images={imagesCollection}
-      text={
-        "Colour theory-based colour palette generator with contrast ratios, auto-gradients and auto-text colour. Easily export your colour schemes in CSS or SCSS formats."
-      }
-      subtitle={"Custom CSS Colour Scheme Generator"}
+      text="Colour theory-based colour palette generator with contrast ratios, auto-gradients and auto-text colour. Easily export your colour schemes in CSS or SCSS formats."
+      subtitle="Custom CSS Colour Scheme Generator"
       title={titleDiv}
-      cta={undefined}
-      url={"https://colour-theory.netlify.app/"}
+      url="https://colour-theory.netlify.app/"
     />
   );
 }

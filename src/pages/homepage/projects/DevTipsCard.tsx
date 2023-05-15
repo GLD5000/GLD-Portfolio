@@ -54,13 +54,10 @@ export default function DevTipsCard() {
   return (
     <ProjectCard
       images={imagesCollection}
-      text={
-        "A website full of tips and tricks for developers. Simply search by keyword or filter by tag to explore and learn. If you are feeling creative, you can even add your own tips too."
-      }
-      subtitle={"Tips and Tricks for Developers"}
+      text="A website full of tips and tricks for developers. Simply search by keyword or filter by tag to explore and learn. If you are feeling creative, you can even add your own tips too."
+      subtitle="Tips and Tricks for Developers"
       title={titleDiv}
-      cta={undefined}
-      url={"https://glddevtips.web.app/"}
+      url="https://glddevtips.web.app/"
     />
   );
 }

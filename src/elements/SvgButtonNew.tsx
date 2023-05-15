@@ -35,6 +35,7 @@ export default function SvgButtonNew({
       rounded border-2 border-solid whitespace-pre-wrap hover:transition
     `,
 }: {
+  // eslint-disable-next-line no-unused-vars
   clickFunction: (e: MouseEvent<HTMLButtonElement>) => void | (() => void);
   id: string | undefined;
   name: string | undefined;

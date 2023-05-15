@@ -118,7 +118,7 @@ function getStars() {
 
   // console.log("logArray:", logArray);
   const starArray: ReactElement[] = [];
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 50; i + 1) {
     starArray.push(
       <circle
         key={count}
@@ -126,7 +126,7 @@ function getStars() {
         cy={NUMBER_ARRAY[count][1]}
         r="1.25"
         className="fill-current"
-      ></circle>
+      />
     );
     starArray.push(
       <circle
@@ -135,7 +135,7 @@ function getStars() {
         cy={NUMBER_ARRAY[count + 1][1]}
         r="0.5"
         className="fill-current"
-      ></circle>
+      />
     );
     count += 2;
   }

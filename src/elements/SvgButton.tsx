@@ -24,13 +24,10 @@ export default function SvgButton({
   clickFunction,
   id,
   name,
-  type = "up",
   showText = true,
   reverse = false,
   buttonClasses = `grid-cols-frAutoFr w-full h-full 
   `,
-  svgWrapperClasses = "pointer-events-none h-fit w-full",
-  svgClasses = "stroke-current fill-none stroke-1",
   svg,
   className = `px-2 py-1
    hover:border-current
@@ -39,16 +36,14 @@ export default function SvgButton({
     `,
 }: {
   text: string | undefined;
+  // eslint-disable-next-line no-unused-vars
   clickFunction: (e: MouseEvent<HTMLButtonElement>) => void | (() => void);
   id: string | undefined;
   name: string | undefined;
   className: string | undefined;
-  type: string | undefined;
   showText: boolean;
   reverse: boolean;
   buttonClasses: string | undefined;
-  svgWrapperClasses: string | undefined;
-  svgClasses: string | undefined;
   svg: JSX.Element;
 }) {
   const content = getContent(reverse, showText, text, svg);

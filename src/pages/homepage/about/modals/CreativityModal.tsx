@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Modal from "../../../../elements/Modal";
 import { RefObject } from "react";
 import Image from "next/image";
 import scope from "src/assets/aboutme/ScopeCropped.jpg";
@@ -7,8 +6,9 @@ import scales from "src/assets/aboutme/ScalesCroppedB.jpg";
 import pool from "src/assets/aboutme/poolPodcastCropped.jpg";
 import morethan from "src/assets/aboutme/morethanPodcast.jpg";
 import assessment from "src/assets/aboutme/assessmentPortal.jpg";
-import cert from "src/assets/aboutme/cert.jpg";
 import logo from "src/assets/aboutme/gldInkscape.jpg";
+import Modal from "../../../../elements/Modal";
+
 export default function CreativityModal({
   refPassed,
 }: {
@@ -151,9 +151,7 @@ export default function CreativityModal({
                 HTML5+
               </Link> */}
               <Link
-                href={
-                  "https://freecodecamp.org/certification/GLD5000/javascript-algorithms-and-data-structures"
-                }
+                href="https://freecodecamp.org/certification/GLD5000/javascript-algorithms-and-data-structures"
                 target="_blank"
                 referrerPolicy="no-referrer"
                 aria-label="Go to my Free code camp certificate"
@@ -189,7 +187,7 @@ export default function CreativityModal({
               placeholder="blur"
               src={scope}
               className="m-auto h-full max-h-[248px] w-auto rounded shadow-xl shadow-black"
-              alt={"GLD Scope Oscilloscope"}
+              alt="GLD Scope Oscilloscope"
             />
           </div>
 
@@ -209,7 +207,7 @@ export default function CreativityModal({
               placeholder="blur"
               src={assessment}
               className="m-auto h-auto max-h-[248px] w-auto rounded-3xl shadow-xl shadow-black"
-              alt={"Assessments Portal"}
+              alt="Assessments Portal"
             />
           </div>
 
@@ -231,13 +229,13 @@ export default function CreativityModal({
                   placeholder="blur"
                   src={scales}
                   className="absolute right-0 bottom-0 m-auto h-[60%] w-auto rounded-3xl shadow-xl shadow-black"
-                  alt={"Inkscape graphic poster"}
+                  alt="Inkscape graphic poster"
                 />
                 <Image
                   placeholder="blur"
                   src={logo}
                   className="absolute left-0 top-0 m-auto h-auto w-[45%] rounded-3xl shadow-xl shadow-black"
-                  alt={"Inkscape logo work"}
+                  alt="Inkscape logo work"
                 />
               </div>
             </div>
@@ -263,13 +261,13 @@ export default function CreativityModal({
                   placeholder="blur"
                   src={morethan}
                   className="absolute left-0 top-0 m-auto h-auto w-[55%] rounded-3xl shadow-xl shadow-black"
-                  alt={"More Than Meets the Eye Podcast"}
+                  alt="More Than Meets the Eye Podcast"
                 />
                 <Image
                   placeholder="blur"
                   src={pool}
                   className="absolute right-0 bottom-0 m-auto h-auto w-[55%] rounded-3xl shadow-xl shadow-black"
-                  alt={"Prime of Our Lives Podcast"}
+                  alt="Prime of Our Lives Podcast"
                 />
               </div>
             </div>

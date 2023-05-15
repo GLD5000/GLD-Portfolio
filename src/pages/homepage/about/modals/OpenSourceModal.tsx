@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Modal from "../../../../elements/Modal";
 import { RefObject } from "react";
 import Image from "next/image";
 import portrait from "src/assets/aboutme/bwportrait.jpg";
+import Modal from "../../../../elements/Modal";
 
 export default function OpenSourceModal({
   refPassed,
@@ -18,7 +18,7 @@ export default function OpenSourceModal({
             placeholder="blur"
             src={portrait}
             className="m-auto h-40 w-40 rounded-full shadow-xl shadow-black"
-            alt={"Gareth Photo"}
+            alt="Gareth Photo"
           />
           <div className="m-auto w-fit">
             <p className="m-0 mx-auto text-center text-4xl">Hi There!</p>
