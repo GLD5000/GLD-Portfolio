@@ -3,7 +3,7 @@ import AboutPortrait from "src/assets/LDW/AboutPortrait.jpg";
 import ContactLandscape from "src/assets/LDW/ContactLandscape.jpg";
 import HeroLandscape from "src/assets/LDW/HeroLandscape.jpg";
 import SchedulePortrait from "src/assets/LDW/SchedulePortrait.jpg";
-import { Righteous } from "@next/font/google";
+import { Righteous } from "next/font/google";
 import ProjectCard from "./ProjectCard";
 
 const imageCollection = (

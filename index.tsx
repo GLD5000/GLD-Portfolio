@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
+import { Inter } from "next/font/google";
 import Header from "./src/pages/homepage/header/Header";
 import Footer from "./src/pages/homepage/footer/Footer";
 import { useState } from "react";
