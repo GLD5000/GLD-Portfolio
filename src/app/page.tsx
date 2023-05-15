@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   icons: { icon: "/gldcondensed.ico" },
 };
-
 export default function Page() {
+  if (HomePage === undefined) return null;
   return <HomePage />;
 }
