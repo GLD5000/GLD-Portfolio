@@ -48,7 +48,7 @@ export default function Hero({
 
   return (
     <>
-      <div className=" absolute top-0  z-[997] grid h-screen w-full bg-purple-light dark:bg-purple"></div>
+      <div className=" absolute top-0  z-[997] grid h-screen w-full bg-secondary-light dark:bg-secondary"></div>
       <Stars />
       <div
         id="hero"
@@ -78,19 +78,19 @@ export default function Hero({
               <h1 className="mx-auto grid w-fit grid-cols-frAutoFr gap-2 text-3xl font-bold xs:text-4xl sm:gap-4 sm:text-4xl md:text-5xl xl:text-6xl">
                 <span
                   key="g"
-                  className="colour-in-g cursor-default hover:text-brand hover:[transition-duration:800ms] hover:[transition-delay:100ms]"
+                  className="colour-in-g cursor-default hover:text-primary hover:[transition-duration:800ms] hover:[transition-delay:100ms]"
                 >
                   Gareth
                 </span>
                 <span
                   key="l"
-                  className="colour-in-l cursor-default hover:text-brand hover:[transition-duration:800ms] hover:[transition-delay:100ms]"
+                  className="colour-in-l cursor-default hover:text-primary hover:[transition-duration:800ms] hover:[transition-delay:100ms]"
                 >
                   L
                 </span>
                 <span
                   key="d"
-                  className="colour-in-d cursor-default hover:text-brand hover:[transition-duration:800ms] hover:[transition-delay:100ms]"
+                  className="colour-in-d cursor-default hover:text-primary hover:[transition-duration:800ms] hover:[transition-delay:100ms]"
                 >
                   Devlin
                 </span>

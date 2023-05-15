@@ -57,13 +57,13 @@ module.exports = {
         "body-sm": "calc(100vw - 2rem)",
       },
       colors: {
-        // brand: "#417b9b", // mild blue
-        // brand: "#53655f", // murky green
-        // brand: "#419b7d", // mint green
-        "brand-dk": "#e0e0e0",
-        brand: "#37836a",
-        purple: "#050214",
-        "purple-light": "#d4cdfa",
+        // primary: "#417b9b", // mild blue
+        // primary: "#53655f", // murky green
+        // primary: "#419b7d", // mint green
+        "primary-dk": "#e0e0e0",
+        primary: "#37836a",
+        secondary: "#050214",
+        "secondary-light": "#d4cdfa",
 
         "bg-var-dk": "#000000",
         "bg-dk": "#1f1f1f",

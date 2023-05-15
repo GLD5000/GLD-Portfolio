@@ -35,7 +35,3 @@ export default function TickSvg({
     </div>
   );
 }
-
-TickSvg.defaultProps = {
-  classes: "stroke-current stroke-1",
-};

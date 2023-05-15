@@ -25,7 +25,7 @@ export default function OpenSourceModal({
             <p className="m-0 mx-auto text-center text-xl">{`Let's chat!`}</p>
           </div>
           <Link
-            className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+            className="m-auto h-fit w-60 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
             target="_blank"
             referrerPolicy="no-referrer"
             href="https://github.com/GLD5000"
@@ -33,7 +33,7 @@ export default function OpenSourceModal({
             Go To GitHub
           </Link>
           <Link
-            className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+            className="m-auto h-fit w-60 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
             target="_blank"
             referrerPolicy="no-referrer"
             href="https://www.linkedin.com/in/garethlouisdevlin/"

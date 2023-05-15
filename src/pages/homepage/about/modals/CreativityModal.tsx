@@ -28,7 +28,7 @@ export default function CreativityModal({
                 href="https://react.dev/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-primary p-1 text-white"
               >
                 {" "}
                 React
@@ -37,7 +37,7 @@ export default function CreativityModal({
                 href="https://www.typescriptlang.org/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-primary p-1 text-white"
               >
                 {" "}
                 TypeScript
@@ -46,7 +46,7 @@ export default function CreativityModal({
                 href="https://nextjs.org"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-primary p-1 text-white"
               >
                 {" "}
                 Next.js
@@ -55,7 +55,7 @@ export default function CreativityModal({
                 href="https://tailwindcss.com/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-primary p-1 text-white"
               >
                 {" "}
                 Tailwind CSS
@@ -64,7 +64,7 @@ export default function CreativityModal({
                 href="https://vitejs.dev/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-primary p-1 text-white"
               >
                 {" "}
                 Vite
@@ -73,7 +73,7 @@ export default function CreativityModal({
                 href="https://vitest.dev/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-primary p-1 text-white"
               >
                 {" "}
                 Vitest
@@ -82,7 +82,7 @@ export default function CreativityModal({
                 href="https://www.npmjs.com/package/husky"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-primary p-1 text-white"
               >
                 {" "}
                 Husky
@@ -91,7 +91,7 @@ export default function CreativityModal({
                 href="https://www.npmjs.com/package/lint-staged"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-primary p-1 text-white"
               >
                 {" "}
                 Lint-Staged
@@ -100,7 +100,7 @@ export default function CreativityModal({
                 href="https://code.visualstudio.com/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-primary p-1 text-white"
               >
                 {" "}
                 VSCode
@@ -109,7 +109,7 @@ export default function CreativityModal({
                 href="https://github.com/GLD5000"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-primary p-1 text-white"
               >
                 {" "}
                 GitHub
@@ -118,7 +118,7 @@ export default function CreativityModal({
                 href="https://git-scm.com/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-primary p-1 text-white"
               >
                 {" "}
                 Git
@@ -127,7 +127,7 @@ export default function CreativityModal({
                 href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-primary p-1 text-white"
               >
                 {" "}
                 JavaScript
@@ -136,7 +136,7 @@ export default function CreativityModal({
                 href="https://sass-lang.com/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-primary p-1 text-white"
               >
                 {" "}
                 SCSS
@@ -145,7 +145,7 @@ export default function CreativityModal({
                 href="https://html.spec.whatwg.org/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-brand p-1 text-white"
+                className=" w-fit rounded bg-primary p-1 text-white"
               >
                 {" "}
                 HTML5+
@@ -180,7 +180,7 @@ export default function CreativityModal({
               href="https://www.cockos.com/EEL2/"
               target="_blank"
               referrerPolicy="no-referrer"
-              className="mx-auto w-fit rounded bg-brand p-1 text-white"
+              className="mx-auto w-fit rounded bg-primary p-1 text-white"
             >
               EEL2
             </Link>
@@ -201,7 +201,7 @@ export default function CreativityModal({
               href="https://www.google.com/script/start/"
               target="_blank"
               referrerPolicy="no-referrer"
-              className="mx-auto w-fit rounded bg-brand p-1 text-white"
+              className="mx-auto w-fit rounded bg-primary p-1 text-white"
             >
               GAS
             </Link>
@@ -221,7 +221,7 @@ export default function CreativityModal({
               href="https://inkscape.org/"
               target="_blank"
               referrerPolicy="no-referrer"
-              className="mx-auto w-fit rounded bg-brand p-1 text-white"
+              className="mx-auto w-fit rounded bg-primary p-1 text-white"
             >
               Inkscape
             </Link>
@@ -253,7 +253,7 @@ export default function CreativityModal({
               href="https://inkscape.org/"
               target="_blank"
               referrerPolicy="no-referrer"
-              className="mx-auto w-fit rounded bg-brand p-1 text-white"
+              className="mx-auto w-fit rounded bg-primary p-1 text-white"
             >
               Reaper
             </Link>

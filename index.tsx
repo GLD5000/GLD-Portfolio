@@ -50,7 +50,7 @@ export default function Home() {
               toggleColourTheme={toggleColourTheme}
               colourTheme={colourTheme}
             />
-            <div className="h-screen bg-purple-light dark:bg-purple"></div>
+            <div className="h-screen bg-secondary-light dark:bg-secondary"></div>
 
             <About />
             <Projects />

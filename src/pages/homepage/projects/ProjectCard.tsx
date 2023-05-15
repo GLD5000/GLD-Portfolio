@@ -31,7 +31,7 @@ export default function ProjectCard({
           {text}
         </p>
         <Link
-          className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand p-2 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+          className="m-auto h-fit w-60 rounded-full border-2 border-black bg-primary p-2 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
           target="_blank"
           referrerPolicy="no-referrer"
           href={url ?? ""}

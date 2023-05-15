@@ -19,7 +19,7 @@ export default function CreativityCard() {
             {" "}
             <button
               type="button"
-              className="m-auto h-fit w-60 rounded-full border-2 border-black bg-brand px-4 py-3 text-xl text-white hover:bg-white hover:text-black hover:transition  focus:bg-white focus:text-black focus:transition"
+              className="m-auto h-fit w-60 rounded-full border-2 border-black bg-primary px-4 py-3 text-xl text-white hover:bg-white hover:text-black hover:transition  focus:bg-white focus:text-black focus:transition"
               onClick={() => {
                 modalRef.current?.showModal();
               }}

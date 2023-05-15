@@ -29,7 +29,7 @@ export default function Header({
   }
 
   return (
-    <header className="sticky top-0 left-0 right-0 z-[996] grid h-fit w-full flex-shrink-0 flex-grow-0  bg-brand">
+    <header className="sticky top-0 left-0 right-0 z-[996] grid h-fit w-full flex-shrink-0 flex-grow-0  bg-primary">
       <div className=" mx-auto flex w-body-sm min-w-body max-w-body flex-wrap items-center justify-between sm:w-body ">
         <div>
           <Link
