@@ -1,5 +1,5 @@
 export default function GldSvg({
-  wrapperClasses = " pointer-events-none h-12 w-12 fill-current",
+  wrapperClasses = " pointer-events-none h-full w-full fill-current",
   svgClasses = "",
 }) {
   return (

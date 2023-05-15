@@ -39,6 +39,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         frAutoFr: "1fr auto 1fr",
+        autoFrAuto: "auto 1fr auto",
         autoAuto: "auto auto",
         autoFr: "auto 1fr",
       },
