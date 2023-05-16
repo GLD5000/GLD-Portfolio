@@ -115,7 +115,7 @@ function getStars() {
   //   logArray.push([left, top]);
   //   logArray.push([leftb, topb]);
   // }
-  if (NUMBER_ARRAY === undefined) return null;
+  if (NUMBER_ARRAY === undefined || NUMBER_ARRAY === null) return null;
   // console.log("logArray:", logArray);
   const starArray: ReactElement[] = [];
   for (let i = 0; i < 50; i + 1) {
