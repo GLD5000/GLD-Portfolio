@@ -144,7 +144,7 @@ function getStars() {
 
 export default function Stars() {
   const starArray = getStars();
-  if (starArray === null) return null;
+  if (starArray === null || starArray === undefined) return null;
   return (
     <svg
       key="starArray"
