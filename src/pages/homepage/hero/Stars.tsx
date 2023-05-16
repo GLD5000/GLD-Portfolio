@@ -115,7 +115,7 @@ function getStars() {
   //   logArray.push([left, top]);
   //   logArray.push([leftb, topb]);
   // }
-  if (NUMBER_ARRAY === undefined || NUMBER_ARRAY === null) return null;
+  // if (NUMBER_ARRAY === undefined || NUMBER_ARRAY === null) return null;
   // console.log("logArray:", logArray);
   const starArray: ReactElement[] = [];
   for (let i = 0; i < 50; i += 1) {
@@ -144,13 +144,13 @@ function getStars() {
 
 export default function Stars() {
   const starArray = getStars();
-  if (starArray === null || starArray === undefined) return null;
+  // if (starArray === null || starArray === undefined) return null;
   return (
     <svg
       key="starArray"
       className="  zoom-in-slow absolute top-0 left-0 z-[997] h-screen w-full py-[5%]"
     >
-      {starArray || null}
+      {starArray}
     </svg>
   );
 }
