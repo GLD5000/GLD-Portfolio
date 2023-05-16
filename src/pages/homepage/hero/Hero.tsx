@@ -53,7 +53,7 @@ export default function Hero({
         ref={elementRef}
         className=" absolute top-0  z-[997] grid h-screen w-full "
       >
-        <div className=" mx-auto grid h-full w-min items-center gap-8 lg:w-fit lg:grid-cols-2">
+        <div className=" m-auto grid h-fit w-min items-center gap-8 lg:w-fit lg:grid-cols-2">
           <div className="m-auto h-fit w-screen max-w-[35rem] lg:h-auto lg:w-full lg:max-w-[50rem] ">
             {/* <GldSvgHero /> */}
             <div className="h-full w-full px-8">
