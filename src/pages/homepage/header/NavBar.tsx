@@ -1,5 +1,5 @@
 import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
-import Link from "next/link";
+// import Link from "next/link";
 import SvgButtonNew from "../../../elements/SvgButtonNew";
 import HamburgerSvg from "../../../icons/HamburgerSvg";
 import MoonSvg from "../../../icons/MoonSvg";
@@ -52,8 +52,27 @@ export default function NavBar({
           </p>,
         ]}
       /> */}
-      <Link
+
+      <a
+        className={`m-0 hidden font-bold text-black sm:inline ${
+          currentSection === "about" ? "text-white" : ""
+        }`}
         href="#about"
+      >
+        About
+      </a>
+
+      <a
+        className={`m-0 hidden font-bold text-black sm:inline ${
+          currentSection === "projects" ? "text-white" : ""
+        }`}
+        href="#projects"
+      >
+        Projects
+      </a>
+
+      {/* <Link
+        href="/about"
         className={`m-0 hidden font-bold text-black sm:inline ${
           currentSection === "about" ? "text-white" : ""
         }`}
@@ -61,13 +80,13 @@ export default function NavBar({
         About
       </Link>
       <Link
-        href="#projects"
+        href="/#projects"
         className={`m-0 hidden font-bold text-black sm:inline ${
           currentSection === "projects" ? "text-white" : ""
         }`}
       >
         Projects
-      </Link>
+      </Link> */}
 
       <div className="flex flex-wrap gap-1">
         <SvgButtonNew

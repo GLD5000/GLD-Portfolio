@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
 import SvgButtonNew from "../../../elements/SvgButtonNew";
 import MoonSvg from "../../../icons/MoonSvg";
@@ -9,7 +9,7 @@ const linkColours =
 
 function getDarkToggleIcon(isDark: boolean) {
   const wrapper = (
-    <div className=" aspect-square h-6">
+    <div className=" aspect-square h-5">
       {isDark ? <SunSvg /> : <MoonSvg />}{" "}
     </div>
   );
@@ -55,7 +55,26 @@ export default function HamburgerMenu({
           </p>,
         ]}
       /> */}
-      <Link
+
+      <a
+        className={`m-0 block h-fit w-20 p-0 text-center font-bold text-black  ${
+          currentSection === "about" ? "text-white" : ""
+        }`}
+        href="#about"
+      >
+        About
+      </a>
+
+      <a
+        className={`m-0 block h-fit w-20 p-0 text-center font-bold text-black  ${
+          currentSection === "projects" ? "text-white" : ""
+        }`}
+        href="#projects"
+      >
+        Projects
+      </a>
+
+      {/* <Link
         href="#about"
         className={`m-0 block h-fit w-20 p-0 text-center font-bold text-black  ${
           currentSection === "about" ? "text-white" : ""
@@ -70,7 +89,7 @@ export default function HamburgerMenu({
         }`}
       >
         Projects
-      </Link>
+      </Link> */}
 
       <SvgButtonNew
         showTextIn
@@ -79,7 +98,7 @@ export default function HamburgerMenu({
         id="colour-theme-button-secondary"
         name="Dark Mode Button"
         className="rounded text-xs"
-        buttonClasses={`flex flex-col w-7 h-7 text-base xs:hidden ${linkColours} self-start`}
+        buttonClasses={`flex flex-col w-5 h-5 text-base xs:hidden ${linkColours} self-start`}
         textElement={null}
         svg={getDarkToggleIcon(colourTheme)}
       />
