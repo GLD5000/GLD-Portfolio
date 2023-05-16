@@ -118,7 +118,7 @@ function getStars() {
   if (NUMBER_ARRAY === undefined || NUMBER_ARRAY === null) return null;
   // console.log("logArray:", logArray);
   const starArray: ReactElement[] = [];
-  for (let i = 0; i < 50; i + 1) {
+  for (let i = 0; i < 50; i += 1) {
     starArray.push(
       <circle
         key={count}
