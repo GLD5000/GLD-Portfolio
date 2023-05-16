@@ -12,6 +12,6 @@ export const metadata: Metadata = {
   icons: { icon: "/gldcondensed.ico" },
 };
 export default function Page() {
-  if (HomePage === undefined) return null;
+  // if (HomePage === undefined) return null;
   return <HomePage />;
 }

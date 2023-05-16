@@ -115,7 +115,7 @@ function getStars() {
   //   logArray.push([left, top]);
   //   logArray.push([leftb, topb]);
   // }
-
+  if (NUMBER_ARRAY === undefined) return null;
   // console.log("logArray:", logArray);
   const starArray: ReactElement[] = [];
   for (let i = 0; i < 50; i + 1) {
@@ -144,6 +144,7 @@ function getStars() {
 
 export default function Stars() {
   const starArray = getStars();
+  if (starArray === null) return null;
   return (
     <svg
       key="starArray"
