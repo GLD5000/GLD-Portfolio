@@ -36,8 +36,8 @@ export default function About() {
             discovered my passion for coding after learning VBA and JavaScript
             to build assessment data processors and dashboards for my work.
             Since then, I have found lots of creative ways to apply my skills
-            and love building for the web. See below to see some of the
-            qualities I really value as a developer.
+            and love building for the web. Below are some of the qualities I
+            really value as a developer.
           </p>
           <CardGrid />
         </div>
