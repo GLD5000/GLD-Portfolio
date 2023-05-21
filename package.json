@@ -15,6 +15,7 @@
     "lint:fix": "prettier \"src/**/*.{js,jsx,ts,tsx,css,scss}\" --write && eslint src --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",

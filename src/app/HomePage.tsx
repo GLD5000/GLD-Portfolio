@@ -1,6 +1,7 @@
 "use client";
 
 import About from "@/pages/homepage/about/About";
+import Contact from "@/pages/homepage/contact/Contact";
 import Footer from "@/pages/homepage/footer/Footer";
 import Header from "@/pages/homepage/header/Header";
 import MainContentLink from "@/pages/homepage/header/MainContentLink";
@@ -51,6 +52,7 @@ export default function HomePage() {
 
           <About />
           <Projects />
+          <Contact />
         </IntersectionProvider>
 
         <Footer />
