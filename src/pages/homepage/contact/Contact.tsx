@@ -1,5 +1,10 @@
 import PaperPlaneSvg from "@/icons/PaperPlaneSvg";
 import { useState, ChangeEvent, FormEvent } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import portrait from "src/assets/aboutme/bwportrait.jpg";
+import LinkedInSvg from "@/icons/LinkedInSvg";
+import GitHubSvg from "src/icons/GitHubSvg";
 
 interface FormData {
   name: string;
@@ -36,47 +41,94 @@ function Contact() {
   };
 
   return (
-    <form
-      className="m-auto mb-20 grid  w-body-sm min-w-body max-w-body flex-col gap-4 rounded bg-transparent p-4   text-black dark:text-white  sm:w-body"
-      onSubmit={handleSubmit}
+    <section
+      id="contact"
+      className="m-auto grid w-body-sm  min-w-body max-w-body gap-4 rounded bg-transparent py-20  text-black dark:text-white  sm:w-body"
     >
-      <h2 className="m-auto w-fit text-3xl">Get In Touch!</h2>
-      <div className="grid gap-4 md:grid-cols-2">
-        <input
-          className="w-full border-b bg-inherit p-2 text-inherit placeholder:text-txt-mid placeholder:dark:text-txt-mid-dk"
-          name="name"
-          placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-          required
+      <div className="mx-auto mt-8 grid w-fit gap-4 sm:mt-0 sm:grid-cols-2">
+        <Image
+          placeholder="blur"
+          src={portrait}
+          className="m-auto h-40 w-40 rounded-full shadow-xl shadow-black"
+          alt="Gareth Photo"
         />
-        <input
-          type="email"
-          className="w-full border-b bg-inherit p-2 text-inherit placeholder:text-txt-mid placeholder:dark:text-txt-mid-dk"
-          name="senderEmail"
-          placeholder="Your Email"
-          value={formData.senderEmail}
-          onChange={handleChange}
-          required
-        />
+        <div className="m-auto w-fit">
+          <p className="m-0 mx-auto text-center text-4xl">Hi There!</p>
+          <p className="m-0 mx-auto text-center text-xl">{`Let's chat!`}</p>
+        </div>
       </div>
-      <textarea
-        className="w-full border-b bg-inherit p-2 text-inherit placeholder:text-txt-mid placeholder:dark:text-txt-mid-dk"
-        name="message"
-        rows={3}
-        placeholder="Your Message"
-        value={formData.message}
-        onChange={handleChange}
-        required
-      />
-      <button
-        className="m-auto flex  w-fit max-w-[40rem] flex-row items-center justify-center gap-2 rounded-full border p-2 text-center hover:bg-black hover:text-white hover:transition focus:bg-black focus:text-white focus:transition hover:dark:bg-white hover:dark:text-black focus:dark:bg-white focus:dark:text-black"
-        type="submit"
+      <form
+        className="grid  w-full gap-4 rounded bg-transparent px-4   text-black dark:text-white "
+        onSubmit={handleSubmit}
       >
-        <PaperPlaneSvg />
-        {messageSent ? "Message Sent!" : "Send Message"}
-      </button>
-    </form>
+        <p className="m-0 mx-auto text-center text-2xl">Send me a Message</p>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <input
+            className="w-full border-b bg-inherit p-2 text-inherit placeholder:text-txt-mid placeholder:dark:text-txt-mid-dk"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="email"
+            className="w-full border-b bg-inherit p-2 text-inherit placeholder:text-txt-mid placeholder:dark:text-txt-mid-dk"
+            name="senderEmail"
+            placeholder="Your Email"
+            value={formData.senderEmail}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <textarea
+          className="w-full border-b bg-inherit p-2 text-inherit placeholder:text-txt-mid placeholder:dark:text-txt-mid-dk"
+          name="message"
+          rows={3}
+          placeholder="Your Message"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        />
+        <button
+          className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+          type="submit"
+        >
+          <PaperPlaneSvg />
+          {messageSent ? "Message Sent!" : "Send Message"}
+        </button>
+      </form>
+
+      <div className="grid gap-4 ">
+        <p className="m-0 mx-auto text-center text-2xl">
+          Other ways to connect...
+        </p>
+
+        <Link
+          className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+          target="_blank"
+          referrerPolicy="no-referrer"
+          href="https://www.linkedin.com/in/garethlouisdevlin/"
+        >
+          <div className="my-auto h-8 w-8">
+            <LinkedInSvg />
+          </div>
+          LinkedIn
+        </Link>
+        <Link
+          className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+          target="_blank"
+          referrerPolicy="no-referrer"
+          href="https://github.com/GLD5000"
+        >
+          <div className="my-auto h-8 w-8">
+            <GitHubSvg />
+          </div>
+          GitHub
+        </Link>
+      </div>
+    </section>
   );
 }
 

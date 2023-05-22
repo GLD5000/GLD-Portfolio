@@ -24,7 +24,9 @@ export default function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        <GitHubSvg />
+        <div className="m-auto h-6 w-6">
+          <GitHubSvg />
+        </div>
         GLD5000 on GitHub
       </a>
       <a
@@ -33,7 +35,9 @@ export default function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        <LinkedInSvg />
+        <div className="m-auto h-6 w-6">
+          <LinkedInSvg />
+        </div>
         Gareth L Devlin on LinkedIn
       </a>
 
