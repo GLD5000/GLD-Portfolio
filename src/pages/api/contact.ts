@@ -27,12 +27,10 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         text: `Name: ${name}\nEmail: ${senderEmail}\nMessage: ${message}`,
       };
       await sgMail.send(msg);
-      res.status(200).json({ success: true });
+      return res.status(200).json({ success: true });
     } catch (error) {
-      res.status(500).json({ error: "Error sending email." });
+      return res.status(500).json({ error: "Error sending email." });
     }
-  } else {
-    res.status(405).json({ error: "Method not allowed." });
   }
-  return res.status(500).json({ error: "Error sending email." });
+  return res.status(405).json({ error: "Method not allowed." });
 };
