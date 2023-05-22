@@ -1,10 +1,12 @@
 import PaperPlaneSvg from "@/icons/PaperPlaneSvg";
-import { useState, ChangeEvent, FormEvent } from "react";
+import { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import portrait from "src/assets/aboutme/bwportrait.jpg";
 import LinkedInSvg from "@/icons/LinkedInSvg";
 import GitHubSvg from "src/icons/GitHubSvg";
+import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
+import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
 
 interface FormData {
   name: string;
@@ -19,6 +21,24 @@ function Contact() {
     message: "",
   });
   const [messageSent, setMessageSent] = useState(false);
+
+  const { elementRef, onScreen } = useIntersectionObserver();
+  const { setcurrentSection, hasScrolled, setHasScrolled } =
+    useIntersectionProviderContext();
+
+  useEffect(() => {
+    let run = true;
+    const refElement = elementRef.current;
+    if (run && onScreen && refElement != null) {
+      setcurrentSection(refElement.id);
+
+      if (!hasScrolled) setHasScrolled(true);
+    }
+
+    return () => {
+      run = false;
+    };
+  }, [onScreen, elementRef, setcurrentSection, hasScrolled, setHasScrolled]);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -43,6 +63,7 @@ function Contact() {
   return (
     <section
       id="contact"
+      ref={elementRef}
       className="m-auto grid w-full gap-4 rounded bg-secondary-light pt-20 pb-32  text-black  dark:bg-secondary dark:text-white"
     >
       <div className="m-auto grid w-body-sm  min-w-body max-w-body gap-4 rounded bg-transparent  text-black dark:text-white  sm:w-body">

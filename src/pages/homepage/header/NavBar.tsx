@@ -71,6 +71,15 @@ export default function NavBar({
         Projects
       </a>
 
+      <a
+        className={`m-0 hidden font-bold text-black sm:inline ${
+          currentSection === "contact" ? "text-white" : ""
+        }`}
+        href="#contact"
+      >
+        Contact
+      </a>
+
       {/* <Link
         href="/about"
         className={`m-0 hidden font-bold text-black sm:inline ${
