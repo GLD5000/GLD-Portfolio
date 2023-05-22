@@ -34,7 +34,7 @@ export default function ProjectCard({
         </p>
         <div className="grid lg:grid-cols-2">
           <Link
-            className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-white p-2 text-center text-xl text-black hover:border-current hover:bg-black hover:text-white hover:transition focus:bg-black focus:text-white focus:transition"
+            className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-white p-2 text-center text-xl font-bold text-black hover:border-current hover:bg-black hover:text-white hover:transition focus:bg-black focus:text-white focus:transition"
             target="_blank"
             referrerPolicy="no-referrer"
             href={repoUrl ?? ""}
@@ -46,7 +46,7 @@ export default function ProjectCard({
           </Link>
 
           <Link
-            className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary p-2 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+            className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary p-2 text-center text-xl font-bold text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
             target="_blank"
             referrerPolicy="no-referrer"
             href={mainUrl ?? ""}
