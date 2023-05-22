@@ -43,7 +43,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="m-auto grid w-full gap-4 rounded bg-secondary-light py-20 text-black  dark:bg-secondary dark:text-white"
+      className="m-auto grid w-full gap-4 rounded bg-secondary-light pt-20 pb-32  text-black  dark:bg-secondary dark:text-white"
     >
       <div className="m-auto grid w-body-sm  min-w-body max-w-body gap-4 rounded bg-transparent  text-black dark:text-white  sm:w-body">
         <div className="mx-auto mt-8 grid w-fit gap-4 sm:mt-0 sm:grid-cols-2">
@@ -59,14 +59,14 @@ function Contact() {
           </div>
         </div>
         <form
-          className="grid  w-full gap-4 rounded bg-transparent p-4   text-black dark:text-white "
+          className="mx-auto  my-20 grid w-full max-w-[55rem] gap-6 rounded-full p-4 text-black dark:text-white "
           onSubmit={handleSubmit}
         >
-          <p className="m-0 mx-auto text-center text-2xl">Send me a Message</p>
+          {/* <p className="m-0 mx-auto text-center text-2xl">Send me a Message</p> */}
 
-          <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2">
             <input
-              className="w-full border-b bg-inherit p-2 text-inherit placeholder:text-txt-mid placeholder:dark:text-txt-mid-dk"
+              className="w-full rounded-lg  border-2 bg-white p-2 text-inherit placeholder:text-txt-mid dark:bg-black placeholder:dark:text-txt-mid-dk"
               name="name"
               placeholder="Your Name"
               value={formData.name}
@@ -75,7 +75,7 @@ function Contact() {
             />
             <input
               type="email"
-              className="w-full border-b bg-inherit p-2 text-inherit placeholder:text-txt-mid placeholder:dark:text-txt-mid-dk"
+              className="w-full rounded-lg border-2 bg-white bg-inherit p-2 text-inherit placeholder:text-txt-mid dark:bg-black placeholder:dark:text-txt-mid-dk"
               name="senderEmail"
               placeholder="Your Email"
               value={formData.senderEmail}
@@ -83,8 +83,9 @@ function Contact() {
               required
             />
           </div>
+
           <textarea
-            className="w-full border-b bg-inherit p-2 text-inherit placeholder:text-txt-mid placeholder:dark:text-txt-mid-dk"
+            className="w-full rounded-lg border-2 bg-white bg-inherit  p-2 text-inherit placeholder:text-txt-mid dark:bg-black placeholder:dark:text-txt-mid-dk"
             name="message"
             rows={3}
             placeholder="Your Message"
@@ -93,7 +94,7 @@ function Contact() {
             required
           />
           <button
-            className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+            className="m-auto mt-10 flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
             type="submit"
           >
             <PaperPlaneSvg />
@@ -101,11 +102,10 @@ function Contact() {
           </button>
         </form>
 
-        <div className="grid gap-4 ">
-          <p className="m-0 mx-auto text-center text-2xl">
-            Other ways to connect...
-          </p>
-
+        <p className="m-0 mx-auto text-center text-2xl">
+          Other ways to connect...
+        </p>
+        <div className="mx-auto grid w-fit gap-6 sm:grid-cols-2 ">
           <Link
             className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
             target="_blank"
@@ -115,7 +115,7 @@ function Contact() {
             <div className="my-auto h-8 w-8">
               <LinkedInSvg />
             </div>
-            LinkedIn
+            My LinkedIn
           </Link>
           <Link
             className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
@@ -126,7 +126,7 @@ function Contact() {
             <div className="my-auto h-8 w-8">
               <GitHubSvg />
             </div>
-            GitHub
+            My GitHub
           </Link>
         </div>
       </div>
