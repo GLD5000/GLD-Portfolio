@@ -29,7 +29,6 @@ function Contact() {
       headers: { "Content-Type": "application/json" },
     });
     const result = await response.json();
-    console.log(result);
     if (result.success) {
       setMessageSent(true);
     }
