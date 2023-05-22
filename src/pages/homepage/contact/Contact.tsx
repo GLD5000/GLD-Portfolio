@@ -1,3 +1,4 @@
+import PaperPlaneSvg from "@/icons/PaperPlaneSvg";
 import { useState, ChangeEvent, FormEvent } from "react";
 
 interface FormData {
@@ -36,36 +37,43 @@ function Contact() {
 
   return (
     <form
-      className="m-auto mb-20 grid w-fit gap-2 rounded bg-white   p-2 text-black dark:bg-secondary dark:text-white"
+      className="m-auto mb-20 grid  w-body-sm min-w-body max-w-body flex-col gap-4 rounded bg-transparent p-4   text-black dark:text-white  sm:w-body"
       onSubmit={handleSubmit}
     >
-      <input
-        className="bg-inherit p-2 text-inherit placeholder:text-txt-mid placeholder:dark:text-txt-mid-dk"
-        name="name"
-        placeholder="Name"
-        value={formData.name}
-        onChange={handleChange}
-        required
-      />
-      <input
-        type="email"
-        className="bg-inherit p-2 text-inherit placeholder:text-txt-mid placeholder:dark:text-txt-mid-dk"
-        name="senderEmail"
-        placeholder="Email"
-        value={formData.senderEmail}
-        onChange={handleChange}
-        required
-      />
+      <h2 className="m-auto w-fit text-3xl">Get In Touch!</h2>
+      <div className="grid gap-4 md:grid-cols-2">
+        <input
+          className="w-full border-b bg-inherit p-2 text-inherit placeholder:text-txt-mid placeholder:dark:text-txt-mid-dk"
+          name="name"
+          placeholder="Your Name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="email"
+          className="w-full border-b bg-inherit p-2 text-inherit placeholder:text-txt-mid placeholder:dark:text-txt-mid-dk"
+          name="senderEmail"
+          placeholder="Your Email"
+          value={formData.senderEmail}
+          onChange={handleChange}
+          required
+        />
+      </div>
       <textarea
-        className="bg-inherit p-2 text-inherit placeholder:text-txt-mid placeholder:dark:text-txt-mid-dk"
+        className="w-full border-b bg-inherit p-2 text-inherit placeholder:text-txt-mid placeholder:dark:text-txt-mid-dk"
         name="message"
-        rows={7}
-        placeholder="Message"
+        rows={3}
+        placeholder="Your Message"
         value={formData.message}
         onChange={handleChange}
         required
       />
-      <button type="submit">
+      <button
+        className="m-auto flex  w-fit max-w-[40rem] flex-row items-center justify-center gap-2 rounded-full border p-2 text-center hover:bg-black hover:text-white hover:transition focus:bg-black focus:text-white focus:transition hover:dark:bg-white hover:dark:text-black focus:dark:bg-white focus:dark:text-black"
+        type="submit"
+      >
+        <PaperPlaneSvg />
         {messageSent ? "Message Sent!" : "Send Message"}
       </button>
     </form>
