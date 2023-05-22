@@ -80,7 +80,7 @@ function Contact() {
           </div>
         </div>
         <form
-          className="mx-auto  my-20 grid w-full max-w-[55rem] gap-6 rounded-full p-4 text-black dark:text-white "
+          className="mx-auto  my-6 grid w-full max-w-[55rem] gap-6 rounded-full p-4 text-black dark:text-white "
           onSubmit={handleSubmit}
         >
           {/* <p className="m-0 mx-auto text-center text-2xl">Send me a Message</p> */}
@@ -115,7 +115,7 @@ function Contact() {
             required
           />
           <button
-            className="m-auto mt-10 flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+            className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
             type="submit"
           >
             <PaperPlaneSvg />
@@ -128,7 +128,7 @@ function Contact() {
         </p>
         <div className="mx-auto grid w-fit gap-6 sm:grid-cols-2 ">
           <Link
-            className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+            className="m-auto flex h-fit w-36 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary p-2 text-center text-base text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
             target="_blank"
             referrerPolicy="no-referrer"
             href="https://www.linkedin.com/in/garethlouisdevlin/"
@@ -136,10 +136,10 @@ function Contact() {
             <div className="my-auto h-8 w-8">
               <LinkedInSvg />
             </div>
-            My LinkedIn
+            LinkedIn
           </Link>
           <Link
-            className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+            className="m-auto flex h-fit w-36 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary p-2 text-center text-base text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
             target="_blank"
             referrerPolicy="no-referrer"
             href="https://github.com/GLD5000"
@@ -147,7 +147,7 @@ function Contact() {
             <div className="my-auto h-8 w-8">
               <GitHubSvg />
             </div>
-            My GitHub
+            GitHub
           </Link>
         </div>
       </div>
