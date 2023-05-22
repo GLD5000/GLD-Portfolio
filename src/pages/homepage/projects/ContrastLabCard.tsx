@@ -57,18 +57,13 @@ const titleDiv = (
 
 export default function ContrastLabCard() {
   return (
-    <>
-      <div className="mx-auto grid w-full  max-w-body items-center self-center sm:w-full sm:px-8 lg:grid-cols-2">
-        <div className="grid" />
-      </div>
-      <ProjectCard
-        images={imageCollection}
-        text="A colour playground that allows you to quickly compare any number of colours and ensure that they meet current standards for visual Contrast Ratios and accessibility (WCAG 2.1)."
-        subtitle="Create Accessible Colour Combinations"
-        title={titleDiv}
-        mainUrl="https://contrast-tool.vercel.app/"
-        repoUrl="https://github.com/GLD5000/GLD-Contrast-Lab"
-      />
-    </>
+    <ProjectCard
+      images={imageCollection}
+      text="A colour playground that allows you to quickly compare any number of colours and ensure that they meet current standards for visual Contrast Ratios and accessibility (WCAG 2.1)."
+      subtitle="Create Accessible Colour Combinations"
+      title={titleDiv}
+      mainUrl="https://contrast-tool.vercel.app/"
+      repoUrl="https://github.com/GLD5000/GLD-Contrast-Lab"
+    />
   );
 }
