@@ -57,7 +57,8 @@ export default function DevTipsCard() {
       text="A website full of tips and tricks for developers. Simply search by keyword or filter by tag to explore and learn. If you are feeling creative, you can even add your own tips too."
       subtitle="Tips and Tricks for Developers"
       title={titleDiv}
-      url="https://glddevtips.web.app/"
+      mainUrl="https://glddevtips.web.app/"
+      repoUrl="https://github.com/GLD5000/GLD-DevTips"
     />
   );
 }

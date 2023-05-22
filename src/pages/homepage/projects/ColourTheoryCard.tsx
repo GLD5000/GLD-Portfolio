@@ -58,7 +58,8 @@ export default function ColourTheoryCard() {
       text="Colour theory-based colour palette generator with contrast ratios, auto-gradients and auto-text colour. Easily export your colour schemes in CSS or SCSS formats."
       subtitle="Custom CSS Colour Scheme Generator"
       title={titleDiv}
-      url="https://colour-theory.netlify.app/"
+      mainUrl="https://colour-theory.netlify.app/"
+      repoUrl="https://github.com/GLD5000/GLD-ColourTheory"
     />
   );
 }

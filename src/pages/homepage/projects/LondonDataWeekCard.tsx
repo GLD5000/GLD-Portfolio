@@ -57,7 +57,8 @@ export default function LondonDataWeekCard() {
       text="The offical website of London Data Week 2023 - a citywide festival about data where you can learn, create, discuss, and explore how to use data to shape our city for the better."
       subtitle="Data in the public, for the public"
       title={titleDiv}
-      url="https://www.londondataweek.org/"
+      mainUrl="https://www.londondataweek.org/"
+      repoUrl="https://github.com/GLD5000/GLD-London-Data-Week"
     />
   );
 }
