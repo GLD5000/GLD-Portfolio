@@ -32,26 +32,26 @@ export default function ProjectCard({
         <p className="mx-auto mb-0 max-w-[36rem] text-justify text-xs xs:text-sm sm:px-4 sm:text-base">
           {text}
         </p>
-        <div className="mx-auto grid h-fit w-fit gap-2 lg:grid-cols-2">
+        <div className="mx-auto grid h-fit w-fit gap-2 sm:grid-cols-2 lg:gap-6">
           <Link
-            className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-white p-2 text-center text-xl font-bold text-black hover:border-current hover:bg-black hover:text-white hover:transition focus:bg-black focus:text-white focus:transition"
+            className="m-auto flex h-fit w-[12rem] flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-white p-2 text-center text-lg font-bold text-black hover:border-current hover:bg-black hover:text-white hover:transition focus:bg-black focus:text-white focus:transition"
             target="_blank"
             referrerPolicy="no-referrer"
             href={repoUrl ?? ""}
           >
-            <div className="my-auto h-10 w-10">
+            <div className="my-auto h-8 w-8">
               <GitHubSvg />
             </div>
             Source Code
           </Link>
 
           <Link
-            className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary p-2 text-center text-xl font-bold text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+            className="m-auto flex h-fit w-[12rem] flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary p-2 text-center text-lg font-bold text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
             target="_blank"
             referrerPolicy="no-referrer"
             href={mainUrl ?? ""}
           >
-            <div className="my-auto h-10 w-10">
+            <div className="my-auto h-8 w-8">
               <PlaySvg />
             </div>
             Live Website
