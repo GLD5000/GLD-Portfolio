@@ -82,7 +82,7 @@ export default function Hero({
                 loading="eager"
                 placeholder="empty"
                 src={gldLogo}
-                className="m-auto h-auto w-full"
+                className="m-auto h-auto w-screen max-w-full lg:w-[50vw] "
                 alt="GLD Logo"
               />
             </div>
