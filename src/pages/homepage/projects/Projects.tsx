@@ -29,7 +29,7 @@ export default function Projects() {
     <main
       id="projects"
       ref={elementRef}
-      className="relative grid w-screen  flex-grow bg-gradient-to-t  from-bg to-bg-var dark:bg-gradient-to-t dark:from-bg-dk dark:to-bg-var-dk sm:justify-items-center  "
+      className="relative grid w-screen  flex-grow bg-gradient-to-t  from-secondary-light via-bg-var to-bg-var dark:bg-gradient-to-t dark:from-secondary dark:via-bg-var-dk dark:to-bg-var-dk sm:justify-items-center  "
     >
       <section className="mx-auto grid h-full w-body min-w-body max-w-body flex-col gap-10 bg-transparent pt-20 pb-60 lg:snap-start ">
         <h1 className="mx-auto my-10 w-fit text-4xl lg:text-8xl">My Work</h1>
