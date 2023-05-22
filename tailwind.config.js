@@ -20,6 +20,7 @@ module.exports = {
         late: "5%",
       },
       screens: {
+        xxs: "320px",
         xs: "420px",
       },
 

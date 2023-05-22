@@ -126,7 +126,7 @@ function Contact() {
         <p className="m-0 mx-auto text-center text-2xl">
           Other ways to connect...
         </p>
-        <div className="mx-auto grid w-fit gap-6 sm:grid-cols-2 ">
+        <div className="mx-auto grid w-fit gap-6 xxs:grid-cols-2 ">
           <Link
             className="m-auto flex h-fit w-36 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary p-2 text-center text-base font-bold text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
             target="_blank"
