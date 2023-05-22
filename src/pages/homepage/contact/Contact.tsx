@@ -115,7 +115,7 @@ function Contact() {
             required
           />
           <button
-            className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+            className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl font-bold text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
             type="submit"
           >
             <PaperPlaneSvg />
@@ -128,7 +128,7 @@ function Contact() {
         </p>
         <div className="mx-auto grid w-fit gap-6 sm:grid-cols-2 ">
           <Link
-            className="m-auto flex h-fit w-36 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary p-2 text-center text-base text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+            className="m-auto flex h-fit w-36 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary p-2 text-center text-base font-bold text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
             target="_blank"
             referrerPolicy="no-referrer"
             href="https://www.linkedin.com/in/garethlouisdevlin/"
@@ -139,7 +139,7 @@ function Contact() {
             LinkedIn
           </Link>
           <Link
-            className="m-auto flex h-fit w-36 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary p-2 text-center text-base text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
+            className="m-auto flex h-fit w-36 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary p-2 text-center text-base font-bold text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
             target="_blank"
             referrerPolicy="no-referrer"
             href="https://github.com/GLD5000"
