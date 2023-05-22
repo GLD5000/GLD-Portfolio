@@ -53,6 +53,26 @@ export default function Hero({
         ref={elementRef}
         className=" absolute top-0  z-[997] grid h-screen w-full "
       >
+        <div className="absolute top-0 left-0 w-full">
+          <div className="mx-auto w-body-sm min-w-body max-w-body flex-col bg-transparent sm:w-body">
+            <SvgButtonNew
+              showTextIn={undefined}
+              clickFunction={toggleColourTheme}
+              reverse={false}
+              id="colour-theme-button-hero"
+              name="Dark Mode Button"
+              className="relative rounded text-xs"
+              buttonClasses="w-fit h-fit overflow-visible flex-col flex text-current pb-4 pt-1 ml-auto mt-3 px-2"
+              textElement={
+                <span className="absolute bottom-0 w-fit rounded-t-none bg-transparent text-current ">
+                  {colourTheme ? "Light" : "Dark"}
+                </span>
+              }
+              svg={getDarkToggleIcon(colourTheme)}
+            />
+          </div>
+        </div>
+
         <div className=" m-auto grid h-fit w-min items-center gap-8 lg:w-fit lg:grid-cols-2">
           <div className="m-auto h-fit w-screen max-w-[35rem] lg:h-auto lg:w-full lg:max-w-[50rem] ">
             {/* <GldSvgHero /> */}
@@ -106,25 +126,10 @@ export default function Hero({
             <p className="my-0 mx-auto w-fit text-xs xs:text-sm sm:text-base lg:text-lg xl:text-xl">
               I build innovative and accessible websites and apps.
             </p>
-          </div>
-        </div>
-        <div className="absolute top-0 left-0 w-full">
-          <div className="mx-auto w-body-sm min-w-body max-w-body flex-col bg-transparent sm:w-body">
-            <SvgButtonNew
-              showTextIn={undefined}
-              clickFunction={toggleColourTheme}
-              reverse={false}
-              id="colour-theme-button-hero"
-              name="Dark Mode Button"
-              className="relative rounded text-xs"
-              buttonClasses="w-fit h-fit overflow-visible flex-col flex text-current pb-4 pt-1 ml-auto mt-3 px-2"
-              textElement={
-                <span className="absolute bottom-0 w-fit rounded-t-none bg-transparent text-current ">
-                  {colourTheme ? "Light" : "Dark"}
-                </span>
-              }
-              svg={getDarkToggleIcon(colourTheme)}
-            />
+            <a
+              href="#about"
+              className="m-auto mt-10 h-fit w-60 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-2xl font-bold text-white hover:bg-white hover:text-black hover:transition  focus:bg-white focus:text-black focus:transition"
+            >{`Let's Go`}</a>
           </div>
         </div>
       </div>
