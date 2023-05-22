@@ -13,21 +13,21 @@ export default function AboutCard({
   cta: ReactNode;
 }) {
   return (
-    <div className="mx-auto grid w-full max-w-[500px] gap-10">
+    <div className="mx-auto grid w-full max-w-[500px] grid-rows-autoFrAuto gap-10">
       <div className="grid gap-4">
         <h2 className="mx-auto text-center font-bold">{title}</h2>
         <Image
           placeholder="blur"
-          className=" mx-auto w-full max-w-[300px] rounded-xl shadow-xl shadow-black"
+          className=" mx-auto w-full max-w-[280px] rounded-xl shadow-xl shadow-black"
           src={image}
           alt="Colour Picker"
         />
       </div>
-      <div className="grid gap-6">
-        <p>{text}</p>
+      <p className="my-0 mx-auto text-justify lg:min-h-[200px] xl:min-h-[144px]">
+        {text}
+      </p>
 
-        {cta}
-      </div>
+      {cta}
     </div>
   );
 }

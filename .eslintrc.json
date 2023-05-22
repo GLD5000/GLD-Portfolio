@@ -10,6 +10,7 @@
   "plugins": ["prettier", "react"],
   "ignorePatterns": ["*.ttf", "*.css"],
   "rules": {
+    "import/no-extraneous-dependencies": "off",
     "react/require-default-props": "off",
     "react/jsx-props-no-spreading": "off",
     "react/jsx-no-useless-fragment": "off",
