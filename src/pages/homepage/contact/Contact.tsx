@@ -133,7 +133,7 @@ function Contact() {
             referrerPolicy="no-referrer"
             href="https://www.linkedin.com/in/garethlouisdevlin/"
           >
-            <div className="my-auto h-8 w-8">
+            <div className="my-auto h-7 w-7">
               <LinkedInSvg />
             </div>
             LinkedIn
@@ -144,7 +144,7 @@ function Contact() {
             referrerPolicy="no-referrer"
             href="https://github.com/GLD5000"
           >
-            <div className="my-auto h-8 w-8">
+            <div className="my-auto h-7 w-7">
               <GitHubSvg />
             </div>
             GitHub
