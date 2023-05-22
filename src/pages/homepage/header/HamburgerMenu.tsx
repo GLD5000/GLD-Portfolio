@@ -58,20 +58,20 @@ export default function HamburgerMenu({
 
       <a
         className={`m-0 block h-fit w-20 p-0 text-center font-bold text-black  ${
-          currentSection === "about" ? "text-white" : ""
-        }`}
-        href="#about"
-      >
-        About
-      </a>
-
-      <a
-        className={`m-0 block h-fit w-20 p-0 text-center font-bold text-black  ${
           currentSection === "projects" ? "text-white" : ""
         }`}
         href="#projects"
       >
         Projects
+      </a>
+
+      <a
+        className={`m-0 block h-fit w-20 p-0 text-center font-bold text-black  ${
+          currentSection === "about" ? "text-white" : ""
+        }`}
+        href="#about"
+      >
+        About
       </a>
 
       <a

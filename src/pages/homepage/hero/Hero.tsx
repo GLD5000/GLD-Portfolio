@@ -127,7 +127,7 @@ export default function Hero({
               I build innovative and accessible websites and apps.
             </p>
             <a
-              href="#about"
+              href="#projects"
               className="m-auto mt-10 h-fit w-60 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-2xl font-bold text-white hover:bg-white hover:text-black hover:transition  focus:bg-white focus:text-black focus:transition"
             >{`Let's Go`}</a>
           </div>

@@ -38,8 +38,8 @@ export default function HomePage() {
           />
           <div className="h-screen bg-secondary-light dark:bg-secondary" />
 
-          <About />
           <Projects />
+          <About />
           <Contact />
         </IntersectionProvider>
 

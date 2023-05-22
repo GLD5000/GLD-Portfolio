@@ -55,20 +55,19 @@ export default function NavBar({
 
       <a
         className={`m-0 hidden font-bold text-black sm:inline ${
-          currentSection === "about" ? "text-white" : ""
-        }`}
-        href="#about"
-      >
-        About
-      </a>
-
-      <a
-        className={`m-0 hidden font-bold text-black sm:inline ${
           currentSection === "projects" ? "text-white" : ""
         }`}
         href="#projects"
       >
         Projects
+      </a>
+      <a
+        className={`m-0 hidden font-bold text-black sm:inline ${
+          currentSection === "about" ? "text-white" : ""
+        }`}
+        href="#about"
+      >
+        About
       </a>
 
       <a

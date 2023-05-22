@@ -29,10 +29,11 @@ export default function Projects() {
     <main
       id="projects"
       ref={elementRef}
-      className="relative grid w-screen  flex-grow bg-gradient-to-t  from-secondary-light via-bg-var to-bg-var dark:bg-gradient-to-t dark:from-secondary dark:via-bg-var-dk dark:to-bg-var-dk sm:justify-items-center  "
+      className="relative grid w-screen  flex-grow bg-gradient-to-t  from-bg-var to-secondary-light text-txt-main dark:bg-gradient-to-t dark:from-bg-var-dk  dark:to-secondary dark:text-txt-main-dk 
+      sm:justify-items-center  "
     >
       <section className="mx-auto grid h-full w-body min-w-body max-w-body flex-col gap-10 bg-transparent pt-20 pb-60 lg:snap-start ">
-        <h1 className="mx-auto my-10 w-fit text-4xl lg:text-8xl">My Work</h1>
+        <h1 className="mx-auto my-10 w-fit text-4xl lg:text-6xl">My Work</h1>
         <p className="m-0 mx-auto max-w-[60rem] text-center xs:text-justify">
           Coding allows me to bring my imagination to life. It is also a way to
           create enticing and interactive tools and products that others can
