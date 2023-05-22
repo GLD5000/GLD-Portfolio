@@ -1,6 +1,6 @@
 export default function LinkedInSvg() {
   return (
-    <div className=" pointer-events-none h-5 w-5 fill-current">
+    <div className=" pointer-events-none my-auto h-full w-full rounded-none fill-current">
       <svg
         width="100%"
         height="100%"

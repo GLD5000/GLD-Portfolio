@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className=" flex flex-shrink-0 flex-grow-0 flex-col flex-wrap items-center gap-2 py-1 text-sm"
+      className=" flex flex-shrink-0 flex-grow-0 flex-col flex-wrap items-center gap-2 bg-secondary-light py-1 text-sm dark:bg-secondary"
     >
       <a
         className=" flex flex-row gap-2 text-txt-mid hover:text-txt-main hover:underline hover:decoration-current hover:underline-offset-2 hover:transition focus:text-txt-main focus:underline focus:decoration-current  focus:underline-offset-2 focus:transition dark:text-txt-mid-dk dark:hover:text-txt-main-dk dark:focus:text-txt-main-dk"
@@ -24,7 +24,9 @@ export default function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        <GitHubSvg />
+        <div className="m-auto h-6 w-6">
+          <GitHubSvg />
+        </div>
         GLD5000 on GitHub
       </a>
       <a
@@ -33,7 +35,9 @@ export default function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        <LinkedInSvg />
+        <div className="m-auto h-6 w-6">
+          <LinkedInSvg />
+        </div>
         Gareth L Devlin on LinkedIn
       </a>
 

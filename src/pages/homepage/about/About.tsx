@@ -26,11 +26,11 @@ export default function About() {
     <section
       id="about"
       ref={elementRef}
-      className="min-h-screen w-full bg-gradient-to-t  from-bg-var to-secondary-light py-20 text-txt-main dark:bg-gradient-to-t dark:from-bg-var-dk  dark:to-secondary dark:text-txt-main-dk lg:snap-start"
+      className="min-h-screen w-full bg-gradient-to-t  from-secondary-light via-bg-var to-bg-var py-20 dark:bg-gradient-to-t dark:from-secondary dark:via-bg-var-dk dark:to-bg-var-dk"
     >
       <div className="mx-auto flex  h-full w-body-sm min-w-body max-w-body flex-col bg-transparent sm:w-body ">
         <div className=" grid w-body-sm min-w-body max-w-body grow gap-10  sm:w-body">
-          <h1 className="mx-auto my-10 text-4xl lg:text-8xl">About Me</h1>
+          <h1 className="mx-auto my-10 text-4xl lg:text-6xl">About Me</h1>
           <p className="m-0 mx-auto max-w-[60rem] text-center xs:text-justify">
             I am a self-taught software developer and former teacher. I
             discovered my passion for coding after learning VBA and JavaScript

@@ -55,6 +55,14 @@ export default function NavBar({
 
       <a
         className={`m-0 hidden font-bold text-black sm:inline ${
+          currentSection === "projects" ? "text-white" : ""
+        }`}
+        href="#projects"
+      >
+        Projects
+      </a>
+      <a
+        className={`m-0 hidden font-bold text-black sm:inline ${
           currentSection === "about" ? "text-white" : ""
         }`}
         href="#about"
@@ -64,11 +72,11 @@ export default function NavBar({
 
       <a
         className={`m-0 hidden font-bold text-black sm:inline ${
-          currentSection === "projects" ? "text-white" : ""
+          currentSection === "contact" ? "text-white" : ""
         }`}
-        href="#projects"
+        href="#contact"
       >
-        Projects
+        Contact
       </a>
 
       {/* <Link
