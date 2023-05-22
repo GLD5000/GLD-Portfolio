@@ -42,7 +42,7 @@ const righteous = Righteous({
 });
 
 const titleDiv = (
-  <div className={`${righteous.className} mx-auto mt-10 text-center`}>
+  <div className={`${righteous.className} mx-auto text-center`}>
     <div className="  flex flex-row overflow-clip rounded-lg border-2 border-current ">
       <h1 className=" rounded-none bg-white p-3 font-black leading-8  text-black sm:p-[0.95rem] sm:text-5xl">
         LONDON DATA WEEK

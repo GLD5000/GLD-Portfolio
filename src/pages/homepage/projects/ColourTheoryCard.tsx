@@ -43,7 +43,7 @@ const imagesCollection = (
 );
 
 const titleDiv = (
-  <div className=" mx-auto mt-10">
+  <div className=" mx-auto">
     <div className=" flex flex-row overflow-clip rounded-lg border-2 border-current font-colourmatic ">
       <h1 className=" text rounded-none bg-white p-3 font-colourmatic text-lg tracking-tight text-black text-shadow-colourmatic xs:text-2xl sm:p-[0.95rem] sm:text-3xl xl:text-4xl">
         &lt;ColourTheory&gt;

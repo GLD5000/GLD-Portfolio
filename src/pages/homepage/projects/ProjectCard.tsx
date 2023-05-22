@@ -19,20 +19,20 @@ export default function ProjectCard({
   repoUrl: string;
 }) {
   return (
-    <div className="mx-auto grid w-full max-w-body items-center gap-8 self-center sm:w-full sm:gap-10 sm:px-8 lg:grid-cols-2">
+    <div className="mx-auto grid w-full max-w-body items-center gap-6 self-center sm:w-full sm:gap-10 sm:px-8 lg:grid-cols-2">
       <div className="relative mx-auto flex aspect-[1/1] w-full max-w-[25rem] sm:w-[80%]">
         {images}
       </div>
 
-      <div className="grid max-w-[95%] gap-8 sm:gap-10">
-        <div className="grid gap-2 sm:gap-4">
+      <div className="mx-auto grid h-fit max-w-[95%] gap-6 sm:gap-10">
+        <div className="mx-auto grid h-fit w-fit gap-2 sm:gap-4">
           {title}
           <b className="mx-auto text-center text-lg sm:text-xl">{subtitle}</b>
         </div>
-        <p className="mx-auto text-justify text-xs xs:text-sm sm:px-10 sm:text-base">
+        <p className="mx-auto mb-0 max-w-[36rem] text-justify text-xs xs:text-sm sm:px-4 sm:text-base">
           {text}
         </p>
-        <div className="grid lg:grid-cols-2">
+        <div className="mx-auto grid h-fit w-fit gap-2 lg:grid-cols-2">
           <Link
             className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-white p-2 text-center text-xl font-bold text-black hover:border-current hover:bg-black hover:text-white hover:transition focus:bg-black focus:text-white focus:transition"
             target="_blank"

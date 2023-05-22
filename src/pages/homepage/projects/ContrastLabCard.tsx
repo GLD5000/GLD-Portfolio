@@ -43,7 +43,7 @@ const imageCollection = (
 );
 
 const titleDiv = (
-  <div className=" mx-auto mt-10">
+  <div className=" mx-auto">
     <div className="  flex flex-row overflow-clip rounded-lg border-2 border-current ">
       <h1 className=" rounded-none bg-white p-3 font-black  leading-6 text-black sm:p-[0.95rem] sm:text-6xl">
         CONTRAST

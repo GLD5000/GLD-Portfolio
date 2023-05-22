@@ -42,7 +42,7 @@ const imagesCollection = (
   </>
 );
 const titleDiv = (
-  <div className=" mx-auto mt-10">
+  <div className=" mx-auto">
     <div className=" flex flex-row overflow-clip rounded-lg border-2 border-current ">
       <h1 className=" rounded-none bg-white px-2 pb-4 pt-1 font-devTips text-6xl font-black tracking-wide text-black sm:px-4 sm:pt-2 sm:pb-8 sm:text-8xl">
         DevTips
