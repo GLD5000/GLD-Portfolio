@@ -93,7 +93,7 @@ export default function AccessibilityModal({
               </div>
             </div>
           </figure>
-          <div className="grid max-w-[500px] gap-4">
+          <div className="mx-auto grid w-fit max-w-[500px] gap-4">
             <h2 className="mx-auto my-4 w-fit text-center text-xl font-bold">
               Features you can also expect include:
             </h2>
