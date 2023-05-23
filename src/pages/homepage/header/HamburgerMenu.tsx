@@ -31,7 +31,7 @@ export default function HamburgerMenu({
     <nav
       className={`relative ${!show && "hidden"} ${
         show && "flex sm:hidden"
-      } h-8 w-screen min-w-[214px]   justify-center gap-2 border-y border-white p-1 text-sm`}
+      } h-8 w-screen min-w-[280px] justify-center gap-2 border-y border-white p-1 text-sm`}
     >
       {/* <ExternalLink
         colourClasses={linkColours}
