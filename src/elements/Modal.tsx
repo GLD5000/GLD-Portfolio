@@ -9,7 +9,9 @@ export default function Modal({
   refIn: RefObject<HTMLDialogElement>;
 }) {
   function handleClose() {
-    refIn.current?.close();
+    setTimeout(() => {
+      refIn.current?.close();
+    }, 200);
   }
   return (
     <dialog
