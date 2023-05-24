@@ -23,22 +23,19 @@ function Contact() {
   const [messageSent, setMessageSent] = useState(false);
 
   const { elementRef, onScreen } = useIntersectionObserver();
-  const { setcurrentSection, hasScrolled, setHasScrolled } =
-    useIntersectionProviderContext();
+  const { setcurrentSection } = useIntersectionProviderContext();
 
   useEffect(() => {
     let run = true;
     const refElement = elementRef.current;
     if (run && onScreen && refElement != null) {
       setcurrentSection(refElement.id);
-
-      if (!hasScrolled) setHasScrolled(true);
     }
 
     return () => {
       run = false;
     };
-  }, [onScreen, elementRef, setcurrentSection, hasScrolled, setHasScrolled]);
+  }, [onScreen, elementRef, setcurrentSection]);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>

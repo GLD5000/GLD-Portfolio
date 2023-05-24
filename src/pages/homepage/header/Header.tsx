@@ -13,12 +13,14 @@ export default function Header({
 }) {
   const [showMenu, setShowMenu] = useState(true);
   const { hasScrolled } = useIntersectionProviderContext();
-  if (!hasScrolled)
+  if (!hasScrolled) {
+    console.log("hidden");
     return (
       <div className="sticky top-0 left-0 right-0 z-[996] grid min-h-[88px] w-screen">
         {" "}
       </div>
     );
+  }
 
   function toggleShowMenu() {
     setShowMenu((state) => !state);
