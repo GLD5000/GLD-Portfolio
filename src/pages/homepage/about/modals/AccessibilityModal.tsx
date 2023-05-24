@@ -116,7 +116,7 @@ export default function AccessibilityModal({
           <Image
             placeholder="blur"
             src={scores}
-            className="mx-auto mt-10 h-auto w-full max-w-[40rem] rounded-xl shadow-xl shadow-black"
+            className="mx-auto mt-10 h-auto w-[280px] max-w-[40rem] rounded-xl shadow-xl shadow-black xs:w-[23rem] sm:w-[30rem] md:w-[40rem]"
             alt="100 percent Lighthouse Scores"
           />
         </>
