@@ -4,8 +4,6 @@ import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
 import MoonSvg from "@/icons/MoonSvg";
 import SunSvg from "@/icons/SunSvg";
 import SvgButtonNew from "@/elements/SvgButtonNew";
-import Image from "next/image";
-import gldLogo from "src/assets/hero/g22813.png";
 import Stars from "./Stars";
 import HeroCta from "./HeroCta";
 
@@ -73,21 +71,7 @@ export default function Hero({
           </div>
         </div>
 
-        <div className=" m-auto grid h-fit w-screen gap-8 bg-gradient-to-t from-secondary-light  via-transparent to-transparent dark:bg-gradient-to-t dark:from-secondary dark:via-transparent dark:to-transparent lg:w-fit lg:grid-cols-2">
-          <div className="m-auto h-fit w-screen max-w-[35rem] lg:h-auto lg:w-full lg:max-w-[50rem] ">
-            <div className="h-full w-full px-8">
-              <Image
-                priority
-                loading="eager"
-                placeholder="empty"
-                src={gldLogo}
-                className="m-auto h-auto w-[95vw] max-w-full lg:w-[50vw] "
-                alt="GLD Logo"
-              />
-            </div>
-          </div>
-          <HeroCta />
-        </div>
+        <HeroCta />
       </div>
     </>
   );

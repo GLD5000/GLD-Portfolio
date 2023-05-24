@@ -14,7 +14,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "mesh-gradient": "url('/background/MeshGradA.svg')",
+        herocta: "linear-gradient(0deg, #d4cdfa 20%, rgba(0,0,0,0) 50%)",
+        heroctadk: "linear-gradient(0deg, #050214 20%, rgba(0,0,0,0) 50%)",
       },
       gradientColorStopPositions: {
         late: "5%",
