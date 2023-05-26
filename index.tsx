@@ -1,15 +1,12 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
+import { useState } from "react";
+import IntersectionProvider from "@/utilities/contexts/IntersectionProvider";
 import Header from "./src/pages/homepage/header/Header";
 import Footer from "./src/pages/homepage/footer/Footer";
-import { useState } from "react";
 import MainContentLink from "./src/pages/homepage/header/MainContentLink";
 import Hero from "./src/pages/homepage/hero/Hero";
 import About from "./src/pages/homepage/about/About";
 import Projects from "./src/pages/homepage/projects/Projects";
-import IntersectionProvider from "@/utilities/contexts/IntersectionProvider";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [colourTheme, setColourTheme] = useState(true);
@@ -36,7 +33,7 @@ export default function Home() {
       </Head>
       <section id="theme-wrapper" className={colourTheme ? "dark" : undefined}>
         <main
-          className={`relative h-screen w-screen snap-y snap-proximity snap-normal flex-col overflow-y-auto overflow-x-hidden border-border   bg-bg text-txt-main motion-safe:scroll-smooth dark:border-border-dk dark:bg-bg-dk dark:text-txt-main-dk  ${
+          className={`relative h-screen w-screen flex-col overflow-y-auto overflow-x-hidden border-border bg-bg text-txt-main motion-safe:scroll-smooth dark:border-border-dk dark:bg-bg-dk dark:text-txt-main-dk  ${
             colourTheme ? "dark" : ""
           }`}
         >
@@ -50,7 +47,7 @@ export default function Home() {
               toggleColourTheme={toggleColourTheme}
               colourTheme={colourTheme}
             />
-            <div className="h-screen bg-secondary-light dark:bg-secondary"></div>
+            <div className="h-screen bg-secondary-light dark:bg-secondary" />
 
             <About />
             <Projects />
