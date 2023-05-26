@@ -5,7 +5,7 @@ import SpanSplitter from "./SpanSplitter";
 
 export default function HeroCta() {
   return (
-    <div className=" m-auto grid h-fit w-screen gap-8 bg-herocta py-12 dark:bg-heroctadk lg:w-fit lg:grid-cols-2">
+    <div className=" mx-auto grid h-fit w-screen gap-8 py-12 lg:my-auto lg:w-fit lg:grid-cols-2">
       <div className="m-auto h-fit w-screen max-w-[35rem] lg:h-auto lg:w-full lg:max-w-[50rem] ">
         <div className="h-full w-full px-8">
           <Image
@@ -13,7 +13,7 @@ export default function HeroCta() {
             loading="eager"
             placeholder="empty"
             src={gldLogo}
-            className="m-auto h-auto w-[95vw] max-w-full lg:w-[50vw] "
+            className="max-landscapeMobile:landscape:h-[50vmin] max-landscapeMobile:landscape:w-auto m-auto h-auto w-[95vw] max-w-full lg:w-[50vw] "
             alt="GLD Logo"
           />
         </div>
