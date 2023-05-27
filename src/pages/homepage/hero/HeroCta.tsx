@@ -12,6 +12,8 @@ export default function HeroCta() {
             priority
             loading="eager"
             placeholder="empty"
+            width={736}
+            height={634.61}
             src={gldLogo}
             className="m-auto h-auto w-[95vw] max-w-full lg:w-[50vw] max-lg:landscape:h-[50vmin] max-lg:landscape:w-auto "
             alt="GLD Logo"
