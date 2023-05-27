@@ -57,6 +57,9 @@ module.exports = {
       maxWidth: {
         body: "1250px",
       },
+      minHeight: {
+        body: "1250px",
+      },
       width: {
         body: "calc(100vw - 4rem)",
         "body-sm": "calc(100vw - 2rem)",

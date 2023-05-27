@@ -13,7 +13,7 @@ export default function HeroCta() {
             loading="eager"
             placeholder="empty"
             src={gldLogo}
-            className="max-landscapeMobile:landscape:h-[50vmin] max-landscapeMobile:landscape:w-auto m-auto h-auto w-[95vw] max-w-full lg:w-[50vw] "
+            className="m-auto h-auto w-[95vw] max-w-full lg:w-[50vw] max-lg:landscape:h-[50vmin] max-lg:landscape:w-auto "
             alt="GLD Logo"
           />
         </div>
