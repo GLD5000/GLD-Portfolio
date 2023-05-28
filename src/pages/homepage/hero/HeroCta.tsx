@@ -1,6 +1,6 @@
 import StarSvg from "@/icons/StarSvg";
 import Image from "next/image";
-import gldLogo from "src/assets/hero/g22813.png";
+import gldLogo from "src/assets/hero/GLDLogo3D.png";
 import SpanSplitter from "./SpanSplitter";
 
 export default function HeroCta() {
