@@ -5,7 +5,7 @@ import SpanSplitter from "./SpanSplitter";
 
 export default function HeroCta() {
   return (
-    <div className=" mx-auto grid h-fit w-screen gap-8 lg:my-auto lg:w-fit lg:grid-cols-2">
+    <div className=" mx-auto grid h-fit max-h-[47rem] w-screen gap-8 lg:my-auto lg:w-fit lg:grid-cols-2">
       <div className="m-auto h-fit w-screen max-w-[35rem] lg:h-auto lg:w-full lg:max-w-[50rem] ">
         <div className="h-full w-full px-8">
           <Image
