@@ -10,7 +10,7 @@ export default function OpenSourceCard() {
   return (
     <AboutCard
       image={imageIn}
-      text="No developer is an island and Open-Source software is what allows us to connect and share good ideas. Every tool I make is free and open source. All my source code is freely available on GitHub on my profile where I have over 2,900 commits over the past year."
+      text="No developer is an island and Open-Source software is what allows us to connect and share good ideas. Every tool I make is free and open source. All my source code is freely available on GitHub on my profile where I have over 3,000 commits over the past year."
       title="Open-Source"
       cta={
         <a
