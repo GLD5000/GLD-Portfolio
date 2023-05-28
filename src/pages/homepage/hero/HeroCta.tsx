@@ -20,7 +20,7 @@ export default function HeroCta() {
           />
         </div>
       </div>
-      <div className="m-auto grid h-fit w-max gap-6 bg-transparent py-4">
+      <div className="m-auto grid h-fit w-fit gap-6 bg-transparent py-4">
         {/* <p className=" ml:4 mr-auto mb-0 w-fit text-xl md:ml-16 lg:text-2xl  xl:text-3xl">
               <SpanSplitter word={"Hi, I am"} />
             </p> */}
