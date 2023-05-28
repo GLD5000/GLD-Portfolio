@@ -50,18 +50,18 @@ export default function HeroCta() {
             <StarSvg />
           </div>
         </div>
-        <h2 className="mx-auto text-2xl font-bold sm:text-3xl xl:text-4xl">
+        <h2 className="h-fit w-full text-center text-2xl font-bold sm:text-3xl xl:text-4xl">
           <SpanSplitter word="Web Developer" />
         </h2>
-        <p className="my-0 mx-auto w-fit text-xs xs:text-sm sm:text-base lg:text-lg xl:text-xl">
+        <p className="my-0 h-fit w-full text-center text-xs xs:text-sm sm:text-base lg:text-lg xl:text-xl">
           I am a React developer based near London, UK.
         </p>
-        <p className="my-0 mx-auto w-fit text-xs xs:text-sm sm:text-base lg:text-lg xl:text-xl">
+        <p className="my-0 h-fit w-full text-center text-xs xs:text-sm sm:text-base lg:text-lg xl:text-xl">
           I build innovative and accessible websites and apps.
         </p>
         <a
           href="#projects"
-          className="mx-auto h-fit w-60 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-2xl font-bold text-white hover:bg-white hover:text-black hover:transition  focus:bg-white focus:text-black focus:transition"
+          className="mx-auto h-14 w-60 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-2xl font-bold text-white hover:bg-white hover:text-black hover:transition  focus:bg-white focus:text-black focus:transition"
         >{`Let's Go`}</a>
       </div>
     </div>
