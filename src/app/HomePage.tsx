@@ -36,7 +36,7 @@ export default function HomePage() {
             toggleColourTheme={toggleColourTheme}
             colourTheme={colourTheme}
           />
-          <div className=" mt-12 h-screen lg:min-h-[47rem]  max-lg:landscape:h-[100vmax]" />
+          <div className=" mt-12 h-screen lg:min-h-[46.25rem]  max-lg:landscape:h-[100vmax]" />
           <Projects />
           <About />
           <Contact />

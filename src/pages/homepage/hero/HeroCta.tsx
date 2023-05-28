@@ -5,21 +5,17 @@ import SpanSplitter from "./SpanSplitter";
 
 export default function HeroCta() {
   return (
-    <div className=" mx-auto grid h-fit max-h-[47rem] w-screen gap-8 lg:my-auto lg:w-fit lg:grid-cols-2">
-      <div className="m-auto h-fit w-screen max-w-[35rem] lg:h-auto lg:w-full lg:max-w-[50rem] ">
-        <div className="h-full w-full px-8">
-          <Image
-            priority
-            loading="eager"
-            placeholder="empty"
-            width={736}
-            height={736}
-            src={gldLogo}
-            className="m-auto h-auto w-[95vw] max-w-full lg:w-[50vw] max-lg:landscape:h-[50vmin] max-lg:landscape:w-auto "
-            alt="GLD Logo"
-          />
-        </div>
-      </div>
+    <div className=" mx-auto grid h-fit max-h-[screen] w-screen gap-8 pt-10 lg:my-auto lg:max-h-[46.25rem] lg:w-fit lg:grid-cols-2">
+      <Image
+        priority
+        loading="eager"
+        placeholder="empty"
+        width={740}
+        height={740}
+        src={gldLogo}
+        className="m-auto h-[min(45vmax,90vmin,46.25rem)] w-[min(45vmax,90vmin,46.25rem)]"
+        alt="GLD Logo"
+      />
       <div className="m-auto grid h-fit w-fit gap-6 bg-transparent py-4">
         {/* <p className=" ml:4 mr-auto mb-0 w-fit text-xl md:ml-16 lg:text-2xl  xl:text-3xl">
               <SpanSplitter word={"Hi, I am"} />
