@@ -1,5 +1,6 @@
 import GitHubSvg from "@/icons/GitHubSvg";
-import PlaySvg from "@/icons/PlaySvg";
+import NewWindowSvg from "@/icons/NewWindow";
+// import PlaySvg from "@/icons/PlaySvg";
 import Link from "next/link";
 import { ReactNode } from "react";
 
@@ -52,7 +53,8 @@ export default function ProjectCard({
             href={mainUrl ?? ""}
           >
             <div className="my-auto h-8 w-8">
-              <PlaySvg />
+              {/* <PlaySvg /> */}
+              <NewWindowSvg />
             </div>
             Live Website
           </Link>
