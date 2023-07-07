@@ -1,10 +1,17 @@
 import Image from "next/image";
+import { Delicious_Handrawn as deliciousHandrawn } from "next/font/google";
 import CreateCropped from "src/assets/devtips/CreateCropped.jpg";
 import SectionCropped from "src/assets/devtips/SectionCropped.jpg";
 import tagsCropped from "src/assets/devtips/tagsCropped.jpg";
 import TipBCropped from "src/assets/devtips/TipBCropped.jpg";
 import TipsCropped from "src/assets/devtips/TipsDCropped.jpg";
 import ProjectCard from "./ProjectCard";
+
+const customFont = deliciousHandrawn({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
 
 const imagesCollection = (
   <>
@@ -44,7 +51,9 @@ const imagesCollection = (
 const titleDiv = (
   <div className=" mx-auto">
     <div className=" flex flex-row overflow-clip rounded-lg border-2 border-current ">
-      <h1 className=" rounded-none bg-white px-2 pb-4 pt-1 font-devTips text-6xl font-black tracking-wide text-black sm:px-4 sm:pt-2 sm:pb-8 sm:text-8xl">
+      <h1
+        className={`${customFont.className} rounded-none bg-white px-2 pb-4 pt-1 text-6xl font-bold tracking-tight text-black text-shadow-devtips sm:px-4 sm:pt-2 sm:pb-8 sm:text-8xl`}
+      >
         DevTips
       </h1>
     </div>

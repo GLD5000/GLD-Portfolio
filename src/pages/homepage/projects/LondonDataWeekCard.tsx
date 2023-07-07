@@ -6,6 +6,11 @@ import SchedulePortrait from "src/assets/LDW/SchedulePortrait.jpg";
 import { Righteous } from "next/font/google";
 import ProjectCard from "./ProjectCard";
 
+const righteous = Righteous({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
 const imageCollection = (
   <>
     <Image
@@ -34,12 +39,6 @@ const imageCollection = (
     />
   </>
 );
-
-const righteous = Righteous({
-  subsets: ["latin"],
-  weight: "400",
-  display: "swap",
-});
 
 const titleDiv = (
   <div className={`${righteous.className} mx-auto text-center`}>

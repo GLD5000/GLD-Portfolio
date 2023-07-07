@@ -1,8 +1,15 @@
 import { useState } from "react";
+import { Roboto_Mono as customGoogleFont } from "next/font/google";
 import GldSvg from "src/icons/GldSvg";
 import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
 import HamburgerMenu from "./HamburgerMenu";
 import NavBar from "./NavBar";
+
+const customFont = customGoogleFont({
+  subsets: ["latin"],
+  weight: "700",
+  display: "swap",
+});
 
 export default function Header({
   toggleColourTheme,
@@ -35,7 +42,9 @@ export default function Header({
               wrapperClasses="h-12 square fill-white"
               svgClasses=" drop-shadow-logo"
             />
-            <h2 className=" px-1 font-title text-3.5xl text-white text-shadow-title">
+            <h2
+              className={`${customFont.className} px-1 text-3.5xl text-white text-shadow-title`}
+            >
               Portfolio
             </h2>
           </a>

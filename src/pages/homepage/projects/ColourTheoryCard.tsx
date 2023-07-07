@@ -1,10 +1,17 @@
 import Image from "next/image";
+import { Press_Start_2P as customGoogleFont } from "next/font/google";
 import ComboCropped from "src/assets/colourtheory/ComboCropped.jpg";
 import CopyCropped from "src/assets/colourtheory/CopyCropped.jpg";
 import PickerCropped from "src/assets/colourtheory/PickerBCropped.jpg";
 import SaveCropped from "src/assets/colourtheory/SaveCropped.jpg";
 import SmallPickerCropped from "src/assets/colourtheory/SmallPickerBCropped.jpg";
 import ProjectCard from "./ProjectCard";
+
+const customFont = customGoogleFont({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+});
 
 const imagesCollection = (
   <>
@@ -44,8 +51,10 @@ const imagesCollection = (
 
 const titleDiv = (
   <div className=" mx-auto">
-    <div className=" flex flex-row overflow-clip rounded-lg border-2 border-current font-colourmatic ">
-      <h1 className=" text rounded-none bg-white p-3 font-colourmatic text-lg tracking-tight text-black text-shadow-colourmatic xs:text-2xl sm:p-[0.95rem] sm:text-3xl xl:text-4xl">
+    <div
+      className={`${customFont.className} flex flex-row overflow-clip rounded-lg border-2 border-current `}
+    >
+      <h1 className=" font-inherit text rounded-none bg-white p-3 text-lg tracking-tight text-black text-shadow-colourmatic xs:text-2xl sm:p-[0.95rem] sm:text-3xl xl:text-4xl">
         &lt;ColourTheory&gt;
       </h1>
     </div>

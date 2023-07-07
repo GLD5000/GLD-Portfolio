@@ -1,10 +1,16 @@
 import Image from "next/image";
+// import { Road_Rage as customGoogleFont } from "next/font/google";
 import ComboCropped from "src/assets/contrastlab/ComboCropped.jpg";
 import InfoTableCropped from "src/assets/contrastlab/InfoTableCropped.jpg";
 import MatrixACropped from "src/assets/contrastlab/MatrixACropped.jpg";
 import PickerCropped from "src/assets/contrastlab/PickerSoloCropped.jpg";
 import InputCropped from "src/assets/contrastlab/InputCropped.jpg";
 import ProjectCard from "./ProjectCard";
+// const customFont = customGoogleFont({
+//   subsets: ["latin"],
+//   weight: "400",
+//   display: "swap",
+// });
 
 const imageCollection = (
   <>
@@ -44,7 +50,7 @@ const imageCollection = (
 
 const titleDiv = (
   <div className=" mx-auto">
-    <div className="  flex flex-row overflow-clip rounded-lg border-2 border-current ">
+    <div className="flex flex-row overflow-clip rounded-lg border-2 border-current ">
       <h1 className=" rounded-none bg-white p-3 font-black  leading-6 text-black sm:p-[0.95rem] sm:text-6xl">
         CONTRAST
       </h1>

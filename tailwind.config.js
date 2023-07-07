@@ -6,12 +6,10 @@ module.exports = {
   darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    fontFamily: {
-      title: ["'Roboto Mono'", "cursive"],
-      devTips: ["'Delicious Handrawn'", "cursive"],
-      contrastTool: ["Poppins", "sans-serif"],
-      colourmatic: ["'Press Start 2P'", "cursive"],
-    },
+    // fontFamily: {
+    //   title: ["'Roboto Mono'", "cursive"],
+    //   colourmatic: ["'Press Start 2P'", "cursive"],
+    // },
     extend: {
       backgroundImage: {
         herocta: "linear-gradient(0deg, #d4cdfa 20%, rgba(0,0,0,0) 50%)",
@@ -30,6 +28,7 @@ module.exports = {
       },
       textShadow: {
         colourmatic: "4px 0px #757575",
+        devtips: "1px 0px 2px #000",
         title: "1px 1px 4px #000000",
       },
       dropShadow: {

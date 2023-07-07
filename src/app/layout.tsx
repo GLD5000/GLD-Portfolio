@@ -1,4 +1,11 @@
 import "@/styles/globals.css";
+import { Poppins } from "next/font/google";
+
+const mainFont = Poppins({
+  subsets: ["latin"],
+  weight: "500",
+  display: "swap",
+});
 
 export default function RootLayout({
   // Layouts must accept a children prop.
@@ -9,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={mainFont.className}>{children}</body>
     </html>
   );
 }
