@@ -29,8 +29,8 @@ const initialiserContext: ProviderContext = {
 function useData() {
   const [currentSection, setcurrentSection] = useState("hero");
   const [hasScrolled, setHasScrolled] = useState(false);
-  // console.log('currentSection:', currentSection);
-  // console.log('hasScrolled:', hasScrolled);
+  console.log("currentSection:", currentSection);
+  console.log("hasScrolled:", hasScrolled);
   if (!hasScrolled && currentSection !== "hero") setHasScrolled(true);
   return {
     currentSection,

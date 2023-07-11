@@ -27,7 +27,7 @@ export default function NavBar({
   colourTheme: boolean;
 }) {
   const { currentSection } = useIntersectionProviderContext();
-
+  console.log("currentSection:", currentSection);
   return (
     <nav className="relative flex h-16 flex-wrap items-center justify-center gap-8 ">
       {/* <ExternalLink
