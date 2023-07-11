@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
-import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
+import useIntersectionObserver from "@/utilities/intersectionObserver/useIntersectionObserver";
+import { useIntersectionProviderContext } from "@/utilities/intersectionObserver/IntersectionProvider";
 import CardGrid from "./CardGrid";
 
 export default function About() {

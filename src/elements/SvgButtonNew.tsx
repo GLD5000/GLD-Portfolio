@@ -1,3 +1,5 @@
+"use client";
+
 import { MouseEvent, ReactElement, useState } from "react";
 
 function getContent(

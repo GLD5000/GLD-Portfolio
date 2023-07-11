@@ -5,7 +5,7 @@ import Header from "@/pages/homepage/header/Header";
 import MainContentLink from "@/pages/homepage/header/MainContentLink";
 import Hero from "@/pages/homepage/hero/Hero";
 import Projects from "@/pages/homepage/projects/Projects";
-import IntersectionProvider from "@/utilities/contexts/IntersectionProvider";
+import IntersectionProvider from "@/utilities/intersectionObserver/IntersectionProvider";
 // import { useState } from "react";
 
 export default function HomePage() {

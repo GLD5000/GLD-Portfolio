@@ -1,41 +1,43 @@
-"use client";
+// "use client";
 
-import { useEffect } from "react";
-import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
-import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
-import MoonSvg from "@/icons/MoonSvg";
-import SunSvg from "@/icons/SunSvg";
-import SvgButtonNew from "@/elements/SvgButtonNew";
-import { usePortfolioStore } from "@/zustand/zustand";
+// import { useEffect } from "react";
+// import { useIntersectionProviderContext } from "@/utilities/intersectionObserver/IntersectionProvider";
+// import useIntersectionObserver from "@/utilities/intersectionObserver/useIntersectionObserver";
+// import MoonSvg from "@/icons/MoonSvg";
+// import SunSvg from "@/icons/SunSvg";
+// import SvgButtonNew from "@/elements/SvgButtonNew";
+// import { usePortfolioStore } from "@/zustand/zustand";
+import IntersectionReference from "@/utilities/intersectionObserver/IntersectionReference";
 import Stars from "./Stars";
 import HeroCta from "./HeroCta";
+import DarkModeBtn from "./DarkModeBtn";
 
-function getDarkToggleIcon(isDark: boolean) {
-  const wrapper = (
-    <div className=" text:inherit my-auto aspect-square h-6">
-      {isDark ? <SunSvg /> : <MoonSvg />}{" "}
-    </div>
-  );
-  return wrapper;
-}
+// function getDarkToggleIcon(isDark: boolean) {
+//   const wrapper = (
+//     <div className=" text:inherit my-auto aspect-square h-6">
+//       {isDark ? <SunSvg /> : <MoonSvg />}{" "}
+//     </div>
+//   );
+//   return wrapper;
+// }
 
 export default function Hero() {
-  const { elementRef, onScreen } = useIntersectionObserver();
-  const { setcurrentSection } = useIntersectionProviderContext();
-  const colourTheme = usePortfolioStore((state) => state.darkTheme);
-  const toggleColourTheme = usePortfolioStore((state) => state.toggleDarkTheme);
+  // const { elementRef, onScreen } = useIntersectionObserver();
+  // const { setcurrentSection } = useIntersectionProviderContext();
+  // const colourTheme = usePortfolioStore((state) => state.darkTheme);
+  // const toggleColourTheme = usePortfolioStore((state) => state.toggleDarkTheme);
 
-  useEffect(() => {
-    let run = true;
-    const refElement = elementRef.current;
-    if (run && onScreen && refElement != null) {
-      setcurrentSection(refElement.id);
-    }
+  // useEffect(() => {
+  //   let run = true;
+  //   const refElement = elementRef.current;
+  //   if (run && onScreen && refElement != null) {
+  //     setcurrentSection(refElement.id);
+  //   }
 
-    return () => {
-      run = false;
-    };
-  }, [onScreen, elementRef, setcurrentSection]);
+  //   return () => {
+  //     run = false;
+  //   };
+  // }, [onScreen, elementRef, setcurrentSection]);
 
   return (
     <>
@@ -43,27 +45,14 @@ export default function Hero() {
         <Stars />
       </div>
       <div
-        id="hero"
-        ref={elementRef}
+        // id="hero"
+        // ref={elementRef}
         className=" absolute top-0  z-[997] grid h-screen w-screen lg:min-h-[46.25rem] max-lg:landscape:h-[100vmax] "
       >
+        <IntersectionReference identity="hero" />
         <div className="absolute top-0 left-0 w-full">
           <div className="mx-auto w-body-sm min-w-body max-w-body flex-col bg-transparent sm:w-body">
-            <SvgButtonNew
-              showTextIn={undefined}
-              clickFunction={toggleColourTheme}
-              reverse={false}
-              id="colour-theme-button-hero"
-              name="Dark Mode Button"
-              className="relative rounded text-xs"
-              buttonClasses="w-fit h-fit overflow-visible flex-col flex text-current pb-4 pt-1 ml-auto mt-3 px-2"
-              textElement={
-                <span className="absolute bottom-0 w-fit rounded-t-none bg-transparent text-current ">
-                  {colourTheme ? "Light" : "Dark"}
-                </span>
-              }
-              svg={getDarkToggleIcon(colourTheme)}
-            />
+            <DarkModeBtn />
           </div>
         </div>
 

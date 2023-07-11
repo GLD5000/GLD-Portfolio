@@ -1,7 +1,7 @@
 "use client";
 
-import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
-import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
+import { useIntersectionProviderContext } from "@/utilities/intersectionObserver/IntersectionProvider";
+import useIntersectionObserver from "@/utilities/intersectionObserver/useIntersectionObserver";
 import { useEffect } from "react";
 import ColourmaticCard from "./ColourTheoryCard";
 import ContrastToolCard from "./ContrastLabCard";

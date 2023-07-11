@@ -7,8 +7,8 @@ import Link from "next/link";
 import portrait from "src/assets/aboutme/bwportrait.jpg";
 import LinkedInSvg from "@/icons/LinkedInSvg";
 import GitHubSvg from "src/icons/GitHubSvg";
-import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
-import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
+import { useIntersectionProviderContext } from "@/utilities/intersectionObserver/IntersectionProvider";
+import useIntersectionObserver from "@/utilities/intersectionObserver/useIntersectionObserver";
 
 interface FormData {
   name: string;
