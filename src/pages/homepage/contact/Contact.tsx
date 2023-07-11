@@ -1,3 +1,5 @@
+"use client";
+
 import PaperPlaneSvg from "@/icons/PaperPlaneSvg";
 import { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import Image from "next/image";

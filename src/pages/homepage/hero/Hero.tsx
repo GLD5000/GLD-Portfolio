@@ -1,9 +1,12 @@
+"use client";
+
 import { useEffect } from "react";
 import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
 import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
 import MoonSvg from "@/icons/MoonSvg";
 import SunSvg from "@/icons/SunSvg";
 import SvgButtonNew from "@/elements/SvgButtonNew";
+import { usePortfolioStore } from "@/zustand/zustand";
 import Stars from "./Stars";
 import HeroCta from "./HeroCta";
 
@@ -16,15 +19,11 @@ function getDarkToggleIcon(isDark: boolean) {
   return wrapper;
 }
 
-export default function Hero({
-  toggleColourTheme,
-  colourTheme,
-}: {
-  toggleColourTheme: () => void;
-  colourTheme: boolean;
-}) {
+export default function Hero() {
   const { elementRef, onScreen } = useIntersectionObserver();
   const { setcurrentSection } = useIntersectionProviderContext();
+  const colourTheme = usePortfolioStore((state) => state.darkTheme);
+  const toggleColourTheme = usePortfolioStore((state) => state.toggleDarkTheme);
 
   useEffect(() => {
     let run = true;

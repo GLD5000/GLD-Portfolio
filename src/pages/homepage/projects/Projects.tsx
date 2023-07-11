@@ -1,3 +1,5 @@
+"use client";
+
 import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
 import useIntersectionObserver from "@/utilities/hooks/useIntersectionObserver";
 import { useEffect } from "react";

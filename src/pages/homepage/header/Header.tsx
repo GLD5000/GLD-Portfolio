@@ -1,7 +1,10 @@
+"use client";
+
 import { useState } from "react";
 import { Roboto_Mono as customGoogleFont } from "next/font/google";
 import GldSvg from "src/icons/GldSvg";
 import { useIntersectionProviderContext } from "@/utilities/contexts/IntersectionProvider";
+import { usePortfolioStore } from "@/zustand/zustand";
 import HamburgerMenu from "./HamburgerMenu";
 import NavBar from "./NavBar";
 
@@ -11,13 +14,10 @@ const customFont = customGoogleFont({
   display: "swap",
 });
 
-export default function Header({
-  toggleColourTheme,
-  colourTheme,
-}: {
-  toggleColourTheme: () => void;
-  colourTheme: boolean;
-}) {
+export default function Header() {
+  const colourTheme = usePortfolioStore((state) => state.darkTheme);
+  const toggleColourTheme = usePortfolioStore((state) => state.toggleDarkTheme);
+
   const [showMenu, setShowMenu] = useState(true);
   const { hasScrolled } = useIntersectionProviderContext();
   if (!hasScrolled) {
