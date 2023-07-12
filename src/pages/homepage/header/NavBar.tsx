@@ -27,7 +27,7 @@ export default function NavBar({
 }) {
   const { currentSection } = useIntersectionProviderContext();
   return (
-    <nav className="relative flex h-16 flex-wrap items-center justify-center gap-8 ">
+    <nav className="relative flex h-12 flex-wrap content-center items-center justify-center gap-8 ">
       <a
         className={`m-0 hidden font-bold text-black sm:inline ${
           currentSection === "projects" ? "text-white" : ""
