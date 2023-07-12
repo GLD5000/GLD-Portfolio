@@ -68,7 +68,7 @@ module.exports = {
         // primary: "#53655f", // murky green
         // primary: "#419b7d", // mint green
         "primary-dk": "#e0e0e0",
-        primary: "#37836a",
+        primary: "#786ab9",
         secondary: "#050214",
         "secondary-light": "#d4cdfa",
 
