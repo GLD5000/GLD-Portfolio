@@ -5,7 +5,7 @@ export const usePortfolioStore = create<{
   toggleDarkTheme: () => void;
   setDarkTheme: (input: boolean) => void;
 }>((set) => ({
-  darkTheme: false,
+  darkTheme: true,
   toggleDarkTheme: () => {
     set((state) => {
       const inverted = !state.darkTheme;
