@@ -1,7 +1,7 @@
 export default function TsLogo() {
   return (
     <svg
-      className="mx-auto h-12 w-12 fill-current stroke-none"
+      className="mx-auto h-8 w-8 fill-current stroke-none"
       viewBox="0 0 512 512"
       fill="none"
     >

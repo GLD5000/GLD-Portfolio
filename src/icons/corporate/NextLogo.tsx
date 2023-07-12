@@ -3,7 +3,7 @@ export default function NextLogo() {
     <svg
       width="394"
       height="80"
-      className="m-auto h-8 w-40 fill-current stroke-none"
+      className="m-auto h-6 w-auto rounded-none fill-current stroke-none"
       viewBox="0 0 394 80"
       fill="none"
     >
