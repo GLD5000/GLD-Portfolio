@@ -6,6 +6,11 @@ import pool from "src/assets/aboutme/poolPodcastCropped.jpg";
 import morethan from "src/assets/aboutme/morethanPodcast.jpg";
 import assessment from "src/assets/aboutme/assessmentPortal.jpg";
 import logo from "src/assets/aboutme/gldInkscape.jpg";
+import ReactLogo from "@/icons/corporate/ReactLogo";
+import TailwindLogo from "@/icons/corporate/TailwindLogo";
+import NextLogo from "@/icons/corporate/NextLogo";
+import TsLogo from "@/icons/corporate/TsLogo";
+import JsLogo from "@/icons/corporate/JsLogo";
 import Modal from "../../../../elements/Modal";
 
 export default function CreativityModal() {
@@ -18,48 +23,58 @@ export default function CreativityModal() {
             <h2 className="mx-auto mb-4 w-fit text-center text-3xl font-bold">
               Web Skills / My Stack
             </h2>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <Link
+                href="https://nextjs.org"
+                target="_blank"
+                referrerPolicy="no-referrer"
+                className=" h-fit w-fit rounded p-2 text-black"
+              >
+                <NextLogo />
+                {/* Next.js */}
+              </Link>
               <Link
                 href="https://react.dev/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-primary p-1 text-white"
+                className=" w-fit rounded p-2 text-black"
               >
-                {" "}
-                React
+                <ReactLogo />
+                {/* <p className="w-fit mx-auto my-0">React</p> */}
               </Link>
               <Link
                 href="https://www.typescriptlang.org/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-primary p-1 text-white"
+                className=" w-fit rounded p-2 text-black"
               >
-                {" "}
-                TypeScript
+                <TsLogo />
+                {/* TypeScript */}
               </Link>
               <Link
-                href="https://nextjs.org"
+                href="https://www.typescriptlang.org/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-primary p-1 text-white"
+                className=" w-fit rounded p-2 text-black"
               >
-                {" "}
-                Next.js
+                <JsLogo />
+                {/* TypeScript */}
               </Link>
+
               <Link
                 href="https://tailwindcss.com/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-primary p-1 text-white"
+                className=" w-fit rounded p-2 text-black"
               >
-                {" "}
-                Tailwind CSS
+                <TailwindLogo />
+                {/* Tailwind CSS */}
               </Link>
-              <Link
+              {/*  <Link
                 href="https://vitejs.dev/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-primary p-1 text-white"
+                className=" w-fit rounded bg-primary p-2 text-white"
               >
                 {" "}
                 Vite
@@ -68,7 +83,7 @@ export default function CreativityModal() {
                 href="https://vitest.dev/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-primary p-1 text-white"
+                className=" w-fit rounded bg-primary p-2 text-white"
               >
                 {" "}
                 Vitest
@@ -77,7 +92,7 @@ export default function CreativityModal() {
                 href="https://www.npmjs.com/package/husky"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-primary p-1 text-white"
+                className=" w-fit rounded bg-primary p-2 text-white"
               >
                 {" "}
                 Husky
@@ -86,7 +101,7 @@ export default function CreativityModal() {
                 href="https://www.npmjs.com/package/lint-staged"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-primary p-1 text-white"
+                className=" w-fit rounded bg-primary p-2 text-white"
               >
                 {" "}
                 Lint-Staged
@@ -95,7 +110,7 @@ export default function CreativityModal() {
                 href="https://code.visualstudio.com/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-primary p-1 text-white"
+                className=" w-fit rounded bg-primary p-2 text-white"
               >
                 {" "}
                 VSCode
@@ -104,16 +119,16 @@ export default function CreativityModal() {
                 href="https://github.com/GLD5000"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-primary p-1 text-white"
+                className=" w-fit rounded bg-primary p-2 text-white"
               >
                 {" "}
                 GitHub
-              </Link>
+              </Link> */}
               {/* <Link
                 href="https://git-scm.com/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-primary p-1 text-white"
+                className=" w-fit rounded bg-primary p-2 text-white"
               >
                 {" "}
                 Git
@@ -122,42 +137,42 @@ export default function CreativityModal() {
                 href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-primary p-1 text-white"
+                className=" w-fit rounded bg-primary p-2 text-white"
               >
                 {" "}
                 JavaScript
               </Link> */}
-              <Link
+              {/* <Link
                 href="https://sass-lang.com/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-primary p-1 text-white"
+                className=" w-fit rounded bg-primary p-2 text-white"
               >
                 {" "}
                 SCSS
-              </Link>
+              </Link> */}
               {/* <Link
                 href="https://html.spec.whatwg.org/"
                 target="_blank"
                 referrerPolicy="no-referrer"
-                className=" w-fit rounded bg-primary p-1 text-white"
+                className=" w-fit rounded bg-primary p-2 text-white"
               >
                 {" "}
                 HTML5+
               </Link> */}
-              <Link
+              {/* <Link
                 href="https://freecodecamp.org/certification/GLD5000/javascript-algorithms-and-data-structures"
                 target="_blank"
                 referrerPolicy="no-referrer"
                 aria-label="Go to my Free code camp certificate"
               >
-                {/* <Image
+                <Image
                   placeholder="blur"
                   src={cert}
                   className="m-auto h-auto w-full max-h-[248px] rounded shadow-xl shadow-black"
                   alt={"Freecode camp certificate"}
-                /> */}
-              </Link>
+                />
+              </Link> */}
             </div>
           </div>
 
@@ -173,7 +188,7 @@ export default function CreativityModal() {
               href="https://www.cockos.com/EEL2/"
               target="_blank"
               referrerPolicy="no-referrer"
-              className="mx-auto w-fit rounded bg-primary p-1 text-white"
+              className="mx-auto w-fit rounded bg-primary p-2 text-white"
             >
               EEL2
             </Link>
@@ -194,7 +209,7 @@ export default function CreativityModal() {
               href="https://www.google.com/script/start/"
               target="_blank"
               referrerPolicy="no-referrer"
-              className="mx-auto w-fit rounded bg-primary p-1 text-white"
+              className="mx-auto w-fit rounded bg-primary p-2 text-white"
             >
               GAS
             </Link>
@@ -214,7 +229,7 @@ export default function CreativityModal() {
               href="https://inkscape.org/"
               target="_blank"
               referrerPolicy="no-referrer"
-              className="mx-auto w-fit rounded bg-primary p-1 text-white"
+              className="mx-auto w-fit rounded bg-primary p-2 text-white"
             >
               Inkscape
             </Link>
@@ -246,7 +261,7 @@ export default function CreativityModal() {
               href="https://inkscape.org/"
               target="_blank"
               referrerPolicy="no-referrer"
-              className="mx-auto w-fit rounded bg-primary p-1 text-white"
+              className="mx-auto w-fit rounded bg-primary p-2 text-white"
             >
               Reaper
             </Link>

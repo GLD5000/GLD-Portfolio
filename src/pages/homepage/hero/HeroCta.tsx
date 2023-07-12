@@ -1,6 +1,12 @@
 import StarSvg from "@/icons/StarSvg";
 import Image from "next/image";
 import gldLogo from "src/assets/hero/GLDLogo3D.png";
+import JsLogo from "@/icons/corporate/JsLogo";
+import NextLogo from "@/icons/corporate/NextLogo";
+import ReactLogo from "@/icons/corporate/ReactLogo";
+import TailwindLogo from "@/icons/corporate/TailwindLogo";
+import TsLogo from "@/icons/corporate/TsLogo";
+import Link from "next/link";
 import SpanSplitter from "./SpanSplitter";
 
 export default function HeroCta() {
@@ -49,6 +55,55 @@ export default function HeroCta() {
         <h2 className="h-fit w-full text-center text-2xl font-bold sm:text-3xl xl:text-4xl">
           <SpanSplitter word="Web Developer" />
         </h2>
+        <div className="mx-auto flex flex-row flex-wrap items-center">
+          <Link
+            href="https://nextjs.org"
+            target="_blank"
+            referrerPolicy="no-referrer"
+            className=" h-fit w-fit rounded p-2 text-current"
+          >
+            <NextLogo />
+            {/* Next.js */}
+          </Link>
+          <Link
+            href="https://react.dev/"
+            target="_blank"
+            referrerPolicy="no-referrer"
+            className=" w-fit rounded p-2 text-current"
+          >
+            <ReactLogo />
+            {/* <p className="w-fit mx-auto my-0">React</p> */}
+          </Link>
+          <Link
+            href="https://www.typescriptlang.org/"
+            target="_blank"
+            referrerPolicy="no-referrer"
+            className=" w-fit rounded p-2 text-current"
+          >
+            <TsLogo />
+            {/* TypeScript */}
+          </Link>
+          <Link
+            href="https://www.typescriptlang.org/"
+            target="_blank"
+            referrerPolicy="no-referrer"
+            className=" w-fit rounded p-2 text-current"
+          >
+            <JsLogo />
+            {/* TypeScript */}
+          </Link>
+
+          <Link
+            href="https://tailwindcss.com/"
+            target="_blank"
+            referrerPolicy="no-referrer"
+            className=" w-fit rounded p-2 text-current"
+          >
+            <TailwindLogo />
+            {/* Tailwind CSS */}
+          </Link>
+        </div>
+
         <p className="my-0 h-fit w-full text-center text-xs xs:text-sm sm:text-base lg:text-lg xl:text-xl">
           I am a React developer based near London, UK.
         </p>
