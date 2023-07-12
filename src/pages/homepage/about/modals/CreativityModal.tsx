@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { RefObject } from "react";
 import Image from "next/image";
 import scope from "src/assets/aboutme/ScopeCropped.jpg";
 import scales from "src/assets/aboutme/ScalesCroppedB.jpg";
@@ -9,14 +8,10 @@ import assessment from "src/assets/aboutme/assessmentPortal.jpg";
 import logo from "src/assets/aboutme/gldInkscape.jpg";
 import Modal from "../../../../elements/Modal";
 
-export default function CreativityModal({
-  refPassed,
-}: {
-  refPassed: RefObject<HTMLDialogElement>;
-}) {
+export default function CreativityModal() {
   return (
     <Modal
-      refIn={refPassed}
+      cta="See My Skills"
       content={
         <div className="grid gap-4 lg:grid-cols-3">
           <div className="grid h-fit max-w-[20rem] px-8">

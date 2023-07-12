@@ -1,5 +1,4 @@
 import { useIntersectionProviderContext } from "@/utilities/intersectionObserver/IntersectionProvider";
-// import Link from "next/link";
 import SvgButtonNew from "../../../elements/SvgButtonNew";
 import HamburgerSvg from "../../../icons/HamburgerSvg";
 import MoonSvg from "../../../icons/MoonSvg";
@@ -30,29 +29,6 @@ export default function NavBar({
   console.log("currentSection:", currentSection);
   return (
     <nav className="relative flex h-16 flex-wrap items-center justify-center gap-8 ">
-      {/* <ExternalLink
-        colourClasses={linkColours}
-        mediaVisibility="hidden sm:flex"
-        link="https://www.linkedin.com/in/garethlouisdevlin/"
-        content={[
-          <LinkedInSvg key="svg" />,
-          <p key="text" className="m-0 hidden md:inline">
-            LinkedIn
-          </p>,
-        ]}
-      />
-      <ExternalLink
-        colourClasses={linkColours}
-        mediaVisibility="hidden sm:flex"
-        link="https://github.com/GLD5000"
-        content={[
-          <GitHubSvg key="svg" />,
-          <p key="text" className="m-0 hidden md:inline">
-            GitHub
-          </p>,
-        ]}
-      /> */}
-
       <a
         className={`m-0 hidden font-bold text-black sm:inline ${
           currentSection === "projects" ? "text-white" : ""
@@ -78,23 +54,6 @@ export default function NavBar({
       >
         Contact
       </a>
-
-      {/* <Link
-        href="/about"
-        className={`m-0 hidden font-bold text-black sm:inline ${
-          currentSection === "about" ? "text-white" : ""
-        }`}
-      >
-        About
-      </Link>
-      <Link
-        href="/#projects"
-        className={`m-0 hidden font-bold text-black sm:inline ${
-          currentSection === "projects" ? "text-white" : ""
-        }`}
-      >
-        Projects
-      </Link> */}
 
       <div className="flex flex-wrap gap-1">
         <SvgButtonNew

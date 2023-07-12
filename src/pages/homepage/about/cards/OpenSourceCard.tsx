@@ -1,12 +1,7 @@
-// import { useRef } from "react";
 import imageIn from "src/assets/aboutme/GitHubHeatMap.jpg";
 import AboutCard from "../AboutCard";
 
-// import OpenSourceModal from "../modals/OpenSourceModal";
-
 export default function OpenSourceCard() {
-  // const modalRef = useRef<HTMLDialogElement>(null);
-
   return (
     <AboutCard
       image={imageIn}
@@ -16,9 +11,6 @@ export default function OpenSourceCard() {
         <a
           href="#contact"
           className="mx-auto h-fit w-60 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl font-bold text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
-          // onClick={() => {
-          //   modalRef.current?.showModal();
-          // }}
         >
           Connect With Me
         </a>

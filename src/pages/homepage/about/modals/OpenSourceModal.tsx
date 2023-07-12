@@ -1,17 +1,11 @@
 import Link from "next/link";
-import { RefObject } from "react";
 import Image from "next/image";
 import portrait from "src/assets/aboutme/bwportrait.jpg";
 import Modal from "../../../../elements/Modal";
 
-export default function OpenSourceModal({
-  refPassed,
-}: {
-  refPassed: RefObject<HTMLDialogElement>;
-}) {
+export default function OpenSourceModal() {
   return (
     <Modal
-      refIn={refPassed}
       content={
         <div className="grid gap-8 lg:grid-cols-2">
           <Image

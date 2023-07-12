@@ -7,8 +7,6 @@ import Link from "next/link";
 import portrait from "src/assets/aboutme/bwportrait.jpg";
 import LinkedInSvg from "@/icons/LinkedInSvg";
 import GitHubSvg from "src/icons/GitHubSvg";
-// import { useIntersectionProviderContext } from "@/utilities/intersectionObserver/IntersectionProvider";
-// import useIntersectionObserver from "@/utilities/intersectionObserver/useIntersectionObserver";
 import IntersectionReference from "@/utilities/intersectionObserver/IntersectionReference";
 
 interface FormData {
@@ -24,21 +22,6 @@ function Contact() {
     message: "",
   });
   const [messageSent, setMessageSent] = useState(false);
-
-  // const { elementRef, onScreen } = useIntersectionObserver();
-  // const { setcurrentSection } = useIntersectionProviderContext();
-
-  // useEffect(() => {
-  //   let run = true;
-  //   const refElement = elementRef.current;
-  //   if (run && onScreen && refElement != null) {
-  //     setcurrentSection(refElement.id);
-  //   }
-
-  //   return () => {
-  //     run = false;
-  //   };
-  // }, [onScreen, elementRef, setcurrentSection]);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -61,11 +44,7 @@ function Contact() {
   };
 
   return (
-    <section
-      // id="contact"
-      // ref={elementRef}
-      className="m-auto grid w-full gap-4 rounded bg-secondary-light pt-20 pb-32  text-black  dark:bg-secondary dark:text-white"
-    >
+    <section className="m-auto grid w-full gap-4 rounded bg-secondary-light pt-20 pb-32  text-black  dark:bg-secondary dark:text-white">
       <div className="m-auto grid w-body-sm  min-w-body max-w-body gap-4 rounded bg-transparent  text-black dark:text-white  sm:w-body">
         <div className="mx-auto mt-8 grid w-fit gap-4 sm:mt-0 sm:grid-cols-2">
           <Image
@@ -76,7 +55,6 @@ function Contact() {
           />
           <div className="m-auto w-fit">
             <IntersectionReference identity="contact" header="Hi There!" />
-            {/* <p className="m-0 mx-auto text-center text-4xl">Hi There!</p> */}
             <p className="m-0 mx-auto text-center text-4xl">{`Let's chat!`}</p>
           </div>
         </div>
@@ -84,8 +62,6 @@ function Contact() {
           className="mx-auto  my-6 grid w-full max-w-[55rem] gap-6 rounded-full p-4 text-black dark:text-white "
           onSubmit={handleSubmit}
         >
-          {/* <p className="m-0 mx-auto text-center text-2xl">Send me a Message</p> */}
-
           <div className="grid gap-6 md:grid-cols-2">
             <input
               className="w-full rounded-lg  border-2 bg-white p-2 text-inherit placeholder:text-txt-mid dark:bg-black placeholder:dark:text-txt-mid-dk"
