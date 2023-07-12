@@ -6,8 +6,10 @@ import { useIntersectionProviderContext } from "./IntersectionProvider";
 
 export default function IntersectionReference({
   identity,
+  header,
 }: {
   identity: string;
+  header?: string;
 }) {
   const { elementRef, onScreen } = useIntersectionObserver();
   const { setcurrentSection } = useIntersectionProviderContext();
@@ -24,5 +26,23 @@ export default function IntersectionReference({
     };
   }, [onScreen, elementRef, setcurrentSection]);
 
-  return <div id={identity} ref={elementRef} />;
+  return (
+    <>
+      {header ? (
+        <h1
+          id={identity}
+          ref={elementRef}
+          className="mx-auto my-10 w-fit scroll-m-32 text-4xl lg:text-6xl"
+        >
+          {header}
+        </h1>
+      ) : (
+        <div
+          id={identity}
+          ref={elementRef}
+          className="absolute top-0 left-0 h-[1px] w-[1px]"
+        />
+      )}
+    </>
+  );
 }

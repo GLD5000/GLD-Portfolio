@@ -1,8 +1,9 @@
 "use client";
 
-import { useIntersectionProviderContext } from "@/utilities/intersectionObserver/IntersectionProvider";
-import useIntersectionObserver from "@/utilities/intersectionObserver/useIntersectionObserver";
-import { useEffect } from "react";
+// import { useIntersectionProviderContext } from "@/utilities/intersectionObserver/IntersectionProvider";
+// import useIntersectionObserver from "@/utilities/intersectionObserver/useIntersectionObserver";
+// import { useEffect } from "react";
+import IntersectionReference from "@/utilities/intersectionObserver/IntersectionReference";
 import ColourmaticCard from "./ColourTheoryCard";
 import ContrastToolCard from "./ContrastLabCard";
 import DevTipsCard from "./DevTipsCard";
@@ -10,30 +11,31 @@ import LondonDataWeekCard from "./LondonDataWeekCard";
 import DevBlogCard from "./DevBlogCard";
 
 export default function Projects() {
-  const { elementRef, onScreen } = useIntersectionObserver();
-  const { setcurrentSection } = useIntersectionProviderContext();
+  // const { elementRef, onScreen } = useIntersectionObserver();
+  // const { setcurrentSection } = useIntersectionProviderContext();
 
-  useEffect(() => {
-    let run = true;
-    const refElement = elementRef.current;
-    if (run && onScreen && refElement != null) {
-      setcurrentSection(refElement.id);
-    }
+  // useEffect(() => {
+  //   let run = true;
+  //   const refElement = elementRef.current;
+  //   if (run && onScreen && refElement != null) {
+  //     setcurrentSection(refElement.id);
+  //   }
 
-    return () => {
-      run = false;
-    };
-  }, [onScreen, elementRef, setcurrentSection]);
+  //   return () => {
+  //     run = false;
+  //   };
+  // }, [onScreen, elementRef, setcurrentSection]);
 
   return (
     <main
-      id="projects"
-      ref={elementRef}
+      // id="projects"
+      // ref={elementRef}
       className="relative grid w-screen  flex-grow bg-gradient-to-t  from-bg-var to-secondary-light text-txt-main dark:bg-gradient-to-t dark:from-bg-var-dk  dark:to-secondary dark:text-txt-main-dk 
       sm:justify-items-center  "
     >
       <section className="mx-auto grid h-full w-body min-w-body max-w-body flex-col gap-10 bg-transparent py-20 ">
-        <h1 className="mx-auto my-10 w-fit text-4xl lg:text-6xl">My Work</h1>
+        <IntersectionReference identity="projects" header="My Work" />
+        {/* <h1 className="mx-auto my-10 w-fit text-4xl lg:text-6xl">My Work</h1> */}
         <p className="m-0 mx-auto max-w-[60rem] text-center xs:text-justify">
           Coding allows me to bring my imagination to life. It is also a way to
           create enticing and interactive tools and products that others can

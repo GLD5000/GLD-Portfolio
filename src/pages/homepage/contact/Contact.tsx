@@ -1,14 +1,15 @@
 "use client";
 
 import PaperPlaneSvg from "@/icons/PaperPlaneSvg";
-import { useState, ChangeEvent, FormEvent, useEffect } from "react";
+import { useState, ChangeEvent, FormEvent } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import portrait from "src/assets/aboutme/bwportrait.jpg";
 import LinkedInSvg from "@/icons/LinkedInSvg";
 import GitHubSvg from "src/icons/GitHubSvg";
-import { useIntersectionProviderContext } from "@/utilities/intersectionObserver/IntersectionProvider";
-import useIntersectionObserver from "@/utilities/intersectionObserver/useIntersectionObserver";
+// import { useIntersectionProviderContext } from "@/utilities/intersectionObserver/IntersectionProvider";
+// import useIntersectionObserver from "@/utilities/intersectionObserver/useIntersectionObserver";
+import IntersectionReference from "@/utilities/intersectionObserver/IntersectionReference";
 
 interface FormData {
   name: string;
@@ -24,20 +25,20 @@ function Contact() {
   });
   const [messageSent, setMessageSent] = useState(false);
 
-  const { elementRef, onScreen } = useIntersectionObserver();
-  const { setcurrentSection } = useIntersectionProviderContext();
+  // const { elementRef, onScreen } = useIntersectionObserver();
+  // const { setcurrentSection } = useIntersectionProviderContext();
 
-  useEffect(() => {
-    let run = true;
-    const refElement = elementRef.current;
-    if (run && onScreen && refElement != null) {
-      setcurrentSection(refElement.id);
-    }
+  // useEffect(() => {
+  //   let run = true;
+  //   const refElement = elementRef.current;
+  //   if (run && onScreen && refElement != null) {
+  //     setcurrentSection(refElement.id);
+  //   }
 
-    return () => {
-      run = false;
-    };
-  }, [onScreen, elementRef, setcurrentSection]);
+  //   return () => {
+  //     run = false;
+  //   };
+  // }, [onScreen, elementRef, setcurrentSection]);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -61,8 +62,8 @@ function Contact() {
 
   return (
     <section
-      id="contact"
-      ref={elementRef}
+      // id="contact"
+      // ref={elementRef}
       className="m-auto grid w-full gap-4 rounded bg-secondary-light pt-20 pb-32  text-black  dark:bg-secondary dark:text-white"
     >
       <div className="m-auto grid w-body-sm  min-w-body max-w-body gap-4 rounded bg-transparent  text-black dark:text-white  sm:w-body">
@@ -74,8 +75,9 @@ function Contact() {
             alt="Gareth Photo"
           />
           <div className="m-auto w-fit">
-            <p className="m-0 mx-auto text-center text-4xl">Hi There!</p>
-            <p className="m-0 mx-auto text-center text-xl">{`Let's chat!`}</p>
+            <IntersectionReference identity="contact" header="Hi There!" />
+            {/* <p className="m-0 mx-auto text-center text-4xl">Hi There!</p> */}
+            <p className="m-0 mx-auto text-center text-4xl">{`Let's chat!`}</p>
           </div>
         </div>
         <form
