@@ -106,17 +106,6 @@ function getStars() {
 
   let count = 0;
 
-  // const logArray = [];
-  // for (let i = 0; i < 50; i++) {
-  //   const left = `${Math.round(Math.random() * 10000) / 100}%`;
-  //   const top = `${Math.round(Math.random() * 10000) / 100}%`;
-  //   const leftb = `${Math.round(Math.random() * 10000) / 100}%`;
-  //   const topb = `${Math.round(Math.random() * 10000) / 100}%`;
-  //   logArray.push([left, top]);
-  //   logArray.push([leftb, topb]);
-  // }
-  // if (NUMBER_ARRAY === undefined || NUMBER_ARRAY === null) return null;
-  // console.log("logArray:", logArray);
   const starArray: ReactElement[] = [];
   for (let i = 0; i < 50; i += 1) {
     starArray.push(

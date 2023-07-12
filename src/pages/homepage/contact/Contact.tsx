@@ -1,48 +1,12 @@
-"use client";
-
-import PaperPlaneSvg from "@/icons/PaperPlaneSvg";
-import { useState, ChangeEvent, FormEvent } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import portrait from "src/assets/aboutme/bwportrait.jpg";
 import LinkedInSvg from "@/icons/LinkedInSvg";
 import GitHubSvg from "src/icons/GitHubSvg";
 import IntersectionReference from "@/utilities/intersectionObserver/IntersectionReference";
-
-interface FormData {
-  name: string;
-  senderEmail: string;
-  message: string;
-}
+import ContactForm from "./ContactForm";
 
 function Contact() {
-  const [formData, setFormData] = useState<FormData>({
-    name: "",
-    senderEmail: "",
-    message: "",
-  });
-  const [messageSent, setMessageSent] = useState(false);
-
-  const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-    if (messageSent) setMessageSent(false);
-  };
-
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    const response = await fetch("/api/sendgrid", {
-      method: "POST",
-      body: JSON.stringify(formData),
-      headers: { "Content-Type": "application/json" },
-    });
-    const result = await response.json();
-    if (result.success) {
-      setMessageSent(true);
-    }
-  };
-
   return (
     <section className="m-auto grid w-full gap-4 rounded bg-secondary-light pt-20 pb-32  text-black  dark:bg-secondary dark:text-white">
       <div className="m-auto grid w-body-sm  min-w-body max-w-body gap-4 rounded bg-transparent  text-black dark:text-white  sm:w-body">
@@ -58,48 +22,7 @@ function Contact() {
             <p className="m-0 mx-auto text-center text-4xl">{`Let's chat!`}</p>
           </div>
         </div>
-        <form
-          className="mx-auto  my-6 grid w-full max-w-[55rem] gap-6 rounded-full p-4 text-black dark:text-white "
-          onSubmit={handleSubmit}
-        >
-          <div className="grid gap-6 md:grid-cols-2">
-            <input
-              className="w-full rounded-lg  border-2 bg-white p-2 text-inherit placeholder:text-txt-mid dark:bg-black placeholder:dark:text-txt-mid-dk"
-              name="name"
-              placeholder="Your Name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-            <input
-              type="email"
-              className="w-full rounded-lg border-2 bg-white bg-inherit p-2 text-inherit placeholder:text-txt-mid dark:bg-black placeholder:dark:text-txt-mid-dk"
-              name="senderEmail"
-              placeholder="Your Email"
-              value={formData.senderEmail}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <textarea
-            className="w-full rounded-lg border-2 bg-white bg-inherit  p-2 text-inherit placeholder:text-txt-mid dark:bg-black placeholder:dark:text-txt-mid-dk"
-            name="message"
-            rows={3}
-            placeholder="Your Message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
-          <button
-            className="m-auto flex h-fit w-60 flex-row items-center justify-center gap-2 rounded-full border-2 border-black bg-primary px-4 py-3 text-center text-xl font-bold text-white hover:bg-white hover:text-black hover:transition focus:bg-white focus:text-black focus:transition"
-            type="submit"
-          >
-            <PaperPlaneSvg />
-            {messageSent ? "Message Sent!" : "Send Message"}
-          </button>
-        </form>
-
+        <ContactForm />
         <p className="m-0 mx-auto text-center text-2xl">
           Other ways to connect...
         </p>
