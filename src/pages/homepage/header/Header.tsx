@@ -19,21 +19,25 @@ export default function Header() {
   const toggleColourTheme = usePortfolioStore((state) => state.toggleDarkTheme);
 
   const [showMenu, setShowMenu] = useState(true);
-  const { hasScrolled } = useIntersectionProviderContext();
-  if (!hasScrolled) {
-    return (
-      <div className="sticky top-0 left-0 right-0 z-[996] grid min-h-[88px] w-screen">
-        {" "}
-      </div>
-    );
-  }
+  const { currentSection } = useIntersectionProviderContext();
+  // if (currentSection === 'hero') {
+  //   return (
+  //     <div className="sticky top-0 left-0 right-0 z-[996] grid min-h-[88px] w-screen">
+  //       {" "}
+  //     </div>
+  //   );
+  // }
 
   function toggleShowMenu() {
     setShowMenu((state) => !state);
   }
 
   return (
-    <header className="sticky top-0 left-0 right-0 z-[996] grid h-fit w-full flex-shrink-0 flex-grow-0  bg-primary">
+    <header
+      className={`sticky transition ${
+        currentSection === "hero" ? "opacity-0" : "opacity-100"
+      } top-0 left-0 right-0 z-[1000] grid h-fit w-full flex-shrink-0 flex-grow-0  bg-primary`}
+    >
       <div className=" mx-auto flex w-body-sm min-w-body max-w-body flex-wrap items-center justify-between sm:w-body ">
         <div>
           <a href="#hero" className="flex flex-wrap items-center gap-2">

@@ -7,7 +7,7 @@ export default function useIntersectionObserver(
     threshold: number | number[];
   }> = {
     root: null,
-    rootMargin: "0% 0px -50% 0px",
+    rootMargin: "0% 0px -70% 0px",
     threshold: [0.05, 0.1, 0.15],
   }
 ) {
