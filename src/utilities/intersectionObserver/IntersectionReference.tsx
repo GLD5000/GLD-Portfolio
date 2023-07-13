@@ -7,9 +7,11 @@ import { useIntersectionProviderContext } from "./IntersectionProvider";
 export default function IntersectionReference({
   identity,
   header,
+  top = true,
 }: {
   identity: string;
   header?: string;
+  top?: boolean;
 }) {
   const { elementRef, onScreen } = useIntersectionObserver();
   const { setcurrentSection } = useIntersectionProviderContext();
@@ -40,7 +42,9 @@ export default function IntersectionReference({
         <div
           id={identity}
           ref={elementRef}
-          className="absolute top-0 left-0 h-[1px] w-[1px]"
+          className={`absolute ${
+            top ? "top-0" : "bottom-0"
+          } left-0 h-[1px] w-[1px]`}
         />
       )}
     </>
