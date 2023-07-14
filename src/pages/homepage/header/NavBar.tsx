@@ -9,7 +9,7 @@ const linkColours =
 
 function getDarkToggleIcon(isDark: boolean) {
   const wrapper = (
-    <div className=" text:inherit my-auto aspect-square h-6">
+    <div className=" text:inherit my-auto aspect-square h-5">
       {isDark ? <SunSvg /> : <MoonSvg />}{" "}
     </div>
   );
