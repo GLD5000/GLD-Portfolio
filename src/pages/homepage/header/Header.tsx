@@ -34,9 +34,9 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky transition ${
-        currentSection === "hero" ? "opacity-0" : "opacity-100"
-      } top-0 left-0 right-0 z-[1000] grid h-fit w-full flex-shrink-0 flex-grow-0  bg-primary`}
+      className={`sticky ${
+        currentSection === "hero" ? "opacity-0" : "opacity-100 transition"
+      } top-0 left-0 right-0 z-[1000] grid h-fit w-full flex-shrink-0 flex-grow-0  bg-secondary-light/[0.94] backdrop-blur-[3px]  dark:bg-secondary/[0.84]`}
     >
       <div className=" mx-auto flex w-body-sm min-w-body max-w-body flex-wrap items-center justify-between sm:w-body ">
         <div>

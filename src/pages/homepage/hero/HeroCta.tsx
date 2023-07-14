@@ -5,7 +5,7 @@ import MyStack from "./MyStack";
 
 export default function HeroCta() {
   return (
-    <div className=" mx-auto grid h-fit max-h-[screen] w-screen gap-8 pt-10 lg:my-auto lg:max-h-[46.25rem] lg:w-fit lg:grid-cols-2">
+    <div className=" m-auto grid h-full max-h-[screen] w-screen gap-8 pt-10 lg:my-auto lg:max-h-[46.25rem] lg:w-fit lg:grid-cols-2">
       <Image
         priority
         loading="eager"
@@ -13,7 +13,7 @@ export default function HeroCta() {
         width={740}
         height={740}
         src={gldLogo}
-        className="m-auto h-[min(45vmax,90vmin,46.25rem)] w-[min(45vmax,90vmin,46.25rem)]"
+        className="m-auto aspect-square w-full max-w-[90vw] xs:max-w-[80vw] sm:max-w-[440px] lg:max-w-[45vw] "
         alt="GLD Logo"
       />
       <div className="m-auto grid h-fit w-fit gap-6 bg-transparent py-4">

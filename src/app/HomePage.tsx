@@ -17,7 +17,6 @@ export default function HomePage() {
         <MainContentLink />
         <Hero />
         <Header />
-        <div className=" mt-12 h-screen lg:min-h-[46.25rem]  max-lg:landscape:h-[100vmax]" />
         <Projects />
         <About />
         <Contact />

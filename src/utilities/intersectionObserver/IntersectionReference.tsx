@@ -13,7 +13,8 @@ export default function IntersectionReference({
   header?: string;
   bottom?: boolean;
 }) {
-  const { elementRef, onScreen } = useIntersectionObserver();
+  const options = bottom ? { rootMargin: "0% 0px 0% 0px" } : undefined;
+  const { elementRef, onScreen } = useIntersectionObserver(options);
   const { setcurrentSection } = useIntersectionProviderContext();
 
   useEffect(() => {

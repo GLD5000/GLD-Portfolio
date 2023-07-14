@@ -5,7 +5,7 @@ import MoonSvg from "../../../icons/MoonSvg";
 import SunSvg from "../../../icons/SunSvg";
 
 const linkColours =
-  "text-black hover:text-white hover:underline hover:decoration-current hover:underline-offset-2 hover:transition focus:text-white focus:underline focus:decoration-current  focus:underline-offset-2 focus:transition ";
+  "text-txt-mid hover:text-txt-main dark:text-txt-mid-dk dark:hover:text-txt-main-dk hover:underline hover:decoration-current hover:underline-offset-2 hover:transition focus:text-txt-main dark:focus:text-txt-main-dk focus:underline focus:decoration-current  focus:underline-offset-2 focus:transition ";
 
 function getDarkToggleIcon(isDark: boolean) {
   const wrapper = (
@@ -29,16 +29,20 @@ export default function NavBar({
   return (
     <nav className="relative flex h-12 flex-wrap content-center items-center justify-center gap-8 ">
       <a
-        className={`m-0 hidden font-bold text-black sm:inline ${
-          currentSection === "projects" ? "text-white" : ""
+        className={`m-0 hidden sm:inline ${
+          currentSection === "projects"
+            ? "font-bold text-txt-main dark:text-txt-main-dk"
+            : "text-txt-mid dark:text-txt-mid-dk"
         }`}
         href="#projects"
       >
         Projects
       </a>
       <a
-        className={`m-0 hidden font-bold text-black sm:inline ${
-          currentSection === "about" ? "text-white" : ""
+        className={`m-0 hidden sm:inline ${
+          currentSection === "about"
+            ? "font-bold text-txt-main dark:text-txt-main-dk"
+            : "text-txt-mid dark:text-txt-mid-dk"
         }`}
         href="#about"
       >
@@ -46,8 +50,10 @@ export default function NavBar({
       </a>
 
       <a
-        className={`m-0 hidden font-bold text-black sm:inline ${
-          currentSection === "contact" ? "text-white" : ""
+        className={`m-0 hidden sm:inline ${
+          currentSection === "contact"
+            ? "font-bold text-txt-main dark:text-txt-main-dk"
+            : "text-txt-mid dark:text-txt-mid-dk"
         }`}
         href="#contact"
       >
