@@ -6,12 +6,8 @@ import pool from "src/assets/aboutme/poolPodcastCropped.jpg";
 import morethan from "src/assets/aboutme/morethanPodcast.jpg";
 import assessment from "src/assets/aboutme/assessmentPortal.jpg";
 import logo from "src/assets/aboutme/gldInkscape.jpg";
-import ReactLogo from "@/icons/corporate/ReactLogo";
-import TailwindLogo from "@/icons/corporate/TailwindLogo";
-import NextLogo from "@/icons/corporate/NextLogo";
-import TsLogo from "@/icons/corporate/TsLogo";
-import JsLogo from "@/icons/corporate/JsLogo";
 import Modal from "../../../../elements/Modal";
+import MyStack from "../../hero/MyStack";
 
 export default function CreativityModal() {
   return (
@@ -24,52 +20,7 @@ export default function CreativityModal() {
               Web Skills / My Stack
             </h2>
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="https://nextjs.org"
-                target="_blank"
-                referrerPolicy="no-referrer"
-                className=" h-fit w-fit rounded p-2 text-black"
-              >
-                <NextLogo />
-                {/* Next.js */}
-              </Link>
-              <Link
-                href="https://react.dev/"
-                target="_blank"
-                referrerPolicy="no-referrer"
-                className=" w-fit rounded p-2 text-black"
-              >
-                <ReactLogo />
-                {/* <p className="w-fit mx-auto my-0">React</p> */}
-              </Link>
-              <Link
-                href="https://www.typescriptlang.org/"
-                target="_blank"
-                referrerPolicy="no-referrer"
-                className=" w-fit rounded p-2 text-black"
-              >
-                <TsLogo />
-                {/* TypeScript */}
-              </Link>
-              <Link
-                href="https://www.typescriptlang.org/"
-                target="_blank"
-                referrerPolicy="no-referrer"
-                className=" w-fit rounded p-2 text-black"
-              >
-                <JsLogo />
-                {/* TypeScript */}
-              </Link>
-
-              <Link
-                href="https://tailwindcss.com/"
-                target="_blank"
-                referrerPolicy="no-referrer"
-                className=" w-fit rounded p-2 text-black"
-              >
-                <TailwindLogo />
-                {/* Tailwind CSS */}
-              </Link>
+              <MyStack />
               {/*  <Link
                 href="https://vitejs.dev/"
                 target="_blank"
