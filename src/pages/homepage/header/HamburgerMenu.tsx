@@ -57,8 +57,10 @@ export default function HamburgerMenu({
       /> */}
 
       <a
-        className={`m-0 block h-fit w-20 p-0 text-center font-bold text-black  ${
-          currentSection === "projects" ? "text-white" : ""
+        className={`m-0 block h-fit w-20 p-0 text-center  ${
+          currentSection === "projects"
+            ? "font-bold text-txt-main dark:text-txt-main-dk"
+            : "text-txt-mid dark:text-txt-mid-dk"
         }`}
         href="#projects"
       >
@@ -66,8 +68,10 @@ export default function HamburgerMenu({
       </a>
 
       <a
-        className={`m-0 block h-fit w-20 p-0 text-center font-bold text-black  ${
-          currentSection === "about" ? "text-white" : ""
+        className={`m-0 block h-fit w-20 p-0 text-center  ${
+          currentSection === "about"
+            ? "font-bold text-txt-main dark:text-txt-main-dk"
+            : "text-txt-mid dark:text-txt-mid-dk"
         }`}
         href="#about"
       >
@@ -75,8 +79,10 @@ export default function HamburgerMenu({
       </a>
 
       <a
-        className={`m-0 block h-fit w-20 p-0 text-center font-bold text-black  ${
-          currentSection === "contact" ? "text-white" : ""
+        className={`m-0 block h-fit w-20 p-0 text-center  ${
+          currentSection === "contact"
+            ? "font-bold text-txt-main dark:text-txt-main-dk"
+            : "text-txt-mid dark:text-txt-mid-dk"
         }`}
         href="#contact"
       >
@@ -85,16 +91,18 @@ export default function HamburgerMenu({
 
       {/* <Link
         href="#about"
-        className={`m-0 block h-fit w-20 p-0 text-center font-bold text-black  ${
-          currentSection === "about" ? "text-white" : ""
+        className={`m-0 block h-fit w-20 p-0 text-center  ${
+          currentSection === "about" ? "font-bold text-txt-main dark:text-txt-main-dk"
+            : "text-txt-mid dark:text-txt-mid-dk"
         }`}
       >
         About
       </Link>
       <Link
         href="#projects"
-        className={`m-0 block h-fit w-20 p-0 text-center font-bold text-black  ${
-          currentSection === "projects" ? "text-white" : ""
+        className={`m-0 block h-fit w-20 p-0 text-center  ${
+          currentSection === "projects" ? "font-bold text-txt-main dark:text-txt-main-dk"
+            : "text-txt-mid dark:text-txt-mid-dk"
         }`}
       >
         Projects
