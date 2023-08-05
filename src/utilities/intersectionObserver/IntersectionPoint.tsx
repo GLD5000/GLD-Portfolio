@@ -19,7 +19,6 @@ export default function IntersectionPoint({
     const refElement = elementRef.current;
     if (run && onScreen && refElement != null) {
       const { id } = refElement;
-      console.log("id:", id);
       const sectionName = id.includes("-") ? id.split("-")[0] : id;
       setcurrentSection(sectionName);
     }
