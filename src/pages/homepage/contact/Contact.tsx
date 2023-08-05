@@ -8,11 +8,15 @@ import ContactForm from "./ContactForm";
 
 function Contact() {
   return (
-    <section className="m-auto grid w-full gap-4 rounded bg-secondary-light pt-20 pb-32  text-black  dark:bg-secondary dark:text-white">
+    <section className="relative m-auto grid w-full gap-4 rounded bg-secondary-light pt-20 pb-32  text-black  dark:bg-secondary dark:text-white">
       <div className="m-auto grid w-body-sm  min-w-body max-w-body gap-4 rounded bg-transparent  text-black dark:text-white  sm:w-body">
         <div className="mx-auto mt-8 grid w-fit gap-4 sm:mt-0 sm:grid-cols-2">
           <div className="m-auto w-fit">
-            <IntersectionReference identity="contact" header="Hi There!" />
+            <IntersectionReference identity="contact" />
+            <h1 className="mx-auto my-10 w-fit text-4xl lg:text-6xl">
+              Hi There!
+            </h1>
+
             <p className="m-0 mx-auto text-center text-xl sm:text-4xl">{`Let's chat!`}</p>
           </div>
           <Image

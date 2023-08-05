@@ -1,53 +1,19 @@
 "use client";
 
-import { useEffect } from "react";
-import useIntersectionObserver from "./useIntersectionObserver";
-import { useIntersectionProviderContext } from "./IntersectionProvider";
+import IntersectionPoint from "./IntersectionPoint";
 
 export default function IntersectionReference({
   identity,
-  header,
-  bottom = false,
+  topOnly = false,
 }: {
   identity: string;
-  header?: string;
-  bottom?: boolean;
+  topOnly?: boolean;
 }) {
-  const options = bottom ? { rootMargin: "0% 0px 0% 0px" } : undefined;
-  const { elementRef, onScreen } = useIntersectionObserver(options);
-  const { setcurrentSection } = useIntersectionProviderContext();
-
-  useEffect(() => {
-    let run = true;
-    const refElement = elementRef.current;
-    if (run && onScreen && refElement != null) {
-      setcurrentSection(refElement.id);
-    }
-
-    return () => {
-      run = false;
-    };
-  }, [onScreen, elementRef, setcurrentSection]);
-
   return (
     <>
-      {header ? (
-        <h1
-          id={identity}
-          ref={elementRef}
-          className="mx-auto my-10 w-fit scroll-m-32 text-4xl lg:text-6xl"
-        >
-          {header}
-        </h1>
-      ) : (
-        <div
-          id={identity}
-          ref={elementRef}
-          className={`absolute ${
-            bottom ? "bottom-0" : "top-0"
-          } left-0 h-[1px] w-[1px]`}
-        />
-      )}
+      <IntersectionPoint identity={identity} top />
+
+      {topOnly ? null : <IntersectionPoint identity={identity} />}
     </>
   );
 }

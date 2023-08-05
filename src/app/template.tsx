@@ -13,7 +13,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
   function getThemeFromSessionStorage() {
     if (typeof window !== "undefined") {
       const sessionData = sessionStorage.getItem("theme");
-      console.log("sessionData:", sessionData);
+      // console.log("sessionData:", sessionData);
       return sessionData === null
         ? true
         : sessionStorage.getItem("theme") === "true";

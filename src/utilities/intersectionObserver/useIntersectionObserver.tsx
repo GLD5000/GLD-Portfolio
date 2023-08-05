@@ -7,8 +7,8 @@ export default function useIntersectionObserver(
     threshold: number | number[];
   }> = {
     root: null,
-    rootMargin: "0% 0px -70% 0px",
-    threshold: [0.05, 0.1, 0.15],
+    rootMargin: "15% 0px -50% 0px",
+    threshold: [0.5, 0.75, 1],
   }
 ) {
   const elementRef = useRef<HTMLDivElement>(null);
