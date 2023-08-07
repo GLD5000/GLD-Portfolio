@@ -38,7 +38,7 @@ export default function IntersectionPoint({
           ref={elementRef}
           className={`absolute ${
             offset ? "top-40" : "top-0"
-          } left-0 h-[50px] w-[1px] bg-white`}
+          } left-0 h-[50px] w-[1px]`}
         />
       ) : (
         <div
@@ -46,7 +46,7 @@ export default function IntersectionPoint({
           ref={elementRef}
           className={`absolute ${
             offset ? "bottom-40" : "bottom-2"
-          } left-0 h-[50px] w-[1px] bg-pink-400`}
+          } left-0 h-[50px] w-[1px]`}
         />
       )}
     </>
