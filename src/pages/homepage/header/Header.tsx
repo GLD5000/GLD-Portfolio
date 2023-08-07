@@ -17,16 +17,8 @@ const customFont = customGoogleFont({
 export default function Header() {
   const colourTheme = usePortfolioStore((state) => state.darkTheme);
   const toggleColourTheme = usePortfolioStore((state) => state.toggleDarkTheme);
-
   const [showMenu, setShowMenu] = useState(true);
   const { currentSection } = useIntersectionProviderContext();
-  // if (currentSection === 'hero') {
-  //   return (
-  //     <div className="sticky top-0 left-0 right-0 z-[996] grid min-h-[88px] w-screen">
-  //       {" "}
-  //     </div>
-  //   );
-  // }
 
   function toggleShowMenu() {
     setShowMenu((state) => !state);
