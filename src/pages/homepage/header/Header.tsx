@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Roboto_Mono as customGoogleFont } from "next/font/google";
 import GldSvg from "src/icons/GldSvg";
-import { useIntersectionProviderContext } from "@/utilities/intersectionObserver/IntersectionProvider";
+import { useIntersectionProviderContext } from "@/utilities/intersectionObserver";
 import { usePortfolioStore } from "@/zustand/zustand";
 import HamburgerMenu from "./HamburgerMenu";
 import NavBar from "./NavBar";
