@@ -3,7 +3,7 @@ import Link from "next/link";
 import portrait from "src/assets/aboutme/bwportrait.jpg";
 import LinkedInSvg from "@/icons/LinkedInSvg";
 import GitHubSvg from "src/icons/GitHubSvg";
-import IntersectionReference from "@/utilities/intersectionObserver/IntersectionReference";
+import { IntersectionReference } from "@/utilities/intersectionObserver";
 import ContactForm from "./ContactForm";
 
 function Contact() {

@@ -1,4 +1,4 @@
-import { useIntersectionProviderContext } from "@/utilities/intersectionObserver/IntersectionProvider";
+import { useIntersectionProviderContext } from "@/utilities/intersectionObserver";
 import SvgButtonNew from "../../../elements/SvgButtonNew";
 import HamburgerSvg from "../../../icons/HamburgerSvg";
 import MoonSvg from "../../../icons/MoonSvg";

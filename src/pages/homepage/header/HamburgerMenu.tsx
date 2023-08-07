@@ -1,5 +1,5 @@
 // import Link from "next/link";
-import { useIntersectionProviderContext } from "@/utilities/intersectionObserver/IntersectionProvider";
+import { useIntersectionProviderContext } from "@/utilities/intersectionObserver";
 import SvgButtonNew from "../../../elements/SvgButtonNew";
 import MoonSvg from "../../../icons/MoonSvg";
 import SunSvg from "../../../icons/SunSvg";

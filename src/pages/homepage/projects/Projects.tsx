@@ -1,4 +1,4 @@
-import IntersectionReference from "@/utilities/intersectionObserver/IntersectionReference";
+import { IntersectionReference } from "@/utilities/intersectionObserver";
 import ColourmaticCard from "./ColourTheoryCard";
 import ContrastToolCard from "./ContrastLabCard";
 import DevTipsCard from "./DevTipsCard";

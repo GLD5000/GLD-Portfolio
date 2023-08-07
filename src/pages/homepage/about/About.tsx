@@ -1,4 +1,4 @@
-import IntersectionReference from "@/utilities/intersectionObserver/IntersectionReference";
+import { IntersectionReference } from "@/utilities/intersectionObserver";
 import CardGrid from "./CardGrid";
 
 export default function About() {

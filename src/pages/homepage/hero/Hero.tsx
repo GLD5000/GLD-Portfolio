@@ -1,4 +1,4 @@
-import IntersectionReference from "@/utilities/intersectionObserver/IntersectionReference";
+import { IntersectionReference } from "@/utilities/intersectionObserver";
 import Stars from "./Stars";
 import HeroCta from "./HeroCta";
 import DarkModeBtn from "./DarkModeBtn";
