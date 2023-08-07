@@ -7,9 +7,11 @@ import { useIntersectionProviderContext } from "./IntersectionProvider";
 export default function IntersectionPoint({
   identity,
   top = false,
+  offset = false,
 }: {
   identity: string;
   top?: boolean;
+  offset?: boolean;
 }) {
   const { elementRef, onScreen } = useIntersectionObserver();
   const { setcurrentSection } = useIntersectionProviderContext();
@@ -32,15 +34,19 @@ export default function IntersectionPoint({
     <>
       {top ? (
         <div
-          id={identity}
+          id={offset ? `${identity}-offset` : identity}
           ref={elementRef}
-          className="absolute top-0 left-0 h-[150px] w-[1px]"
+          className={`absolute ${
+            offset ? "top-40" : "top-0"
+          } left-0 h-[50px] w-[1px] bg-white`}
         />
       ) : (
         <div
-          id={`${identity}-bottom`}
+          id={`${identity}-bottom-${offset}`}
           ref={elementRef}
-          className="absolute bottom-0 left-0 h-[150px] w-[1px]"
+          className={`absolute ${
+            offset ? "bottom-40" : "bottom-2"
+          } left-0 h-[50px] w-[1px] bg-pink-400`}
         />
       )}
     </>

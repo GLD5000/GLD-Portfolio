@@ -12,8 +12,14 @@ export default function IntersectionReference({
   return (
     <>
       <IntersectionPoint identity={identity} top />
+      <IntersectionPoint identity={identity} top offset />
 
-      {topOnly ? null : <IntersectionPoint identity={identity} />}
+      {topOnly ? null : (
+        <>
+          <IntersectionPoint identity={identity} />
+          <IntersectionPoint identity={identity} offset />
+        </>
+      )}
     </>
   );
 }
