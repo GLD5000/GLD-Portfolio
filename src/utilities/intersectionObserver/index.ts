@@ -1,4 +1,4 @@
-export { default as IntersectionReference } from "./IntersectionReference";
+export { default as IntersectionWrapper } from "./IntersectionWrapper";
 export {
   default as IntersectionProvider,
   useIntersectionProviderContext,

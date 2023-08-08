@@ -34,7 +34,7 @@ export default function IntersectionPoint({
     <>
       {top ? (
         <div
-          id={offset ? `${identity}-offset` : identity}
+          id={`${identity}-top-offset`}
           ref={elementRef}
           className={`absolute ${
             offset ? "top-40" : "top-0"

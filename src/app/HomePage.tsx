@@ -5,7 +5,10 @@ import Header from "@/pages/homepage/header/Header";
 import MainContentLink from "@/pages/homepage/header/MainContentLink";
 import Hero from "@/pages/homepage/hero/Hero";
 import Projects from "@/pages/homepage/projects/Projects";
-import { IntersectionProvider } from "@/utilities/intersectionObserver";
+import {
+  IntersectionProvider,
+  IntersectionWrapper,
+} from "@/utilities/intersectionObserver";
 
 export default function HomePage() {
   return (
@@ -15,11 +18,19 @@ export default function HomePage() {
     >
       <IntersectionProvider>
         <MainContentLink />
-        <Hero />
         <Header />
-        <Projects />
-        <About />
-        <Contact />
+        <IntersectionWrapper identity="hero">
+          <Hero />
+        </IntersectionWrapper>
+        <IntersectionWrapper identity="projects">
+          <Projects />
+        </IntersectionWrapper>
+        <IntersectionWrapper identity="about">
+          <About />
+        </IntersectionWrapper>
+        <IntersectionWrapper identity="contact">
+          <Contact />
+        </IntersectionWrapper>
       </IntersectionProvider>
 
       <Footer />
