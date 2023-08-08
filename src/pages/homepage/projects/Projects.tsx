@@ -1,4 +1,3 @@
-import { IntersectionReference } from "@/utilities/intersectionObserver";
 import ColourmaticCard from "./ColourTheoryCard";
 import ContrastToolCard from "./ContrastLabCard";
 import DevTipsCard from "./DevTipsCard";
@@ -8,11 +7,10 @@ import DevBlogCard from "./DevBlogCard";
 export default function Projects() {
   return (
     <main
-      className="relative grid w-screen  flex-grow bg-gradient-to-t  from-bg-var to-secondary-light text-txt-main dark:bg-gradient-to-t dark:from-bg-var-dk  dark:to-secondary dark:text-txt-main-dk 
+      className="grid w-screen  flex-grow bg-gradient-to-t  from-bg-var to-secondary-light text-txt-main dark:bg-gradient-to-t dark:from-bg-var-dk  dark:to-secondary dark:text-txt-main-dk 
       sm:justify-items-center  "
     >
-      <section className="mx-auto grid h-full w-body min-w-body max-w-body flex-col gap-10 bg-transparent py-20 ">
-        <IntersectionReference identity="projects" />
+      <div className="mx-auto grid h-full w-body min-w-body max-w-body flex-col gap-10 bg-transparent py-20 ">
         <h1 className="mx-auto my-10 w-fit text-4xl lg:text-6xl"> My Work</h1>
 
         <p className="m-0 mx-auto max-w-[60rem] text-center xs:text-justify">
@@ -31,7 +29,7 @@ export default function Projects() {
           <DevTipsCard />
           <ColourmaticCard />
         </div>
-      </section>
+      </div>
     </main>
   );
 }

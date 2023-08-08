@@ -3,16 +3,14 @@ import Link from "next/link";
 import portrait from "src/assets/aboutme/bwportrait.jpg";
 import LinkedInSvg from "@/icons/LinkedInSvg";
 import GitHubSvg from "src/icons/GitHubSvg";
-import { IntersectionReference } from "@/utilities/intersectionObserver";
 import ContactForm from "./ContactForm";
 
 function Contact() {
   return (
-    <section className="relative m-auto grid w-full gap-4 rounded bg-secondary-light pt-20 pb-32  text-black  dark:bg-secondary dark:text-white">
+    <div className="m-auto grid w-full gap-4 rounded bg-secondary-light pt-20 pb-32  text-black  dark:bg-secondary dark:text-white">
       <div className="m-auto grid w-body-sm  min-w-body max-w-body gap-4 rounded bg-transparent  text-black dark:text-white  sm:w-body">
         <div className="mx-auto mt-8 grid w-fit gap-4 sm:mt-0 sm:grid-cols-2">
           <div className="m-auto w-fit">
-            <IntersectionReference identity="contact" />
             <h1 className="mx-auto my-10 w-fit text-4xl lg:text-6xl">
               Hi There!
             </h1>
@@ -55,7 +53,7 @@ function Contact() {
           </Link>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
