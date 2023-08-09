@@ -9,7 +9,7 @@ export default function IntersectionWrapper({
   children: ReactNode;
 }) {
   return (
-    <section id={identity} className="relative m-0 h-fit w-full p-0">
+    <section id={identity} className="relative w-full">
       <IntersectionReference identity={identity} />
       {children}
     </section>
