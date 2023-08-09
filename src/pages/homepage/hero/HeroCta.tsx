@@ -5,7 +5,7 @@ import MyStack from "./MyStack";
 
 export default function HeroCta() {
   return (
-    <div className=" m-auto grid h-full max-h-[screen] w-screen gap-8 pt-10 lg:my-auto lg:max-h-[46.25rem] lg:w-fit lg:grid-cols-2">
+    <div className=" m-auto grid h-fit max-h-[screen] w-screen gap-8 pt-10 lg:my-auto  lg:w-fit lg:grid-cols-2">
       <Image
         priority
         loading="eager"
