@@ -1,5 +1,5 @@
 import ColourmaticCard from "./ColourTheoryCard";
-import ContrastToolCard from "./ContrastLabCard";
+import ContrastLabCard from "./ContrastLabCard";
 import DevTipsCard from "./DevTipsCard";
 import LondonDataWeekCard from "./LondonDataWeekCard";
 import DevBlogCard from "./DevBlogCard";
@@ -25,7 +25,7 @@ export default function Projects() {
         <div className="mt-10 grid w-full grow gap-10 lg:gap-24 ">
           <LondonDataWeekCard />
           <DevBlogCard />
-          <ContrastToolCard />
+          <ContrastLabCard />
           <DevTipsCard />
           <ColourmaticCard />
         </div>

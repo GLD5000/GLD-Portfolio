@@ -68,7 +68,7 @@ export default function ContrastLabCard() {
       text="A colour playground that allows you to quickly compare any number of colours and ensure that they meet current standards for visual Contrast Ratios and accessibility (WCAG 2.1)."
       subtitle="Create Accessible Colour Combinations"
       title={titleDiv}
-      mainUrl="https://contrast-tool.vercel.app/"
+      mainUrl="https://contrast-lab.vercel.app/"
       repoUrl="https://github.com/GLD5000/GLD-Contrast-Lab"
     />
   );
